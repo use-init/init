@@ -1,0 +1,637 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"important",
+				"importantColor"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"clear",
+				"clearfix"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"bore",
+				"border-bottom"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"box-",
+				"box-header"
+			],
+			[
+				"marin",
+				"margin-top"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"vert",
+				"vertical-align"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"back",
+				"background	background-image: url"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"border",
+				"bordercolor"
+			],
+			[
+				"mari",
+				"margin-top"
+			],
+			[
+				"basic",
+				"basicFontSize"
+			],
+			[
+				"cust",
+				"customers"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"basi",
+				"basicFontSize"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"align",
+				"alignleft"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"nor",
+				"no-repeat"
+			],
+			[
+				"img",
+				"images"
+			],
+			[
+				"clea",
+				"clear"
+			],
+			[
+				"borde",
+				"border-color"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"bas",
+				"basicLineHeight"
+			],
+			[
+				"blo",
+				"block"
+			],
+			[
+				"header",
+				"Header"
+			],
+			[
+				"ex",
+				"extend"
+			],
+			[
+				"vi",
+				"visited"
+			],
+			[
+				"so",
+				"solid"
+			],
+			[
+				"head",
+				"header	<header>"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"get_sear",
+				"get_search_form"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Volumes/Macintosh HD/Users/hans/Sites/resources/html5-boilerplate/H5BP/.gitignore",
+		"/Volumes/Macintosh HD/Users/hans/Sites/resources/html5-boilerplate/H5BP/index.html",
+		"/Users/hans/Downloads/necolas-dotfiles-bdb46c6/bootstrap.sh",
+		"/Users/hans/.gitconfig",
+		"/Volumes/Macintosh HD/Users/hans/Sites/resources/html5-boilerplate/H5BP/.htaccess",
+		"/Volumes/Macintosh HD/Users/hans/Sites/resources/html5-boilerplate/H5BP/js/plugins.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/resources/html5-boilerplate/H5BP/404.html",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/styles.css",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/typoscript/setup/lib.sidebar.ts",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/modules/_navigation.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/elements/_lists.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/typoscript/setup/lib.sidebar-nav.ts",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/typoscript/setup/lib.mainnavigation.ts",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/typoscript/setup/lib.breadcrumb.ts",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/typoscript/setup.ts",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/typoscript/setup/lib.right-col.ts",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/typoscript/setup/page.ts",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/modules/_box.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/page/_news.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/ext-templates/news/Templates/News/List.html",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/ext-templates/news/Partials/List/LatestItem.html",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/ext-templates/ke_search/template.html",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/elements/_forms.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/helpers/_mixins.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/modules/_accordion.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/js/general.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/img/arrow-666.svg",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/page/_search.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/.htaccess",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/typoscript/setup/config.ts",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/js/modernizr-2.5.3.min.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/js/jquery.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/js/modernizr-2.0.6.min.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/page/_events.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/helpers/_helper.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/modules/_pageparts.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/elements/_typography.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/addinonals.css",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/.gitignore",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/dgu-online-theme.sublime-project",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/dgu-online-theme.sublime-workspace",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/modules/_paginator.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/page/_contact.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/styles.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/page/_presentation.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/page/_salutation.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/page/_abschluesse.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/modules/_breadcrumb.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/modules/_presenter.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/modules/_calendar.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/helpers/_h5bp.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/page/contact.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/js/vendor/jquery.tablesorter.min.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/js/vendor/plugins",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/js/vendor/libs",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/page/_layout.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/img/events-arrows.png",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/elements/_elements.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/js/events.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/js/vendor/jquery.tablesorter.pager.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/ext-templates/cz_simple_cal/Templates/EventIndex/list.html",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/helpers/_variables.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/ext-templates/cz_simple_cal/Templates/EventIndex/list.ics",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/ext-templates/cz_simple_cal/Partials/EventIndex/event-for-list.html",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/modules/_jquery.datepicker.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/typoscript/setup/lib.logo.ts",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/ext-templates/cz_simple_cal/Templates/EventIndex/event-for-list.html",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/ext-templates/cz_simple_cal/Templates/ViewHelpers/Widget/EventIndex/List/Index.html",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/js/vendor/jquery.tablesorter.min-ck.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/js/vendor/tablesorter.min.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/img/search-button.png",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/img/search-btn.png",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/img/dropdownicon.jpg",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/readme.md",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/old.css",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/typoscript/setup/lib.newstagtitle.ts",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/typoscript/setup/lib.mehrzumthema.ts",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/typoscript/setup/lib.pagetitle.ts",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/ext-templates/news/Templates/News/DateMenu.html",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/ext-templates/news/Layouts/Backend/Default.html",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/ext-templates/news/Layouts/General.html",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/ext-templates/news/Partials/Category/Items.html",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/ext-templates/news/Templates/News/Detail.html",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/img/arrow-c00.svg",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/typoscript/setup/lib.footer-copyright.ts",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/img/ausschusse-list.png",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/typoscript/setup/lib.footer-menu.ts",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/typoscript/setup/lib.topnav.ts",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/page/_presenation.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/_styles.css",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/page/_commercial.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/_layout.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/newsletter/css/styles.css",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/ext-templates/news/Partials/List/NewsletterItem.html",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/typoscript/setup/lib.accordion.ts",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/ext-templates/cz_simple_cal/Partials/Event/show/startdate.html",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/typoscript/setup/newsletter.ts",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/newsletter/img/header-bg.png",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/typoscript/setup/tt_content.ts",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/backend/TSconfig/pageTS-rootlevel.ts",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/newsletter/img/slogan.png",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/newsletter/img/spacer.gif",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/typoscript/constants.ts",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/newsletter/img/logo.png",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/ext-templates/news/Templates/News/NewsletterList.html",
+		"/Users/hans/Library/Application Support/Sublime Text 2/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/typoscript/setup/plugin.tx_czsimplecal.ts",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/ext-templates/news/Templates/News/List.xml",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/newsletter/img/hr.gif",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/sftp-config.json",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/newsletter/img/header.gif",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/img/aktion-img.jpg",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/style.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/_h5bp.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/theme/css/style.css",
+		"/Volumes/Macintosh HD/Users/hans/Sites/resources/html5-boilerplate/test/build/build.xml",
+		"/Volumes/Macintosh HD/Users/hans/Sites/resources/html5-boilerplate/H5BP - Ant-Build-Script/build.xml",
+		"/Volumes/Macintosh HD/Users/hans/Sites/resources/html5-boilerplate/H5BP - Ant-Build-Script/createproject.sh",
+		"/Volumes/Macintosh HD/Users/hans/Sites/resources/html5-boilerplate/H5BP - Ant-Build-Script/runbuildscript.bat",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/styleguide/content/arrow-c00.svg",
+		"/Users/hans/Downloads/pfeil.svg",
+		"/Volumes/Macintosh HD/Users/hans/Sites/normaderm-vichy/repo/assets/sass/screen.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/normaderm-vichy/repo/assets/sass/_raffle.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/normaderm-vichy/repo/site/templates/home-at.php",
+		"/Volumes/Macintosh HD/Users/hans/Sites/normaderm-vichy/repo/site/config/config.localhost.php",
+		"/Volumes/Macintosh HD/Users/hans/Sites/normaderm-vichy/repo/site/templates/home.php",
+		"/Volumes/Macintosh HD/Users/hans/Sites/normaderm-vichy/repo/site/config/config.php",
+		"/Volumes/Macintosh HD/Users/hans/Sites/normaderm-vichy/repo/site/snippets/contact.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"header",
+			"right-col",
+			"morelink",
+			"Startpage latest",
+			"news-list-item",
+			"morelink",
+			".fade",
+			"fade",
+			"filter",
+			"svg",
+			"kesearch_spinner_filters",
+			"spinner",
+			"img",
+			"# ",
+			"docty",
+			"confi",
+			"js",
+			"jns",
+			"doctype",
+			"htm",
+			"modernizr",
+			"@extend .alignleft",
+			"alignleft",
+			"align",
+			"external-link-new-window",
+			"@include button",
+			"button",
+			"@extend",
+			"morelink",
+			"filterbtn",
+			".checkpoint label",
+			".kontakt-form .checklist",
+			"clearfix",
+			"+ ",
+			"3s",
+			"box-header",
+			"e8ebf3",
+			"dtstart",
+			"updatePage",
+			"renderTable",
+			"s",
+			"page-navigation",
+			"renderTable",
+			"updatePageDisplay",
+			"cssPageDisplay",
+			"checklist",
+			"filter",
+			"e aktuellen Mitteilungen interessieren Sie am meiste",
+			".filterbtn",
+			".post-bottom",
+			"post-box",
+			"aktuelleslist",
+			"footer",
+			"li",
+			"less",
+			"themelist",
+			"  ",
+			"themelist",
+			"themenlist",
+			"c",
+			".widecolumn li",
+			".widescreen li",
+			"kontakt-form text",
+			"article-info",
+			"news-aside",
+			"footer",
+			"ooter-copyright",
+			"footer",
+			"#mainnavigation",
+			"close",
+			"main-nav",
+			".sublink",
+			"#mainnavigation",
+			"lib.topnav",
+			".box",
+			"navigation",
+			"li:hover",
+			"h4.subtitle,",
+			".box-news h2 {",
+			"box h2",
+			"h4",
+			".box",
+			"box",
+			"mainnavigation",
+			".box-news h2",
+			"logo",
+			"header",
+			"bgHeader",
+			"h2",
+			"margin-b",
+			"newsletter",
+			"article",
+			"item",
+			"article",
+			"orange",
+			"closure",
+			"regex",
+			"copying",
+			"closure",
+			"java",
+			"dl",
+			"home",
+			"normadermhome_hype_container",
+			"normadermhomeat_hype_container",
+			"click",
+			"box-home-facebook",
+			"root.co",
+			"opac",
+			".box-ra",
+			"label",
+			"data",
+			"gewinn",
+			"#nav",
+			"nav",
+			"60px",
+			"\n  background: $mainBg;",
+			"overlay",
+			"emphcolor",
+			"small",
+			" ?>",
+			"basicLine",
+			"spe",
+			"template",
+			"searchform",
+			"tab",
+			"cmd+[",
+			"indentation",
+			"tab"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".main-footer",
+			".main-nav",
+			"li",
+			".main-nav"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"accordion",
+				"typoscript/setup/lib.accordion.ts"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 591.0,
+		"selected_items":
+		[
+			[
+				"crea",
+				"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/createam/relaunch/repo/createam.sublime-project"
+			],
+			[
+				"dr",
+				"/Volumes/Macintosh HD/Users/hans/Sites/source-access/wordpress/wp-content/themes/drublic/drublic-blog.sublime-project"
+			],
+			[
+				"",
+				"/Volumes/Macintosh HD/Users/hans/Sites/colored.by/prototype/Colored-by-Prototype.sublime-project"
+			]
+		],
+		"width": 732.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 242.0,
+	"status_bar_visible": true
+}
