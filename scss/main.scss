@@ -1,0 +1,40 @@
+/*!
+ *	This project's description goes here
+ *
+ *	@author		Some author's name
+ *	@version	v0.0.0
+ *
+ */
+
+
+// Helpers
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/common";
+
+// Typography and Elements
+@import "elements/typography";
+
+// Layout
+@import "page/layout";
+@import "page/header";
+@import "page/footer";
+
+// Modules
+@import "modules/box";
+
+// Print Stylesheets
+@media print {
+	@import "media/print";
+}
+
+// Media-Query for Tablets
+@media screen only and (max-width: 1024px) {
+	@import "media/tablets";
+}
+
+// Media-Query for Smartphones
+@media screen only and (max-width: 480px) {
+	@import "media/smartphones";
+}
+
