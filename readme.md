@@ -19,7 +19,7 @@ We use jQuery and Modernizr (custom build).
 Please lint your JavaScript before commit.
 
 ## Deployment
-Please use [grunt.js](https://github.com/cowboy/grunt) for deployment. The `grunt.js`-file has tasks for concatenating and minifing CSS and JavaScript.
+Please use [grunt.js](https://github.com/cowboy/grunt) for building a production-state of a website. The `grunt.js`-file has tasks for concatenating and minifing CSS and JavaScript.
 Additional information on this project is stored in `package.json`.
 
 
@@ -33,6 +33,7 @@ We use it at [/gebrüderheitz](http://gebruederheitz.de/) for front-end developm
 
 ### Major components:
 
+* grunt: MIT license
 * jQuery: MIT/GPL license
 * Modernizr: MIT/BSD license
 * Normalize.css: Public Domain
