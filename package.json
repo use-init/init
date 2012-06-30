@@ -1,0 +1,23 @@
+{
+	"name": "",
+	"title": "",
+	"description": "",
+	"version": "0.0.0",
+	"homepage": "",
+	"author": {
+		"name": ""
+	},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"bugs": {
+		"url": ""
+	},
+	"licenses": [],
+	"dependencies": {},
+	"devDependencies": {
+		"grunt": ">=0.3.9"
+	},
+	"keywords": []
+}
