@@ -3,7 +3,40 @@
 This project extends [HTML5 Boilerpalte](https://github.com/h5bp/html5-boilerplate) with some more structure for SCSS files and JavaScripts.
 
 
-## General
+## TODO
+
+* Include html-linting aka. validation with Grunt
+* Include deploy-task
+* Move all files currently not affected by Grunt into `publish`-dir with running `$ grunt dev`
+* RequireJS ?
+* Tests ?
+
+## Dependencies
+
+You will need to install some stuff, if you haven't already:
+
+Mayors:
+
+* Node.js
+* Ruby
+
+Secondaries:
+
+* Node: npm
+* Ruby: SASS
+
+After you've set this stuff up please run
+
+	$ npm install
+
+in your project's folder.
+This will install all the things you need automatically (grunt, grunt-sass).
+
+## Contribute
+If you got something that's worth including into the project please [submit a Pull Request](https://github.com/drublic/init/issues) or [open an issue](https://github.com/drublic/init/issues) for further discussion.
+
+@necolas [wrote down some good guidelines](https://github.com/h5bp/html5-boilerplate/wiki/contribute) for contribution to HTML5 Boilerplate. Please keep these in mind when contributing to this project. <3
+
 Please use the `.editorconfig`-file in order to set the right usage of tabs/spaces in your editor. Visit [editorconfig.org](http://editorconfig.org/) for more information.
 
 ## CSS
@@ -16,10 +49,10 @@ You can find more information about the installation process of SASS and the usa
 
 ## JS
 We use jQuery and Modernizr (custom build).
-Please lint your JavaScript before commit. You can use the grunt-task `lint` for this.
+Please lint your JavaScript before commit. You can use the Grunt-task `lint` for this.
 
 ## Deployment
-Please use [grunt.js](https://github.com/cowboy/grunt) for building a production-state of a website. The `grunt.js`-file has tasks for concatenating and minifing CSS and JavaScript.
+Please use [Grunt.js](https://github.com/cowboy/grunt) for building a production-state of a website. The `Gruntfile.js` has tasks for concatenating and minifing CSS and JavaScript.
 Additional information on this project is stored in `package.json`.
 
 
@@ -33,7 +66,7 @@ We use it at [/gebrüderheitz](http://gebruederheitz.de/) for front-end developm
 
 ### Major components:
 
-* grunt: MIT license
+* Grunt: MIT license
 * HTML5 Boilerplate: Public Domain
 * jQuery: MIT/GPL license
 * Modernizr: MIT/BSD license
