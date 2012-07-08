@@ -36,10 +36,12 @@ module.exports = function (grunt) {
 			}
 		},
 		rubysass: {
-			options: {},
+			options: {
+				style: 'compact'
+			},
 			css: {
 				files: {
-					'scss/main.scss': 'css/main.css'
+					'css/main.css': 'scss/main.scss'
 				}
 			}
 		},
