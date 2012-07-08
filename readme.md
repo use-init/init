@@ -30,7 +30,16 @@ After you've set this stuff up please run
 	$ npm install
 
 in your project's folder.
-This will install all the things you need automatically (grunt, grunt-sass).
+This will install all the things you need on Node automatically.
+
+These are:
+* Grunt in a preview-version (0.4.0a)
+* grunt-sass in version 0.2.0
+
+### Troubleshooting
+If running the install does not work, please try running it as with admin-rights:
+
+	$ sudo npm install
 
 ## Contribute
 If you got something that's worth including into the project please [submit a Pull Request](https://github.com/drublic/init/issues) or [open an issue](https://github.com/drublic/init/issues) for further discussion.
