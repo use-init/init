@@ -8,33 +8,33 @@
 
 
 // Helpers
-@import "helpers/variables";
-@import "helpers/mixins";
-@import "helpers/normalize";
-@import "helpers/helpers";
+@import "scss/helpers/variables";
+@import "scss/helpers/mixins";
+@import "scss/helpers/normalize";
+@import "scss/helpers/helpers";
 
 // Typography and Elements
-@import "elements/typography";
+@import "scss/elements/typography";
 
 // Layout
-@import "page/base";
-@import "page/header";
-@import "page/footer";
+@import "scss/page/base";
+@import "scss/page/header";
+@import "scss/page/footer";
 
 // Modules
-@import "modules/box";
+@import "scss/modules/box";
 
 // Print Stylesheets
 @media print {
-	@import "media/print";
+	@import "scss/media/print";
 }
 
 // Media-Query for Tablets
 @media screen only and (max-width: 1024px) {
-	@import "media/tablets";
+	@import "scss/media/tablets";
 }
 
 // Media-Query for Smartphones
 @media screen only and (max-width: 480px) {
-	@import "media/smartphones";
+	@import "scss/media/smartphones";
 }
