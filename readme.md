@@ -16,7 +16,7 @@ You can find more information about the installation process of SASS and the usa
 
 ## JS
 We use jQuery and Modernizr (custom build).
-Please lint your JavaScript before commit.
+Please lint your JavaScript before commit. You can use the grunt-task `lint` for this.
 
 ## Deployment
 Please use [grunt.js](https://github.com/cowboy/grunt) for building a production-state of a website. The `grunt.js`-file has tasks for concatenating and minifing CSS and JavaScript.
