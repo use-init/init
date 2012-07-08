@@ -1,11 +1,12 @@
 {
-	"name": "",
-	"title": "",
-	"description": "",
-	"version": "0.0.0",
+	"name": "init",
+	"title": "init",
+	"description": "This is an inititial boilerplate for front-end projects",
+	"version": "0.1.0",
 	"homepage": "",
 	"author": {
-		"name": ""
+		"name": "Hans Christian Reinl",
+		"url": "http://drublic.de"
 	},
 	"repository": {
 		"type": "git",
@@ -14,10 +15,11 @@
 	"bugs": {
 		"url": ""
 	},
-	"licenses": [],
+	"license": "MIT",
 	"dependencies": {},
 	"devDependencies": {
-		"grunt": ">=0.3.9"
+		"grunt": "git+https://github.com/cowboy/grunt.git#0ba6d4b529",
+		"grunt-sass": "0.2.0"
 	},
 	"keywords": []
 }
