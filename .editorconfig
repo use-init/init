@@ -4,8 +4,7 @@ root = true
 [*]
 end_of_line = LF
 indent_style = tab
-indent_size = 4
 
 [.htaccess]
-indent_style = spaces
+indent_style = space
 indent_size = 2
