@@ -19,7 +19,7 @@
 	"dependencies": {},
 	"devDependencies": {
 		"grunt": "git+https://github.com/cowboy/grunt.git#0ba6d4b529",
-		"grunt-sass": "git+https://github.com/sindresorhus/grunt-sass.git#a8e563ac6aff"
+		"grunt-sass": "git+https://github.com/sindresorhus/grunt-sass.git#5242bf38b04a"
 	},
 	"keywords": []
 }

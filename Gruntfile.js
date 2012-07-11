@@ -37,6 +37,7 @@ module.exports = function (grunt) {
 		},
 		rubysass: {
 			options: {
+				unixNewlines: true,
 				style: 'compact'
 			},
 			css: {
