@@ -20,4 +20,5 @@ Thumbs.db
 *.sublime-workspace
 
 node_modules
+public
 
