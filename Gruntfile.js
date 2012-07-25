@@ -32,6 +32,10 @@ module.exports = function (grunt) {
 			}
 		},
 
+		htmllint: {
+			all: ['index.html']
+		},
+
 		concat: {
 			js: {
 				src: ['js/vendor/jquery-1.7.2.min.js', 'js/plugins/log.js', 'js/main.js'],
@@ -72,6 +76,7 @@ module.exports = function (grunt) {
 
 	// Load some stuff
 	grunt.loadNpmTasks('grunt-sass');
+	grunt.loadNpmTasks('grunt-html');
 
 	// Default task.
 	grunt.registerTask('default', 'lint concat rubysass min');

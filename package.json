@@ -19,7 +19,8 @@
 	"dependencies": {},
 	"devDependencies": {
 		"grunt": "https://nodeload.github.com/cowboy/grunt/tarball/0ba6d4b529",
-		"grunt-sass": "https://nodeload.github.com/sindresorhus/grunt-sass/tarball/5242bf38b04a"
+		"grunt-sass": "https://nodeload.github.com/sindresorhus/grunt-sass/tarball/5242bf38b04a",
+		"grunt-html": "~0.1.1"
 	},
 	"keywords": []
 }
