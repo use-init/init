@@ -5,7 +5,6 @@ This project extends [HTML5 Boilerpalte](https://github.com/h5bp/html5-boilerpla
 
 ## TODO
 
-* Include deploy-task
 * Move all files currently not affected by Grunt into `publish`-dir with running `$ grunt dev`
 * RequireJS ?
 * Tests ?
