@@ -5,7 +5,6 @@ This project extends [HTML5 Boilerpalte](https://github.com/h5bp/html5-boilerpla
 
 ## TODO
 
-* Include html-linting aka. validation with Grunt
 * Include deploy-task
 * Move all files currently not affected by Grunt into `publish`-dir with running `$ grunt dev`
 * RequireJS ?
@@ -35,6 +34,7 @@ This will install all the things you need on Node automatically.
 These are:
 * Grunt in a preview-version (0.4.0a)
 * grunt-sass in version 0.2.0
+* grunt-html in version 0.1.1
 
 ### Troubleshooting
 If running the install does not work, please try running it as with admin-rights:
@@ -44,7 +44,7 @@ If running the install does not work, please try running it as with admin-rights
 ## Contribute
 If you got something that's worth including into the project please [submit a Pull Request](https://github.com/drublic/init/issues) or [open an issue](https://github.com/drublic/init/issues) for further discussion.
 
-@necolas [wrote down some good guidelines](https://github.com/h5bp/html5-boilerplate/wiki/contribute) for contribution to HTML5 Boilerplate. Please keep these in mind when contributing to this project. <3
+[@necolas](https://github.com/necolas) [wrote down some good guidelines](https://github.com/necolas/issue-guidelines) for contributing to his projects. Please keep these in mind when contributing to this project. <3
 
 Please use the `.editorconfig`-file in order to set the right usage of tabs/spaces in your editor. Visit [editorconfig.org](http://editorconfig.org/) for more information.
 
@@ -81,7 +81,7 @@ We use it at [/gebrüderheitz](http://gebruederheitz.de/) for front-end developm
 * Modernizr: MIT/BSD license
 * Normalize.css: Public Domain
 
-### Everything else:
+### Everything that has been developed by the contributors to this project:
 
 The MIT License (MIT)
 Copyright © 2012 Hans Christian Reinl, http://drublic.de
