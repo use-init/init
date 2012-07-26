@@ -37,27 +37,41 @@ module.exports = function (grunt) {
 		},
 
 		concat: {
-			js: {
-				src: ['js/vendor/jquery-1.7.2.min.js', 'js/plugins/log.js', 'js/main.js'],
+			deploy: {
+				src: [
+					// Remove jQuery if you don't want to include the local copy in your build
+					'js/vendor/jquery-1.7.2.min.js',
+					'js/plugins/log.js',
+					'js/main.js'
+				],
 				dest: 'public/js/main-<%= pkg.version %>.min.js'
 			}
 		},
 
 		rubysass: {
-			options: {
-				unixNewlines: true,
-				style: 'compact'
-			},
-			css: {
+			dev: {
+				options: {
+					unixNewlines: true,
+					style: 'expanded'
+				},
 				files: {
 					'css/main.css': 'scss/main.scss'
 				}
+			},
+			deploy: {
+				options: {
+					style: 'compressed'
+				},
+				files: {
+					'public/css/main-<%= pkg.version %>.min.css': 'scss/main.scss'
+				}
+
 			}
 		},
 
 		min: {
-			js: {
-				src: ['<config_process:meta.banner>', '<config:concat.js.dest>'],
+			deploy: {
+				src: ['<config_process:meta.banner>', '<config:concat.deploy.dest>'],
 				dest: 'public/js/main-<%= pkg.version %>.min.js'
 			}
 		},
@@ -78,7 +92,14 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-html');
 
-	// Default task.
-	grunt.registerTask('default', 'lint concat rubysass min');
+
+	// A task for development
+	grunt.registerTask('dev', 'lint htmllint rubysass:dev');
+
+	// A task for deployment
+	grunt.registerTask('deploy', 'lint htmllint concat rubysass:deploy min');
+
+	// Default task
+	grunt.registerTask('default', 'lint htmllint concat rubysass:dev min');
 
 };
