@@ -77,12 +77,18 @@ module.exports = function (grunt) {
 		},
 
 		watch: {
-			css: {
-				files: 'scss/**/_*.scss',
-				tasks: 'rubysass'
+			html: {
+				files: '<config:htmllint.all>',
+				tasks: 'htmllint'
 			},
+
+			scss: {
+				files: ['scss/main.scss', 'scss/**/_*.scss'],
+				tasks: 'rubysass:dev'
+			},
+
 			js: {
-				files: '<config.lint.all>',
+				files: '<config:lint.all>',
 				tasks: 'lint'
 			}
 		}
