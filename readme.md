@@ -75,10 +75,10 @@ We use it at [/gebrüderheitz](http://gebruederheitz.de/) for front-end developm
 ### Major components:
 
 * Grunt: MIT license
-* HTML5 Boilerplate: Public Domain
+* HTML5 Boilerplate: MIT license
 * jQuery: MIT/GPL license
 * Modernizr: MIT/BSD license
-* Normalize.css: Public Domain
+* Normalize.css: MIT license
 
 ### Everything that has been developed by the contributors to this project:
 
