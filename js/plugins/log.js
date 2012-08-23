@@ -1,10 +1,3 @@
-/*
- *
- * A logging function
- * Please be aware that this does not output the correct line
- *
- */
-
 // Avoid `console` errors in browsers that lack a console
 if (!(window.console && console.log)) {
 	(function() {
