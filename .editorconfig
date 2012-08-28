@@ -1,8 +1,10 @@
-; top-most EditorConfig file
+# editorconfig.org
+
+# top-most EditorConfig file
 root = true
 
 [*]
-end_of_line = LF
+end_of_line = lf
 indent_style = tab
 charset = utf-8
 trim_trailing_whitespace = true
