@@ -41,11 +41,8 @@ If running the install does not work, please try running it as with admin-rights
 	$ sudo npm install
 
 ## Contribute
-If you got something that's worth including into the project please [submit a Pull Request](https://github.com/drublic/init/issues) or [open an issue](https://github.com/drublic/init/issues) for further discussion.
 
-[@necolas](https://github.com/necolas) [wrote down some good guidelines](https://github.com/necolas/issue-guidelines) for contributing to his projects. Please keep these in mind when contributing to this project. <3
-
-Please use the `.editorconfig`-file in order to set the right usage of tabs/spaces in your editor. Visit [editorconfig.org](http://editorconfig.org/) for more information.
+Please help making this project better and [contribute](CONTRIBUTE.md) with your knowledge.
 
 ## CSS
 We are currently working with [SASS](http://sass-lang.com/) (in its dialect SCSS) and do not use CSS directly. Please do not edit the CSS-files in any case but search the correct `.scss` file and edit the according SCSS. If you are not familiar with SCSS you can write pure CSS which is actually valid SCSS.
