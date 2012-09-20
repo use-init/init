@@ -1,5 +1,6 @@
-/*globals module */
 module.exports = function (grunt) {
+
+	'use strict';
 
 	// Project configuration.
 	grunt.initConfig({
@@ -10,25 +11,9 @@ module.exports = function (grunt) {
 		},
 
 		lint: {
-			all: ['Gruntfile.js', 'js/main.js']
-		},
-
-		jshint: {
+			all: ['Gruntfile.js', 'js/main.js'],
 			options: {
-				curly: true,
-				eqeqeq: true,
-				immed: true,
-				latedef: true,
-				newcap: true,
-				noarg: true,
-				sub: true,
-				undef: true,
-				boss: true,
-				eqnull: true,
-				browser: true
-			},
-			globals: {
-				jQuery: true
+				options: '<json:.jshintrc>',
 			}
 		},
 
