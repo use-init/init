@@ -1,5 +1,10 @@
 # Changelog
 
+### HEAD
+
+* Add .jshintrc file
+* Add CONTRIBUTING.md file
+
 ### 0.4.0 (10 September, 2012)
 
 * Add Changelog
