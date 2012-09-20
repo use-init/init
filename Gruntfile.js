@@ -24,8 +24,9 @@ module.exports = function (grunt) {
 		concat: {
 			deploy: {
 				src: [
-					// Remove jQuery if you don't want to include the local copy in your build
-					'js/vendor/jquery-1.7.2.min.js',
+					// Remove jQuery if you don't want to include the local copy
+					// in your build
+					'js/vendor/jquery-1.8.1.min.js',
 					'js/plugins/log.js',
 					'js/main.js'
 				],
@@ -56,7 +57,10 @@ module.exports = function (grunt) {
 
 		min: {
 			deploy: {
-				src: ['<config_process:meta.banner>', '<config:concat.deploy.dest>'],
+				src: [
+					'<config_process:meta.banner>',
+					'<config:concat.deploy.dest>'
+				],
 				dest: 'public/js/main-<%= pkg.version %>.min.js'
 			}
 		},
