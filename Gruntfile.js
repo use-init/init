@@ -24,7 +24,7 @@ module.exports = function (grunt) {
 		// Build modernizr
 		modernizr: {
 			devFile: 'js/vendor/modernizr-2.6.2.js',
-			outputFile : 'public/js/vendor/modernizr-for-<%= pkg.version %>.min.js',
+			outputFile : 'dist/js/vendor/modernizr-for-<%= pkg.version %>.min.js',
 
 			extra: {
 				shiv: true,
@@ -47,7 +47,7 @@ module.exports = function (grunt) {
 					'js/plugins/log.js',
 					'js/main.js'
 				],
-				dest: 'public/js/main-<%= pkg.version %>.min.js'
+				dest: 'dist/js/main-<%= pkg.version %>.min.js'
 			}
 		},
 
@@ -66,7 +66,7 @@ module.exports = function (grunt) {
 					style: 'compressed'
 				},
 				files: {
-					'public/css/main-<%= pkg.version %>.min.css': 'scss/main.scss'
+					'dist/css/main-<%= pkg.version %>.min.css': 'scss/main.scss'
 				}
 
 			}
@@ -78,7 +78,7 @@ module.exports = function (grunt) {
 					'<config_process:meta.banner>',
 					'<config:concat.deploy.dest>'
 				],
-				dest: 'public/js/main-<%= pkg.version %>.min.js'
+				dest: 'dist/js/main-<%= pkg.version %>.min.js'
 			}
 		},
 
