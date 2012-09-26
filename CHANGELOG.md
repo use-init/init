@@ -2,6 +2,12 @@
 
 ### HEAD
 
+
+### 0.5.0 (26 September, 2012)
+
+* Rename production-package to "dist"
+* Update jQuery to 1.8.2
+* Add grunt-modernizr task
 * Add .jshintrc file
 * Add CONTRIBUTING.md file
 
