@@ -21,6 +21,23 @@ module.exports = function (grunt) {
 			all: ['index.html']
 		},
 
+		// Build modernizr
+		modernizr: {
+			devFile: 'js/vendor/modernizr-2.6.2.js',
+			outputFile : 'public/js/vendor/modernizr-for-<%= pkg.version %>.min.js',
+
+			extra: {
+				shiv: true,
+				mq: true
+			},
+
+			// Minify
+			uglify: true,
+
+			// Files
+			files: ['js/**/*.js', 'scss/**/*.scss']
+		},
+
 		concat: {
 			deploy: {
 				src: [
@@ -86,13 +103,13 @@ module.exports = function (grunt) {
 	// Load some stuff
 	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-html');
-
+	grunt.loadNpmTasks('grunt-modernizr');
 
 	// A task for development
 	grunt.registerTask('dev', 'lint htmllint rubysass:dev');
 
 	// A task for deployment
-	grunt.registerTask('deploy', 'lint htmllint concat rubysass:deploy min');
+	grunt.registerTask('deploy', 'lint htmllint modernizr concat rubysass:deploy min');
 
 	// Default task
 	grunt.registerTask('default', 'lint htmllint concat rubysass:dev min');
