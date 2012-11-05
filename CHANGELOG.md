@@ -3,6 +3,11 @@
 ### HEAD
 
 
+### 0.6.0 (06 November, 2012)
+
+* Update Gruntfile and package.json to work with latest draft of Grunt 0.4.0
+* Update log.js to reflect HTML5 BP's latest log stub method
+
 ### 0.5.0 (26 September, 2012)
 
 * Rename production-package to "dist"
