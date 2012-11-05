@@ -3,6 +3,12 @@
 ### HEAD
 
 
+### 0.6.0 (06 November, 2012)
+
+* Update .htaccess to HTML5 Boilerplate's latest version
+* Update log.js to reflect HTML5 BP's latest log stub method
+* Update Gruntfile and package.json to work with latest draft of Grunt 0.4.0
+
 ### 0.5.0 (26 September, 2012)
 
 * Rename production-package to "dist"
