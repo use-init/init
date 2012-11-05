@@ -18,9 +18,12 @@
 	"license": "MIT",
 	"dependencies": {},
 	"devDependencies": {
-		"grunt": "https://nodeload.github.com/cowboy/grunt/tarball/0ba6d4b529",
-		"grunt-sass": "https://nodeload.github.com/sindresorhus/grunt-sass/tarball/04965d48a523",
-		"grunt-html": "~0.1.1",
+		"grunt": "~0.4.0a",
+		"grunt-contrib-jshint": "~0.1.0",
+		"grunt-contrib-uglify": "~0.1.0",
+		"grunt-contrib-concat": "~0.1.0",
+		"grunt-contrib-watch": "~0.1.3",
+		"grunt-contrib-sass": "~0.2.0",
 		"grunt-modernizr": "~0.1.3"
 	},
 	"keywords": []

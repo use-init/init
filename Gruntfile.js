@@ -4,21 +4,18 @@ module.exports = function (grunt) {
 
 	// Project configuration.
 	grunt.initConfig({
-		pkg: '<json:package.json>',
+		pkg: grunt.file.readJSON("package.json"),
 		meta: {
 			banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
 			'<%= grunt.template.today("yyyy-mm-dd") %> */'
 		},
 
-		lint: {
-			all: ['Gruntfile.js', 'js/main.js'],
-			options: {
-				options: '<json:.jshintrc>',
-			}
-		},
-
-		htmllint: {
-			all: ['index.html']
+		jshint: {
+			all: [
+				'Gruntfile.js',
+				'js/main.js'
+			],
+			options: grunt.file.readJSON('.jshintrc')
 		},
 
 		// Build modernizr
@@ -43,7 +40,7 @@ module.exports = function (grunt) {
 				src: [
 					// Remove jQuery if you don't want to include the local copy
 					// in your build
-					'js/vendor/jquery-1.8.1.min.js',
+					'js/vendor/jquery-1.8.2.min.js',
 					'js/plugins/log.js',
 					'js/main.js'
 				],
@@ -51,7 +48,7 @@ module.exports = function (grunt) {
 			}
 		},
 
-		rubysass: {
+		sass: {
 			dev: {
 				options: {
 					unixNewlines: true,
@@ -72,46 +69,45 @@ module.exports = function (grunt) {
 			}
 		},
 
-		min: {
+		uglify: {
 			deploy: {
-				src: [
-					'<config_process:meta.banner>',
-					'<config:concat.deploy.dest>'
-				],
+				src:'dist/js/main-<%= pkg.version %>.min.js',
 				dest: 'dist/js/main-<%= pkg.version %>.min.js'
 			}
 		},
 
 		watch: {
-			html: {
-				files: '<config:htmllint.all>',
-				tasks: 'htmllint'
-			},
 
 			scss: {
-				files: ['scss/main.scss', 'scss/**/_*.scss'],
-				tasks: 'rubysass:dev'
+				files: ['scss/**/*.scss'],
+				tasks: 'sass:dev'
 			},
 
 			js: {
-				files: '<config:lint.all>',
-				tasks: 'lint'
+				files: [
+					'Gruntfile.js',
+					'js/main.js'
+				],
+				tasks: 'jshint'
 			}
 		}
 	});
 
 	// Load some stuff
-	grunt.loadNpmTasks('grunt-sass');
-	grunt.loadNpmTasks('grunt-html');
 	grunt.loadNpmTasks('grunt-modernizr');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// A task for development
-	grunt.registerTask('dev', 'lint htmllint rubysass:dev');
+	grunt.registerTask('dev', ['jshint', 'sass:dev']);
 
 	// A task for deployment
-	grunt.registerTask('deploy', 'lint htmllint modernizr concat rubysass:deploy min');
+	grunt.registerTask('deploy', ['jshint', 'modernizr', 'concat', 'sass:deploy', 'uglify']);
 
 	// Default task
-	grunt.registerTask('default', 'lint htmllint concat rubysass:dev min');
+	grunt.registerTask('default', ['jshint', 'concat', 'sass:dev', 'uglify']);
 
 };
