@@ -4,7 +4,7 @@ module.exports = function (grunt) {
 
 	// Project configuration.
 	grunt.initConfig({
-		pkg: grunt.file.readJSON("package.json"),
+		pkg: require('./package'),
 		meta: {
 			banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
 			'<%= grunt.template.today("yyyy-mm-dd") %> */'
@@ -15,7 +15,9 @@ module.exports = function (grunt) {
 				'Gruntfile.js',
 				'js/main.js'
 			],
-			options: grunt.file.readJSON('.jshintrc')
+			options: {
+				jshintrc: '.jshintrc'
+			}
 		},
 
 		// Build modernizr
@@ -71,7 +73,7 @@ module.exports = function (grunt) {
 
 		uglify: {
 			deploy: {
-				src:'dist/js/main-<%= pkg.version %>.min.js',
+				src: 'dist/js/main-<%= pkg.version %>.min.js',
 				dest: 'dist/js/main-<%= pkg.version %>.min.js'
 			}
 		},
