@@ -2,6 +2,14 @@
 
 ### HEAD
 
+### 0.7.0 (21 January, 2013)
+
+* Improve log.js removing function name for noop
+* Update favion to lastest with HiDPI version
+* Update jQuery to version 1.9.0 including source map
+* Update to lastest styles from HTML5 Boilerplate
+* Update normalize.css to version 1.1.0
+* Update to reflect latest changes in Grunt
 
 ### 0.6.0 (06 November, 2012)
 
