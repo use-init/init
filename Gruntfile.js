@@ -42,7 +42,7 @@ module.exports = function (grunt) {
 				src: [
 					// Remove jQuery if you don't want to include the local copy
 					// in your build
-					'js/vendor/jquery-1.8.2.min.js',
+					'js/vendor/jquery-*.min.js',
 					'js/plugins/log.js',
 					'js/main.js'
 				],
