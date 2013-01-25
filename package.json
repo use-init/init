@@ -21,7 +21,8 @@
 		"grunt": "0.4.x",
 		"grunt-contrib-jshint": "git://github.com/gruntjs/grunt-contrib-jshint.git",
 		"grunt-contrib-uglify": "git://github.com/gruntjs/grunt-contrib-uglify.git",
-		"grunt-contrib-concat": "git://github.com/gruntjs/grunt-contrib-concat.git",
+		"grunt-contrib-clean": "git://github.com/gruntjs/grunt-contrib-clean.git",
+		"grunt-contrib-copy": "git://github.com/gruntjs/grunt-contrib-copy.git",
 		"grunt-contrib-watch": "git://github.com/gruntjs/grunt-contrib-watch.git",
 		"grunt-contrib-sass": "git://github.com/gruntjs/grunt-contrib-sass.git",
 		"grunt-modernizr": "0.1.x"

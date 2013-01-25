@@ -37,19 +37,6 @@ module.exports = function (grunt) {
 			files: ['js/**/*.js', 'scss/**/*.scss']
 		},
 
-		concat: {
-			deploy: {
-				src: [
-					// Remove jQuery if you don't want to include the local copy
-					// in your build
-					'js/vendor/jquery-*.min.js',
-					'js/plugins/log.js',
-					'js/main.js'
-				],
-				dest: 'dist/js/main-<%= pkg.version %>.min.js'
-			}
-		},
-
 		sass: {
 			dev: {
 				options: {
@@ -71,10 +58,30 @@ module.exports = function (grunt) {
 			}
 		},
 
+		clean: {
+			deploy: ["dist"]
+		},
+
 		uglify: {
 			deploy: {
-				src: 'dist/js/main-<%= pkg.version %>.min.js',
-				dest: 'dist/js/main-<%= pkg.version %>.min.js'
+				options: {
+					sourceMap: "dist/js/main-<%= pkg.version %>.min.map"
+				},
+				files: {
+					'dist/js/main-<%= pkg.version %>.min.js': [
+						'js/vendor/jquery-*.min.js',
+						'js/plugins/log.js',
+						'js/main.js'
+					],
+				}
+			}
+		},
+
+		copy: {
+			deploy: {
+				files: [
+					{src: ['js/**'], dest: 'dist/'}
+				]
 			}
 		},
 
@@ -95,11 +102,41 @@ module.exports = function (grunt) {
 		}
 	});
 
+	grunt.registerTask( "fix-sourcemap", function() {
+		var paths = [];
+		var fs = require("fs");
+
+		grunt.task.requires('uglify');
+
+		paths.push(grunt.config.get('uglify.deploy.options.sourceMap'));
+		for(var k in grunt.config.get('uglify.deploy.files')) {
+			k = grunt.template.process(k);
+			paths.push(k);
+		}
+
+		paths.forEach(function( filename ) {
+			grunt.log.writeln(filename);
+			var text = fs.readFileSync( filename, "utf8" );
+
+			// Modify map/min so that it points to files in the same folder;
+			// see https://github.com/mishoo/UglifyJS2/issues/47
+			if ( /\.map$/.test( filename ) ) {
+				text = text.replace( /"(dist\/)?js\//g, "\"" );
+				fs.writeFileSync( filename, text, "utf-8" );
+			} else if ( /\.min\.js$/.test( filename ) ) {
+				text = text.replace( /sourceMappingURL=(dist\/)?js\//, "sourceMappingURL=" );
+				fs.writeFileSync( filename, text, "utf-8" );
+			}
+		});
+
+	});
+
 	// Load some stuff
 	grunt.loadNpmTasks('grunt-modernizr');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
@@ -107,9 +144,9 @@ module.exports = function (grunt) {
 	grunt.registerTask('dev', ['jshint', 'sass:dev']);
 
 	// A task for deployment
-	grunt.registerTask('deploy', ['jshint', 'modernizr', 'concat', 'sass:deploy', 'uglify']);
+	grunt.registerTask('deploy', ['jshint', 'clean', 'modernizr', 'sass:deploy', 'uglify', 'copy', 'fix-sourcemap']);
 
 	// Default task
-	grunt.registerTask('default', ['jshint', 'concat', 'sass:dev', 'uglify']);
+	grunt.registerTask('default', ['jshint', 'sass:dev', 'uglify', 'copy', 'fix-sourcemap']);
 
 };
