@@ -59,13 +59,13 @@ module.exports = function (grunt) {
 		},
 
 		clean: {
-			deploy: ["dist"]
+			deploy: ['dist']
 		},
 
 		uglify: {
 			deploy: {
 				options: {
-					sourceMap: "dist/js/main-<%= pkg.version %>.min.map"
+					sourceMap: 'dist/js/main-<%= pkg.version %>.min.map'
 				},
 				files: {
 					'dist/js/main-<%= pkg.version %>.min.js': [
@@ -79,14 +79,14 @@ module.exports = function (grunt) {
 
 		copy: {
 			deploy: {
-				files: [
-					{src: ['js/**'], dest: 'dist/'}
-				]
+				files: [{
+					src: ['js/**'],
+					dest: 'dist/'
+				}]
 			}
 		},
 
 		watch: {
-
 			scss: {
 				files: ['scss/**/*.scss'],
 				tasks: 'sass:dev'
@@ -102,35 +102,6 @@ module.exports = function (grunt) {
 		}
 	});
 
-	grunt.registerTask( "fix-sourcemap", function() {
-		var paths = [];
-		var fs = require("fs");
-
-		grunt.task.requires('uglify');
-
-		paths.push(grunt.config.get('uglify.deploy.options.sourceMap'));
-		for(var k in grunt.config.get('uglify.deploy.files')) {
-			k = grunt.template.process(k);
-			paths.push(k);
-		}
-
-		paths.forEach(function( filename ) {
-			grunt.log.writeln(filename);
-			var text = fs.readFileSync( filename, "utf8" );
-
-			// Modify map/min so that it points to files in the same folder;
-			// see https://github.com/mishoo/UglifyJS2/issues/47
-			if ( /\.map$/.test( filename ) ) {
-				text = text.replace( /"(dist\/)?js\//g, "\"" );
-				fs.writeFileSync( filename, text, "utf-8" );
-			} else if ( /\.min\.js$/.test( filename ) ) {
-				text = text.replace( /sourceMappingURL=(dist\/)?js\//, "sourceMappingURL=" );
-				fs.writeFileSync( filename, text, "utf-8" );
-			}
-		});
-
-	});
-
 	// Load some stuff
 	grunt.loadNpmTasks('grunt-modernizr');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -139,6 +110,8 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+
+	grunt.loadTasks('grunt-tasks');
 
 	// A task for development
 	grunt.registerTask('dev', ['jshint', 'sass:dev']);
