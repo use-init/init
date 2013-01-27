@@ -5,9 +5,10 @@ This project extends [HTML5 Boilerpalte](https://github.com/h5bp/html5-boilerpla
 
 ## TODO
 
-* Move all files currently not affected by Grunt into `publish`-dir with running `$ grunt dev`
-* RequireJS ?
-* Tests ?
+* Move all files currently not affected by Grunt into `dist`-dir (#11)
+* RequireJS (#12)
+* Tests (#7)
+
 
 ## Dependencies
 
@@ -25,47 +26,55 @@ Secondaries:
 
 After you've set this stuff up please run
 
+	$ npm install -g grunt-cli
+
+This installs the Grunt command line tools.
+Afterwards please run
+
 	$ npm install
 
-in your project's folder.
-This will install all the things you need on Node automatically.
-
-These are:
-* Grunt in a preview-version (0.4.0a)
-* grunt-sass in version 0.2.0
-* grunt-html in version 0.1.1
+in your project's directory.
+This will install all the things you need for running the grunt-tasks automatically.
 
 ### Troubleshooting
+
 If running the install does not work, please try running it as with admin-rights:
 
-	$ sudo npm install
+	$ sudo npm install -g grunt-cli
+
 
 ## Contribute
 
 Please help making this project better and [contribute](CONTRIBUTE.md) with your knowledge.
 
+
 ## CSS
+
 We are currently working with [SASS](http://sass-lang.com/) (in its dialect SCSS) and do not use CSS directly. Please do not edit the CSS-files in any case but search the correct `.scss` file and edit the according SCSS. If you are not familiar with SCSS you can write pure CSS which is actually valid SCSS.
 
-However all `.scss`-files are compiled into one file called `style.css` in the `css`-folder. This is the only file that is relevant for uploading and including into the page.
+However all `.scss`-files are compiled into one file called `main.css` in the `css`-folder. There is a productive-version too.
 
 You can find more information about the installation process of SASS and the usage of SCSS in the [SASS Tutorial](http://sass-lang.com/tutorial.html).
 
 
 ## JS
-We use jQuery and Modernizr (custom build).
-Please lint your JavaScript before commit. You can use the Grunt-task `lint` for this.
+
+We use jQuery and Modernizr (custom build via Grunt).
+
+Please use JSHint for your JavaScript before you commit. You can use the Grunt-task `jshint` for this. It is also integrated in `grunt watch`.
+
 
 ## Deployment
-Please use [Grunt.js](https://github.com/cowboy/grunt) for building a production-state of a website. The `Gruntfile.js` has tasks for concatenating and minifing CSS and JavaScript.
-Additional information on this project is stored in `package.json`.
 
+Please use [Grunt.js](https://github.com/cowboy/grunt) for building a production-state of a website. The `Gruntfile.js` has tasks for concatenating and minifing CSS and JavaScript.
+
+Additional information on this project is stored in `package.json`.
 
 
 ## Development
 
 This package is developed and maintained by [Hans Christian Reinl](http://drublic.de/).
-We use it at [/gebrüderheitz](http://gebruederheitz.de/) for front-end development.
+
 
 ## License
 
@@ -80,7 +89,7 @@ We use it at [/gebrüderheitz](http://gebruederheitz.de/) for front-end developm
 ### Everything that has been developed by the contributors to this project:
 
 The MIT License (MIT)
-Copyright © 2012 Hans Christian Reinl, http://drublic.de
+Copyright 2013 Hans Christian Reinl, http://drublic.de
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
