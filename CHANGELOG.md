@@ -2,6 +2,11 @@
 
 ### HEAD
 
+### 0.8.0 (27 January, 2013)
+
+* Add source-maps for JavaScript files (See #9 and #10)
+* Add wildcard option for jQuery version (#8)
+
 ### 0.7.0 (21 January, 2013)
 
 * Improve log.js removing function name for noop
