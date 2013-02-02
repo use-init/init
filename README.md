@@ -1,6 +1,6 @@
 # __init__, based on HTML5 Boilerplate
 
-This project extends [HTML5 Boilerpalte](https://github.com/h5bp/html5-boilerplate) with some more structure for SCSS files and JavaScripts.
+This project extends [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate) with some more structure for SCSS files and JavaScripts.
 
 
 ## TODO
@@ -45,7 +45,7 @@ If running the install does not work, please try running it as with admin-rights
 
 ## Contribute
 
-Please help making this project better and [contribute](CONTRIBUTE.md) with your knowledge.
+Please help making this project better and [contribute](CONTRIBUTING.md) with your knowledge.
 
 
 ## CSS
