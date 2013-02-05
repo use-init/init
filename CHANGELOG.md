@@ -2,6 +2,10 @@
 
 ### HEAD
 
+### 0.8.1 (05 February 2013)
+
+* Update jQuery to version 1.9.1 including source map
+
 ### 0.8.0 (27 January, 2013)
 
 * Add source-maps for JavaScript files (See #9 and #10)
