@@ -14,7 +14,7 @@ This project extends [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerpla
 
 You will need to install some stuff, if you haven't already:
 
-Mayors:
+Majors:
 
 * Node.js
 * Ruby
