@@ -99,6 +99,16 @@ module.exports = function (grunt) {
 				],
 				tasks: 'jshint'
 			}
+		},
+
+		// Server config
+		connect: {
+			server: {
+				options: {
+					port: 9001,
+					keepalive: true
+				}
+			}
 		}
 	});
 
@@ -110,6 +120,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-connect');
 
 	grunt.loadTasks('grunt-tasks');
 
