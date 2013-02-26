@@ -2,6 +2,11 @@
 
 ### HEAD
 
+### 0.8.2 (26 February 2013)
+
+* Add node server with grunt-contrib-connect
+* Remove WEBrick server
+
 ### 0.8.1 (05 February 2013)
 
 * Update jQuery to version 1.9.1 including source map
