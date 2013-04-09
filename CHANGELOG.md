@@ -2,6 +2,8 @@
 
 ### HEAD
 
+### 0.8.3 (09 April 2013)
+
 * Update .htaccess to reflect latest changes
 * Remove Google Analytics protocol check (see h5bp/html5-boilerplate#1319)
 * Update normalize.css to version 1.1.1
