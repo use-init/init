@@ -2,6 +2,8 @@
 
 ### HEAD
 
+* Update versions of Grunt modules
+
 ### 0.8.2 (26 February 2013)
 
 * Add node server with grunt-contrib-connect
