@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Update normalize.css to version 1.1.1
 * Update versions of Grunt modules
 
 ### 0.8.2 (26 February 2013)
