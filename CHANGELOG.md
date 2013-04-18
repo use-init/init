@@ -2,6 +2,12 @@
 
 ### HEAD
 
+### 0.9.0 (18 April 2013)
+
+* Add Travis CI
+* Include RequireJS
+* Rename log.js to console.js
+
 ### 0.8.3 (09 April 2013)
 
 * Update .htaccess to reflect latest changes

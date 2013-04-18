@@ -2,7 +2,7 @@
 	"name": "init",
 	"title": "init",
 	"description": "This is an inititial boilerplate for front-end projects",
-	"version": "0.9.0pre",
+	"version": "0.9.0",
 	"homepage": "https://github.com/drublic/init",
 	"author": {
 		"name": "Hans Christian Reinl",

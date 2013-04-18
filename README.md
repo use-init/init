@@ -6,7 +6,6 @@ This project extends [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerpla
 ## TODO
 
 * Move all files currently not affected by Grunt into `dist`-dir (#11)
-* RequireJS (#12)
 * Tests (#7)
 
 
