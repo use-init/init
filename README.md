@@ -1,4 +1,4 @@
-# __init__, based on HTML5 Boilerplate
+# __init__, based on HTML5 Boilerplate [![Build Status](https://secure.travis-ci.org/drublic/init.png?branch=master)](http://travis-ci.org/drublic/init)
 
 This project extends [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate) with some more structure for SCSS files and JavaScripts.
 
