@@ -62,17 +62,13 @@ module.exports = function (grunt) {
 			deploy: ['dist']
 		},
 
-		uglify: {
-			deploy: {
+		requirejs: {
+			compile: {
 				options: {
-					sourceMap: 'dist/js/main-<%= pkg.version %>.min.map'
-				},
-				files: {
-					'dist/js/main-<%= pkg.version %>.min.js': [
-						'js/vendor/jquery-*.min.js',
-						'js/plugins/log.js',
-						'js/main.js'
-					],
+					baseUrl: 'js/',
+					mainConfigFile: 'js/config.js',
+					include: ['Vendor/require'],
+					out: 'dist/js/main-<%= pkg.version %>.min.js'
 				}
 			}
 		},
@@ -118,19 +114,17 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-requirejs');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-connect');
-
-	grunt.loadTasks('grunt-tasks');
 
 	// A task for development
 	grunt.registerTask('dev', ['jshint', 'sass:dev']);
 
 	// A task for deployment
-	grunt.registerTask('deploy', ['jshint', 'clean', 'modernizr', 'sass:deploy', 'uglify', 'copy', 'fix-sourcemap']);
+	grunt.registerTask('deploy', ['jshint', 'clean', 'modernizr', 'sass:deploy', 'requirejs', 'copy']);
 
 	// Default task
-	grunt.registerTask('default', ['jshint', 'sass:dev', 'uglify', 'copy', 'fix-sourcemap']);
+	grunt.registerTask('default', ['jshint', 'sass:dev', 'requirejs', 'copy']);
 
 };
