@@ -127,4 +127,7 @@ module.exports = function (grunt) {
 	// Default task
 	grunt.registerTask('default', ['jshint', 'sass:dev', 'requirejs', 'copy']);
 
+	// Travis CI task
+	grunt.registerTask('travis', ['jshint']);
+
 };
