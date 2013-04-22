@@ -82,6 +82,15 @@ module.exports = function (grunt) {
 			}
 		},
 
+		jasmine: {
+			src: 'js/*.js',
+			options: {
+				specs: 'tests/*.js',
+				vendor: ['js/vendor/jquery-1.9.1.min.js'],
+				outfile: 'tests/_SpecRunner.html'
+			}
+		},
+
 		watch: {
 			scss: {
 				files: ['scss/**/*.scss'],
@@ -93,7 +102,7 @@ module.exports = function (grunt) {
 					'Gruntfile.js',
 					'js/*.js'
 				],
-				tasks: 'jshint'
+				tasks: ['jshint', 'jasmine']
 			}
 		},
 
@@ -119,9 +128,9 @@ module.exports = function (grunt) {
 
 		// Setup concurrent tasks
 		concurrent: {
-			deploy1: ['jshint', 'clean', 'modernizr', 'sass:deploy', 'imageoptim', 'copy'],
+			deploy1: ['jshint', 'jasmine', 'clean', 'modernizr', 'sass:deploy', 'imageoptim', 'copy'],
 			deploy2: ['requirejs'],
-			dev1: ['jshint', 'sass:dev', 'imageoptim', 'copy'],
+			dev1: ['jshint', 'jasmine', 'sass:dev', 'imageoptim', 'copy'],
 			dev2: ['requirejs']
 		}
 	});
@@ -137,9 +146,10 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-imageoptim');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-concurrent');
+	grunt.loadNpmTasks('grunt-contrib-jasmine');
 
 	// A task for development
-	grunt.registerTask('dev', ['jshint', 'sass:dev']);
+	grunt.registerTask('dev', ['jshint', 'jasmine', 'sass:dev']);
 
 	// A task for deployment
 	grunt.registerTask('deploy', ['concurrent:deploy1', 'concurrent:deploy2']);
@@ -148,6 +158,6 @@ module.exports = function (grunt) {
 	grunt.registerTask('default', ['concurrent:dev1', 'concurrent:dev2']);
 
 	// Travis CI task
-	grunt.registerTask('travis', ['jshint']);
+	grunt.registerTask('travis', ['jshint', 'jasmine']);
 
 };
