@@ -2,7 +2,7 @@
 
 ### HEAD
 
-* Update jQuery to 1.10.0
+* Update jQuery to 1.10.1
 
 ### 0.9.0 (18 April 2013)
 
