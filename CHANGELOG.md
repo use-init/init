@@ -2,6 +2,10 @@
 
 ### HEAD
 
+### 0.9.1 (04 April 2013)
+
+* Add grunt-concurrent to run tasks concurrently (#22)
+* Update normalize.css to 1.1.2
 * Update jQuery to 1.10.1
 
 ### 0.9.0 (18 April 2013)
