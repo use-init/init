@@ -105,6 +105,14 @@ module.exports = function (grunt) {
 					keepalive: true
 				}
 			}
+		},
+
+		// Setup concurrent tasks
+		concurrent: {
+			deploy1: ['jshint', 'clean', 'modernizr', 'sass:deploy', 'copy'],
+			deploy2: ['requirejs'],
+			dev1: ['jshint', 'sass:dev', 'copy'],
+			dev2: ['requirejs'],
 		}
 	});
 
@@ -117,15 +125,16 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-requirejs');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.loadNpmTasks('grunt-concurrent');
 
 	// A task for development
 	grunt.registerTask('dev', ['jshint', 'sass:dev']);
 
 	// A task for deployment
-	grunt.registerTask('deploy', ['jshint', 'clean', 'modernizr', 'sass:deploy', 'requirejs', 'copy']);
+	grunt.registerTask('deploy', ['concurrent:deploy1', 'concurrent:deploy2']);
 
 	// Default task
-	grunt.registerTask('default', ['jshint', 'sass:dev', 'requirejs', 'copy']);
+	grunt.registerTask('default', ['concurrent:dev1', 'concurrent:dev2']);
 
 	// Travis CI task
 	grunt.registerTask('travis', ['jshint']);
