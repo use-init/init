@@ -5,6 +5,9 @@
  *	@version	v0.0.0
  *
  */
+/**
+ * Variables to be used throughout the project
+ */
 /* normalize.css v1.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -614,7 +617,7 @@ button,
 input,
 select,
 textarea {
-  color: #222;
+  color: #222222;
 }
 
 body {
