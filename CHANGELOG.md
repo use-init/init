@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Update to Google Universal Analytics
 * Remove CC for IE7
 * Remove Chrome Frame support (#28)
 * Update normalize.css to 2.1.2 (removes IE 6 and 7 support)
