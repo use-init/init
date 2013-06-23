@@ -8,7 +8,7 @@ require.config({
 	deps: ['plugins/console', 'jquery', 'main'],
 
 	paths: {
-		'jquery': 'vendor/jquery-1.10.1.min'
+		'jquery': '../components/jquery/jquery.min'
 		// More additional paths here
 	},
 

@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Use Bower for package management and replace vendor packages (#24)
 * Update to Google Universal Analytics
 * Remove CC for IE7
 * Remove Chrome Frame support (#28)

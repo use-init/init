@@ -10,7 +10,7 @@
 // Helpers
 @import "helpers/variables";
 @import "helpers/mixins";
-@import "helpers/normalize";
+@import "../components/normalize.scss/normalize";
 @import "helpers/helpers";
 
 // Typography and Elements

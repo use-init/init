@@ -22,6 +22,7 @@ Secondaries:
 
 * Node: npm
 * Ruby: SASS
+* Bower
 
 After you've set this stuff up please run
 
@@ -30,10 +31,13 @@ After you've set this stuff up please run
 This installs the Grunt command line tools.
 Afterwards please run
 
-	$ npm install
+	$ npm install && bower install
 
 in your project's directory.
 This will install all the things you need for running the grunt-tasks automatically.
+
+Also it will create a folder `components` which holds all vendor dependencies
+managed by Bower.
 
 ### Troubleshooting
 
