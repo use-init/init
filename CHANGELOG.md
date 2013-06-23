@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Remove Chrome Frame support (#28)
 * Update normalize.css to 2.1.2 (removes IE 6 and 7 support)
 * Use a variable for main text color (#30)
 
