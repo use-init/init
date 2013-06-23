@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Update normalize.css to 2.1.2 (removes IE 6 and 7 support)
 * Use a variable for main text color (#30)
 
 ### 0.9.1 (04 April 2013)
