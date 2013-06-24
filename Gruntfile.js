@@ -22,7 +22,7 @@ module.exports = function (grunt) {
 
 		// Build modernizr
 		modernizr: {
-			devFile: 'js/vendor/modernizr-2.6.2.js',
+			devFile: 'components/modernizr/modernizr.js',
 			outputFile : 'dist/js/vendor/modernizr-for-<%= pkg.version %>.min.js',
 
 			extra: {
@@ -67,7 +67,7 @@ module.exports = function (grunt) {
 				options: {
 					baseUrl: 'js/',
 					mainConfigFile: 'js/config.js',
-					include: ['Vendor/require'],
+					include: ['../components/requirejs/require'],
 					out: 'dist/js/main-<%= pkg.version %>.min.js'
 				}
 			}
