@@ -9,7 +9,7 @@
 
 // Helpers
 @import "helpers/variables";
-@import "helpers/mixins";
+@import "../components/sass-mixins/mixins";
 @import "../components/normalize.scss/normalize";
 @import "helpers/helpers";
 

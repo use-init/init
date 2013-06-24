@@ -7,7 +7,8 @@
     "normalize-scss": "~2.1.2",
     "jquery": "1.10.1",
     "modernizr": "2.6.2",
-    "requirejs": "~2.1.6"
+    "requirejs": "~2.1.6",
+    "sass-mixins": "~0.2.2"
   },
   "devDependencies": {}
 }
