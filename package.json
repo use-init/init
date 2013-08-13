@@ -29,7 +29,8 @@
     "grunt-contrib-requirejs": "0.4.1",
     "grunt-modernizr": "0.3.0",
     "grunt-contrib-connect": "0.3.0",
-    "grunt-concurrent": "0.3.0"
+    "grunt-concurrent": "0.3.0",
+    "grunt-imageoptim": "1.2.11"
   },
   "keywords": []
 }
