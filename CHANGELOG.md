@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Add default markup (#31)
 * Update to Apache Server Configs v1.1.0
 * Remove media-query files in favor of inline media-queries
 * Add .bowerrc configuration file for Bower
