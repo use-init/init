@@ -30,12 +30,12 @@ body {
  */
 
 ::-moz-selection {
-	background: #b3d4fc;
+	background: $selection-color;
 	text-shadow: none;
 }
 
 ::selection {
-	background: #b3d4fc;
+	background: $selection-color;
 	text-shadow: none;
 }
 
@@ -47,7 +47,7 @@ hr {
 	display: block;
 	height: 1px;
 	border: 0;
-	border-top: 1px solid #ccc;
+	border-top: 1px solid $hr-color;
 	margin: 1em 0;
 	padding: 0;
 }
