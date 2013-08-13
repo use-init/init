@@ -49,7 +49,7 @@ Please help making this project better and [contribute](CONTRIBUTING.md) with yo
 
 We are currently working with [Sass](http://sass-lang.com/) (in its dialect SCSS) and do not use CSS directly. Please do not edit the CSS-files in any case but search the corresponding `.scss` file and edit it accordingly. If you are not familiar with SCSS you can write pure CSS which is actually valid SCSS.
 
-However all `.scss`-files are compiled into one file called `main.css` in the `css`-folder. There is a productive-version too.
+However all `.scss`-files are compiled into one file called `main.css` in the `css`-folder. There is a productive-version (means minified), too.
 
 You can find more information about the installation process of Sass and the usage of SCSS in the [Sass Tutorial](http://sass-lang.com/tutorial.html).
 
