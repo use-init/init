@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Update jQuery to 1.10.2
 * Use SASS-Mixins via Bower
 * Use Bower for package management and replace vendor packages (#24)
 * Update to Google Universal Analytics
