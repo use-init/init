@@ -122,7 +122,8 @@ module.exports = function (grunt) {
 			deploy1: ['jshint', 'clean', 'modernizr', 'sass:deploy', 'imageoptim', 'copy'],
 			deploy2: ['requirejs'],
 			dev1: ['jshint', 'sass:dev', 'imageoptim', 'copy'],
-			dev2: ['requirejs'],
+			dev2: ['requirejs']
+		}
 	});
 
 	// Load some stuff
