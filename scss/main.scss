@@ -29,13 +29,3 @@
 @media print {
 	@import "media/print";
 }
-
-// Media-Query for Tablets
-@media screen only and (max-width: 1024px) {
-	@import "media/tablets";
-}
-
-// Media-Query for Smartphones
-@media screen only and (max-width: 480px) {
-	@import "media/smartphones";
-}
