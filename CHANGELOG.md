@@ -4,6 +4,7 @@
 
 * Remove media-query files in favor of inline media-queries
 
+* Add .bowerrc configuration file for Bower
 * Add test integration with Jasmine
 * Update Bower dependencies
 * Update npm module dependencies
