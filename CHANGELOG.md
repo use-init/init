@@ -4,6 +4,7 @@
 
 * Remove media-query files in favor of inline media-queries
 
+* Add test integration with Jasmine
 * Update Bower dependencies
 * Update npm module dependencies
 * Add AUTHORS file instead of specifiying it in package.json

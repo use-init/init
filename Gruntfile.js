@@ -165,6 +165,6 @@ module.exports = function (grunt) {
 	grunt.registerTask('default', ['dev']);
 
 	// Travis CI task
-	grunt.registerTask('travis', ['jshint', 'jasmine']);
+	grunt.registerTask('travis', ['jshint', 'connect:test', 'jasmine']);
 
 };
