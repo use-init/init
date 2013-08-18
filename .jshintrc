@@ -15,5 +15,22 @@
 	"unused": true,
 	"strict": true,
 	"trailing": true,
-	"smarttabs": true
+	"smarttabs": true,
+
+	"globals": {
+		"jQuery": true,
+		"$": true,
+
+		"module": true,
+		"require": true,
+		"requirejs": true,
+		"define": true,
+
+		"sinon": true,
+		"describe": true,
+		"it": true,
+		"expect": true,
+		"beforeEach": true,
+		"afterEach": true
+	}
 }
