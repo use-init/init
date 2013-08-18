@@ -13,7 +13,7 @@ module.exports = function (grunt) {
 		jshint: {
 			all: [
 				'Gruntfile.js',
-				'js/*.js'
+				'js/**/*.js'
 			],
 			options: {
 				jshintrc: '.jshintrc'
@@ -65,7 +65,6 @@ module.exports = function (grunt) {
 		requirejs: {
 			compile: {
 				options: {
-					baseUrl: 'js/',
 					mainConfigFile: 'js/config.js',
 					include: ['../components/requirejs/require'],
 					out: 'dist/js/main-<%= pkg.version %>.min.js'
@@ -82,12 +81,30 @@ module.exports = function (grunt) {
 			}
 		},
 
+		// Server config
+		connect: {
+			test: {
+				port: 8000
+			},
+
+			server: {
+				options: {
+					port: 9001,
+					keepalive: true
+				}
+			}
+		},
+
+		// Jasmine test configuration
 		jasmine: {
-			src: 'js/*.js',
+			src: 'js/**/*.js',
 			options: {
+				host: 'http://127.0.0.1:8000/',
 				specs: 'tests/*.js',
-				vendor: ['js/vendor/jquery-1.9.1.min.js'],
-				outfile: 'tests/_SpecRunner.html'
+				template: require('grunt-template-jasmine-requirejs'),
+				templateOptions: {
+					requireConfigFile: 'js/config.js',
+				}
 			}
 		},
 
@@ -100,7 +117,7 @@ module.exports = function (grunt) {
 			js: {
 				files: [
 					'Gruntfile.js',
-					'js/*.js'
+					'js/**/*.js'
 				],
 				tasks: ['jshint', 'jasmine']
 			}
@@ -116,21 +133,11 @@ module.exports = function (grunt) {
 			}
 		},
 
-		// Server config
-		connect: {
-			server: {
-				options: {
-					port: 9001,
-					keepalive: true
-				}
-			}
-		},
-
 		// Setup concurrent tasks
 		concurrent: {
-			deploy1: ['jshint', 'jasmine', 'clean', 'modernizr', 'sass:deploy', 'imageoptim', 'copy'],
+			deploy1: ['jshint', 'connect:test', 'jasmine', 'clean', 'modernizr', 'sass:deploy', 'imageoptim', 'copy'],
 			deploy2: ['requirejs'],
-			dev1: ['jshint', 'jasmine', 'sass:dev', 'imageoptim', 'copy'],
+			dev1: ['jshint', 'connect:test', 'jasmine', 'sass:dev', 'imageoptim', 'copy'],
 			dev2: ['requirejs']
 		}
 	});
@@ -149,13 +156,13 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-jasmine');
 
 	// A task for development
-	grunt.registerTask('dev', ['jshint', 'jasmine', 'sass:dev']);
+	grunt.registerTask('dev', ['concurrent:dev1', 'concurrent:dev2']);
 
 	// A task for deployment
 	grunt.registerTask('deploy', ['concurrent:deploy1', 'concurrent:deploy2']);
 
 	// Default task
-	grunt.registerTask('default', ['concurrent:dev1', 'concurrent:dev2']);
+	grunt.registerTask('default', ['dev']);
 
 	// Travis CI task
 	grunt.registerTask('travis', ['jshint', 'jasmine']);
