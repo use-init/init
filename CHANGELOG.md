@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Add documentation about how to write modules with Sass
 * Add default markup (#31)
 * Update to Apache Server Configs v1.1.0
 * Remove media-query files in favor of inline media-queries
@@ -12,7 +13,7 @@
 * Add AUTHORS file instead of specifiying it in package.json
 * Add grunt-imageoptim as task
 * Update jQuery to 1.10.2
-* Use SASS-Mixins via Bower
+* Use Sass-Mixins via Bower
 * Use Bower for package management and replace vendor packages (#24)
 * Update to Google Universal Analytics
 * Remove CC for IE7
