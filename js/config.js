@@ -3,9 +3,10 @@
  */
 require.config({
 
-	// Initialize the application with the main application file and the
-	// console-stub from HTML5 Boilerplate
-	deps: ['plugins/console', 'jquery', 'main'],
+	baseUrl: 'js',
+
+	// Initialize the application with the main application file
+	deps: ['plugins/console', 'main'],
 
 	paths: {
 		'jquery': '../components/jquery/jquery.min'
@@ -13,7 +14,7 @@ require.config({
 	},
 
 	shim: {
-		// If you need to shim anything
+		// If you need to shim anything, put it here
 	}
 
 });
