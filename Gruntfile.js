@@ -49,7 +49,7 @@ var config = {
 	},
 
 	tests: {
-		src: 'tests/*.js'
+		src: 'tests/**/*spec.js'
 	}
 };
 
@@ -180,6 +180,26 @@ module.exports = function (grunt) {
 			}
 		},
 
+		// Configuration for Karma test-runner
+		karma: {
+			unit: {
+				options: {
+
+					// frameworks to use
+					frameworks: ['jasmine', 'requirejs'],
+
+					// list of files / patterns to load in the browser
+					files: [
+						'tests/test-main.js',
+						config.tests.src
+					],
+
+					// Start these browsers
+					browsers: ['Chrome', 'ChromeCanary', 'Firefox', 'Safari', 'PhantomJS', 'Opera'],
+				}
+			}
+		},
+
 		watch: {
 			scss: {
 				files: config.sass.files,
@@ -189,6 +209,11 @@ module.exports = function (grunt) {
 			js: {
 				files: config.jsHintFiles,
 				tasks: ['jshint', 'jasmine']
+			},
+
+			karma: {
+				files: config.jsHintFiles,
+				tasks: ['connect:test', 'jasmine']
 			}
 		},
 
