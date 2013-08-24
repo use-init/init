@@ -2,7 +2,7 @@
 
 ## Getting started
 
-* [General purpose](usage.md) — Overview of the project contents.
+* [General purpose & Starting Point](usage.md) — Overview of the project contents.
 * [FAQ](faq.md) — Frequently asked questions, along with their answers.
 
 ## Contents of init
