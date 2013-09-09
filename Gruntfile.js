@@ -81,6 +81,21 @@ module.exports = function (grunt) {
 			}
 		},
 
+		// Lossless image optimization
+		imagemin: {
+			images: {
+				options: {
+					optimizationLevel: 5
+				},
+				files: [{
+					expand: true,
+					cwd: 'img/',
+					src: ['**/*.{png,jpg,gif}'],
+					dest: 'dist/img/'
+				}]
+			}
+		},
+
 		// Server config
 		connect: {
 			test: {
@@ -123,34 +138,24 @@ module.exports = function (grunt) {
 			}
 		},
 
-		// Losslessly optimize images
-		imageoptim: {
-			files: ['img'],
-			options: {
-				jpegMini: true,
-				imageAlpha: true,
-				quitAfter: true
-			}
-		},
-
 		// Setup concurrent tasks
 		concurrent: {
-			deploy1: ['jshint', 'connect:test', 'jasmine', 'clean', 'modernizr', 'sass:deploy', 'imageoptim', 'copy'],
+			deploy1: ['jshint', 'connect:test', 'jasmine', 'clean', 'modernizr', 'sass:deploy', 'imagemin', 'copy'],
 			deploy2: ['requirejs'],
-			dev1: ['jshint', 'connect:test', 'jasmine', 'sass:dev', 'imageoptim', 'copy'],
+			dev1: ['jshint', 'connect:test', 'jasmine', 'sass:dev', 'copy'],
 			dev2: ['requirejs']
 		}
 	});
 
 	// Load some stuff
 	grunt.loadNpmTasks('grunt-modernizr');
+	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-requirejs');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-imageoptim');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-concurrent');
 	grunt.loadNpmTasks('grunt-contrib-jasmine');

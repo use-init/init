@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Add Grunt task to optimize images (#26)
 * Add documentation about how to write modules with Sass
 * Add default markup (#31)
 * Update to Apache Server Configs v1.1.0
@@ -11,7 +12,6 @@
 * Update Bower dependencies
 * Update npm module dependencies
 * Add AUTHORS file instead of specifiying it in package.json
-* Add grunt-imageoptim as task
 * Update jQuery to 1.10.2
 * Use Sass-Mixins via Bower
 * Use Bower for package management and replace vendor packages (#24)
