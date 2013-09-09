@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Restructre copying of files and dist-folder structure (#11)
 * Add Grunt task to optimize images (#26)
 * Add documentation about how to write modules with Sass
 * Add default markup (#31)

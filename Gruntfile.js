@@ -23,7 +23,7 @@ module.exports = function (grunt) {
 		// Build modernizr
 		modernizr: {
 			devFile: 'components/modernizr/modernizr.js',
-			outputFile : 'dist/js/vendor/modernizr-for-<%= pkg.version %>.min.js',
+			outputFile : 'dist/<%= pkg.version %>/modernizr.min.js',
 
 			extra: {
 				shiv: true,
@@ -52,7 +52,7 @@ module.exports = function (grunt) {
 					style: 'compressed'
 				},
 				files: {
-					'dist/css/main-<%= pkg.version %>.min.css': 'scss/main.scss'
+					'dist/<%= pkg.version %>/main.min.css': 'scss/main.scss'
 				}
 
 			}
@@ -67,7 +67,7 @@ module.exports = function (grunt) {
 				options: {
 					mainConfigFile: 'js/config.js',
 					include: ['../components/requirejs/require'],
-					out: 'dist/js/main-<%= pkg.version %>.min.js'
+					out: 'dist/<%= pkg.version %>/main.min.js'
 				}
 			}
 		},
@@ -140,8 +140,8 @@ module.exports = function (grunt) {
 
 		// Setup concurrent tasks
 		concurrent: {
-			deploy1: ['jshint', 'connect:test', 'jasmine', 'clean', 'modernizr', 'sass:deploy', 'imagemin', 'copy'],
-			deploy2: ['requirejs'],
+			deploy1: ['jshint', 'clean', 'modernizr', 'sass:deploy', 'imagemin', 'copy'],
+			deploy2: ['requirejs', 'connect:test', 'jasmine'],
 			dev1: ['jshint', 'connect:test', 'jasmine', 'sass:dev', 'copy'],
 			dev2: ['requirejs']
 		}
