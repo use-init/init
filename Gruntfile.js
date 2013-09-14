@@ -1,20 +1,84 @@
+/**
+ * Grunt configuration
+ */
+var config = {
+
+	// A banner for distributed files (name, version, license, date)
+	banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - MIT License - ' +
+		'<%= grunt.template.today("yyyy-mm-dd") %> */',
+
+	destDir: 'dist/',
+
+	requirejs: '../components/requirejs/require',
+
+	// All files that should be checked with JSHint
+	jsHintFiles: [
+		'Gruntfile.js',
+		'js/**/*.js'
+	],
+
+	// JavaScript files
+	js: {
+		files: [
+			'js/**/*.js'
+		],
+		config: 'js/config.js',
+		dest: 'dist/<%= pkg.version %>/main.min.js'
+	},
+
+	// Sass files
+	sass: {
+		files: [
+			'scss/**/*.scss'
+		],
+		src: 'scss/main.scss',
+		devDest: 'css/main.css',
+		dest: 'dist/<%= pkg.version %>/main.min.css'
+	},
+
+	// Modernizr files
+	modernizr: {
+		src: 'components/modernizr/modernizr.js',
+		dest: 'dist/<%= pkg.version %>/modernizr.min.js'
+	},
+
+	// Images
+	img: {
+		src: 'img/',
+		dest: 'dist/img/'
+	},
+
+	tests: {
+		src: 'tests/*.js'
+	}
+};
+
+/*
+ * Call Grunt configuration
+ */
 module.exports = function (grunt) {
 
 	'use strict';
+
+	/*
+	 * Helper
+	 */
+	var helper = {};
+
+	helper.sassDev = {};
+	helper.sassDev[config.sass.devDest] = config.sass.src;
+	helper.sassProd = {};
+	helper.sassProd[config.sass.dest] = config.sass.src;
 
 	// Project configuration.
 	grunt.initConfig({
 		pkg: require('./package'),
 		meta: {
-			banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
-			'<%= grunt.template.today("yyyy-mm-dd") %> */'
+			banner: config.banner
 		},
 
 		jshint: {
-			all: [
-				'Gruntfile.js',
-				'js/**/*.js'
-			],
+			all: config.jsHintFiles,
 			options: {
 				jshintrc: '.jshintrc'
 			}
@@ -22,8 +86,8 @@ module.exports = function (grunt) {
 
 		// Build modernizr
 		modernizr: {
-			devFile: 'components/modernizr/modernizr.js',
-			outputFile : 'dist/<%= pkg.version %>/modernizr.min.js',
+			devFile: config.modernizr.src,
+			outputFile: config.modernizr.dest,
 
 			extra: {
 				shiv: true,
@@ -34,7 +98,7 @@ module.exports = function (grunt) {
 			uglify: true,
 
 			// Files
-			files: ['js/**/*.js', 'scss/**/*.scss']
+			files: config.js.files.concat(config.sass.files)
 		},
 
 		sass: {
@@ -43,31 +107,28 @@ module.exports = function (grunt) {
 					unixNewlines: true,
 					style: 'expanded'
 				},
-				files: {
-					'css/main.css': 'scss/main.scss'
-				}
+				files: helper.sassDev
 			},
 			deploy: {
 				options: {
-					style: 'compressed'
+					style: 'compressed',
+					banner: config.banner
 				},
-				files: {
-					'dist/<%= pkg.version %>/main.min.css': 'scss/main.scss'
-				}
+				files: helper.sassProd
 
 			}
 		},
 
 		clean: {
-			deploy: ['dist']
+			deploy: [config.destDir]
 		},
 
 		requirejs: {
 			compile: {
 				options: {
-					mainConfigFile: 'js/config.js',
-					include: ['../components/requirejs/require'],
-					out: 'dist/<%= pkg.version %>/main.min.js'
+					mainConfigFile: config.js.config,
+					include: [config.requirejs],
+					out: config.js.dest
 				}
 			}
 		},
@@ -75,8 +136,8 @@ module.exports = function (grunt) {
 		copy: {
 			deploy: {
 				files: [{
-					src: ['js/**'],
-					dest: 'dist/'
+					src: config.js.files,
+					dest: config.destDir
 				}]
 			}
 		},
@@ -89,9 +150,9 @@ module.exports = function (grunt) {
 				},
 				files: [{
 					expand: true,
-					cwd: 'img/',
+					cwd: config.img.src,
 					src: ['**/*.{png,jpg,gif}'],
-					dest: 'dist/img/'
+					dest: config.img.dest
 				}]
 			}
 		},
@@ -112,28 +173,25 @@ module.exports = function (grunt) {
 
 		// Jasmine test configuration
 		jasmine: {
-			src: 'js/**/*.js',
+			src: config.js.files,
 			options: {
 				host: 'http://127.0.0.1:8000/',
-				specs: 'tests/*.js',
+				specs: config.tests.src,
 				template: require('grunt-template-jasmine-requirejs'),
 				templateOptions: {
-					requireConfigFile: 'js/config.js',
+					requireConfigFile: config.js.config
 				}
 			}
 		},
 
 		watch: {
 			scss: {
-				files: ['scss/**/*.scss'],
+				files: config.sass.files,
 				tasks: 'sass:dev'
 			},
 
 			js: {
-				files: [
-					'Gruntfile.js',
-					'js/**/*.js'
-				],
+				files: config.jsHintFiles,
 				tasks: ['jshint', 'jasmine']
 			}
 		},
