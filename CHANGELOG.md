@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Add node-matchdep to automatically fetch dependencies
 * Update to Apache Server Configs v1.1.0
 * Remove media-query files in favor of inline media-queries
 * Add .bowerrc configuration file for Bower
@@ -9,7 +10,6 @@
 * Update Bower dependencies
 * Update npm module dependencies
 * Add AUTHORS file instead of specifiying it in package.json
-* Add grunt-imageoptim as task
 * Update jQuery to 1.10.2
 * Use SASS-Mixins via Bower
 * Use Bower for package management and replace vendor packages (#24)
