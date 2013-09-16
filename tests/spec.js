@@ -1,21 +1,6 @@
-require(['modules/module'], function (module) {
-	'use strict';
-
-	describe('init', function () {
-		it('is available', function () {
-			expect(module).not.toBe(null);
-		});
-
-		it('fires event on init', function () {
-			var eventCalled;
-
-			$(document).on(module.getEventName(), function () {
-				eventCalled = true;
-			});
-
-			module.init();
-
-			expect(eventCalled).toBeTruthy();
-		});
-	});
+define({
+	specs: [
+		// Load the example spec, replace this and add your own spec.
+		'spec/example-spec'
+	]
 });

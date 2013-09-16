@@ -124,7 +124,18 @@ module.exports = function (grunt) {
 				options: {
 					mainConfigFile: config.js.config,
 					include: [config.requirejs],
-					out: config.js.dest
+					out: config.js.dest,
+
+					// Wrap in IIFE
+					wrap: true,
+
+					// Source Maps
+					generateSourceMaps: true,
+
+					// Do not preserve license comments when working with source maps, incompatible.
+					preserveLicenseComments: false,
+
+					optimize: 'uglify2'
 				}
 			}
 		},
@@ -182,20 +193,42 @@ module.exports = function (grunt) {
 
 		// Configuration for Karma test-runner
 		karma: {
+			options: {
+				runnerPort: 9999,
+				port: 8000,
+
+				singleRun: true,
+				colors: true,
+				captureTimeout: 7000,
+
+				// Start these browsers
+				browsers: ['Chrome', 'ChromeCanary', 'Firefox', 'Safari', 'PhantomJS'],
+
+				plugins: [
+					'karma-jasmine',
+					'karma-chrome-launcher',
+					'karma-chromecanary-launcher',
+					'karma-firefox-launcher',
+					'karma-safari-launcher',
+					'karma-phantomjs-launcher'
+				],
+
+
+				proxies: {
+					'/base': 'http://localhost:<%= connect.test.port %>'
+				}
+			},
+
 			unit: {
 				options: {
-
 					// frameworks to use
-					frameworks: ['jasmine', 'requirejs'],
+					frameworks: ['jasmine'],
 
 					// list of files / patterns to load in the browser
 					files: [
-						'tests/test-main.js',
-						config.tests.src
-					],
-
-					// Start these browsers
-					browsers: ['Chrome', 'ChromeCanary', 'Firefox', 'Safari', 'PhantomJS', 'Opera'],
+						'components/requirejs/require.js',
+						'tests/test-main.js'
+					]
 				}
 			}
 		},
@@ -212,8 +245,8 @@ module.exports = function (grunt) {
 			},
 
 			karma: {
-				files: config.jsHintFiles,
-				tasks: ['connect:test', 'jasmine']
+				files: [config.jsHintFiles, config.tests.src],
+				tasks: ['connect:test', 'jasmine', 'karma:unit']
 			}
 		},
 
