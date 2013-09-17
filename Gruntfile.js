@@ -119,10 +119,6 @@ module.exports = function (grunt) {
 			}
 		},
 
-		clean: {
-			deploy: [config.destDir]
-		},
-
 		requirejs: {
 			compile: {
 				options: {
@@ -198,7 +194,7 @@ module.exports = function (grunt) {
 
 		// Setup concurrent tasks
 		concurrent: {
-			deploy1: ['jshint', 'clean', 'modernizr', 'sass:deploy', 'imagemin', 'copy'],
+			deploy1: ['jshint', 'modernizr', 'sass:deploy', 'imagemin', 'copy'],
 			deploy2: ['requirejs', 'connect:test', 'jasmine'],
 			dev1: ['jshint', 'connect:test', 'jasmine', 'sass:dev', 'copy'],
 			dev2: ['requirejs']
