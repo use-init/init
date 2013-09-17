@@ -205,18 +205,8 @@ module.exports = function (grunt) {
 		}
 	});
 
-	// Load some stuff
-	grunt.loadNpmTasks('grunt-concurrent');
-	grunt.loadNpmTasks('grunt-contrib-clean');
-	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-contrib-connect');
-	grunt.loadNpmTasks('grunt-contrib-imagemin');
-	grunt.loadNpmTasks('grunt-contrib-jasmine');
-	grunt.loadNpmTasks('grunt-contrib-jshint');
-	grunt.loadNpmTasks('grunt-contrib-requirejs');
-	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-modernizr');
+	// Load all npm tasks through node-matchdep (fetches all tasks from package.json)
+	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
 	// A task for development
 	grunt.registerTask('dev', ['concurrent:dev1', 'concurrent:dev2']);

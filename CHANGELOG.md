@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Add node-matchdep to automatically fetch dependencies
 * Add clean Grunt config at beginning of Gruntfile (#46)
 * Use only one Apple Touch Icon
 * Restructre copying of files and dist-folder structure (#11)
