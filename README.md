@@ -1,4 +1,4 @@
-# <img src="logo.svg" alt="INIT" title="INIT" width="200">
+# <img src="http://rawgithub.com/drublic/init/v1.0.0/logo.svg" alt="INIT" title="INIT" width="200">
 
 This project is based upon [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate) and adds more structure for SCSS files, JavaScripts, includes build tasks and a whole lot more.
 
