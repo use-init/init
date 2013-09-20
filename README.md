@@ -1,6 +1,8 @@
-# __init__ [![Build Status](https://secure.travis-ci.org/drublic/init.png?branch=master)](http://travis-ci.org/drublic/init)
+# <img src="logo.svg" alt="INIT" title="INIT" width="200">
 
 This project is based upon [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate) and adds more structure for SCSS files, JavaScripts, includes build tasks and a whole lot more.
+
+[![Build Status](https://secure.travis-ci.org/drublic/init.png?branch=master)](http://travis-ci.org/drublic/init)
 
 ## Dependencies
 
@@ -70,13 +72,7 @@ Additional information on this project is stored in `package.json`.
 
 ## Development
 
-This package is developed and maintained by [Hans Christian Reinl](http://drublic.de/).
-
-Other team members:
-
-- [Anselm Hannemann](http://helloanselm.com/)
-
-And [more contributors](https://github.com/drublic/init/graphs/contributors)
+This package is developed and maintained by [Hans Christian Reinl](http://drublic.de/), [Anselm Hannemann](http://helloanselm.com/) and [more contributors](https://github.com/drublic/init/graphs/contributors).
 
 
 ## License
