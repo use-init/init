@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Add default logo.svg
 * Remove grunt-contrib-clean
 * Add node-matchdep to automatically fetch dependencies
 * Add clean Grunt config at beginning of Gruntfile (#46)
