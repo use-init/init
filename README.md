@@ -75,6 +75,11 @@ Additional information on this project is stored in `package.json`.
 This package is developed and maintained by [Hans Christian Reinl](http://drublic.de/), [Anselm Hannemann](http://helloanselm.com/) and [more contributors](https://github.com/drublic/init/graphs/contributors).
 
 
+## Credits
+
+The INIT logo was designed by Jan von Beckerath at [NIMIUS](http://nimius.net) and optimized by [Stefan Nitzsche](http://www.stn.my/).
+
+
 ## License
 
 Please be aware of the licenses of each component we use in this project. Everything else that has been developed by the contributions to this project is under [MIT License](LICENSE.md).
