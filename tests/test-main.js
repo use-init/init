@@ -19,12 +19,14 @@
 
 			// Location of tests
 			spec: '../tests/spec',
-			specs: '../test/jasmine/specs',
+			specs: '../tests/jasmine/specs',
 		},
 
 		shim: {
-			"jasmine": { exports: "jasmine" },
-			"jasmine-html": ["jasmine"]
+			jasmine: {
+				exports: 'jasmine'
+			},
+			'jasmine-html': ['jasmine']
 		},
 	});
 

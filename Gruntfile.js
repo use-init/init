@@ -207,12 +207,10 @@ module.exports = function (grunt) {
 				plugins: [
 					'karma-jasmine',
 					'karma-chrome-launcher',
-					'karma-chromecanary-launcher',
 					'karma-firefox-launcher',
 					'karma-safari-launcher',
 					'karma-phantomjs-launcher'
 				],
-
 
 				proxies: {
 					'/base': 'http://localhost:<%= connect.test.port %>'

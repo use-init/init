@@ -1,19 +1,23 @@
-describe('init', function () {
+define(['/../../js/modules/module.js'], function (module) {
 	'use strict';
 
-	it('is available', function () {
-		expect(module).not.toBe(null);
-	});
+	describe('init', function () {
 
-	it('fires event on init', function () {
-		var eventCalled;
-
-		$(document).on(module.getEventName(), function () {
-			eventCalled = true;
+		it('is available', function () {
+			expect(module).not.toBe(null);
 		});
 
-		module.init();
+		it('fires event on init', function () {
+			var eventCalled;
 
-		expect(eventCalled).toBeTruthy();
+			$(document).on(module.getEventName(), function () {
+				eventCalled = true;
+			});
+
+			module.init();
+
+			expect(eventCalled).toBeTruthy();
+		});
 	});
+
 });
