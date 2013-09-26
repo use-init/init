@@ -1,6 +1,10 @@
+/**
+ * All specifications you need to load for your test suite
+ */
 define({
 	specs: [
-		// Load the example spec, replace this and add your own spec.
-		'spec/example-spec'
+
+		// Load the example spec, add your own specifications here
+		'specs/example-spec'
 	]
 });

@@ -3,13 +3,11 @@
  */
 require.config({
 
-	baseUrl: 'js',
-
 	// Initialize the application with the main application file
 	deps: ['plugins/console', 'main'],
 
 	paths: {
-		'jquery': '../components/jquery/jquery.min'
+		jquery: '../components/jquery/jquery.min'
 		// More additional paths here
 	},
 

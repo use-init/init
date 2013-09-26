@@ -194,15 +194,12 @@ module.exports = function (grunt) {
 		// Configuration for Karma test-runner
 		karma: {
 			options: {
-				runnerPort: 9999,
-				port: 8000,
-
 				singleRun: true,
 				colors: true,
 				captureTimeout: 7000,
 
 				// Start these browsers
-				browsers: ['Chrome', 'ChromeCanary', 'Firefox', 'Safari', 'PhantomJS'],
+				browsers: ['Chrome', 'Firefox', 'Safari', 'PhantomJS'],
 
 				plugins: [
 					'karma-jasmine',

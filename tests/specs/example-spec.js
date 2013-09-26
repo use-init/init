@@ -1,7 +1,13 @@
-define(['/../../js/modules/module.js'], function (module) {
+/**
+ * An example specification for the example module
+ * Loads the module and runs the test suite
+ */
+define(['modules/module'], function (module) {
 	'use strict';
 
-	describe('init', function () {
+	// Test suit INIT
+	describe('INIT', function () {
+
 
 		it('is available', function () {
 			expect(module).not.toBe(null);
@@ -19,5 +25,4 @@ define(['/../../js/modules/module.js'], function (module) {
 			expect(eventCalled).toBeTruthy();
 		});
 	});
-
 });
