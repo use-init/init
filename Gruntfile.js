@@ -181,36 +181,34 @@ module.exports = function (grunt) {
 		// Configuration for Karma test-runner
 		karma: {
 			options: {
-				singleRun: true,
-				colors: true,
-				captureTimeout: 7000,
-
-				// Start these browsers
-				browsers: ['Chrome', 'Firefox', 'Safari', 'PhantomJS'],
-
-				plugins: [
-					'karma-jasmine',
-					'karma-chrome-launcher',
-					'karma-firefox-launcher',
-					'karma-safari-launcher',
-					'karma-phantomjs-launcher'
-				],
+				configFile: 'karma.conf.js',
 
 				proxies: {
 					'/base': 'http://localhost:<%= connect.test.port %>'
 				}
 			},
 
+			test: {
+				options: {
+
+					// Start these browsers
+					browsers: ['Chrome', 'Firefox', 'Safari', 'PhantomJS'],
+
+					plugins: [
+						'karma-jasmine',
+						'karma-chrome-launcher',
+						'karma-firefox-launcher',
+						'karma-safari-launcher',
+						'karma-phantomjs-launcher'
+					]
+				}
+			},
+
 			unit: {
 				options: {
-					// frameworks to use
-					frameworks: ['jasmine'],
 
-					// list of files / patterns to load in the browser
-					files: [
-						'components/requirejs/require.js',
-						'tests/test-main.js'
-					]
+					// Use Firefox and Chrome for Travis
+					browsers: ['Firefox', 'Chrome']
 				}
 			}
 		},
@@ -236,7 +234,7 @@ module.exports = function (grunt) {
 		concurrent: {
 			deploy1: ['jshint', 'modernizr', 'sass:deploy', 'imagemin', 'copy'],
 			deploy2: ['requirejs', 'connect:test', 'karma:unit'],
-			dev1: ['jshint', 'connect:test', 'karma:unit', 'sass:dev', 'copy'],
+			dev1: ['jshint', 'connect:test', 'karma:test', 'sass:dev', 'copy'],
 			dev2: ['requirejs']
 		}
 	});
