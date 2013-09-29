@@ -207,8 +207,8 @@ module.exports = function (grunt) {
 			unit: {
 				options: {
 
-					// Use Firefox and Chrome for Travis
-					browsers: ['Firefox', 'Chrome']
+					// Use Phantom and Firefox for Travis
+					browsers: ['PhantomJS', 'Firefox']
 				}
 			}
 		},
