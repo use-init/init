@@ -2,6 +2,8 @@
 
 ### HEAD
 
+* Remove Jasmine task from Grunt
+* Add Karma as Test Suite
 * Add default logo.svg
 * Remove grunt-contrib-clean
 * Add node-matchdep to automatically fetch dependencies

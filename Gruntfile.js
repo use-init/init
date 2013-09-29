@@ -49,7 +49,7 @@ var config = {
 	},
 
 	tests: {
-		src: 'tests/*.js'
+		src: 'tests/**/*spec.js'
 	}
 };
 
@@ -124,7 +124,18 @@ module.exports = function (grunt) {
 				options: {
 					mainConfigFile: config.js.config,
 					include: [config.requirejs],
-					out: config.js.dest
+					out: config.js.dest,
+
+					// Wrap in IIFE
+					wrap: true,
+
+					// Source Maps
+					generateSourceMaps: true,
+
+					// Do not preserve license comments when working with source maps, incompatible.
+					preserveLicenseComments: false,
+
+					optimize: 'uglify2'
 				}
 			}
 		},
@@ -167,15 +178,37 @@ module.exports = function (grunt) {
 			}
 		},
 
-		// Jasmine test configuration
-		jasmine: {
-			src: config.js.files,
+		// Configuration for Karma test-runner
+		karma: {
 			options: {
-				host: 'http://127.0.0.1:8000/',
-				specs: config.tests.src,
-				template: require('grunt-template-jasmine-requirejs'),
-				templateOptions: {
-					requireConfigFile: config.js.config
+				configFile: 'karma.conf.js',
+
+				proxies: {
+					'/base': 'http://localhost:<%= connect.test.port %>'
+				}
+			},
+
+			test: {
+				options: {
+
+					// Start these browsers
+					browsers: ['Chrome', 'Firefox', 'Safari', 'PhantomJS'],
+
+					plugins: [
+						'karma-jasmine',
+						'karma-chrome-launcher',
+						'karma-firefox-launcher',
+						'karma-safari-launcher',
+						'karma-phantomjs-launcher'
+					]
+				}
+			},
+
+			unit: {
+				options: {
+
+					// Use Phantom and Firefox for Travis
+					browsers: ['PhantomJS', 'Firefox']
 				}
 			}
 		},
@@ -188,15 +221,20 @@ module.exports = function (grunt) {
 
 			js: {
 				files: config.jsHintFiles,
-				tasks: ['jshint', 'jasmine']
+				tasks: ['jshint', 'connect:test', 'karma:unit']
+			},
+
+			karma: {
+				files: [config.jsHintFiles, config.tests.src],
+				tasks: ['connect:test', 'karma:unit']
 			}
 		},
 
 		// Setup concurrent tasks
 		concurrent: {
 			deploy1: ['jshint', 'modernizr', 'sass:deploy', 'imagemin', 'copy'],
-			deploy2: ['requirejs', 'connect:test', 'jasmine'],
-			dev1: ['jshint', 'connect:test', 'jasmine', 'sass:dev', 'copy'],
+			deploy2: ['requirejs', 'connect:test', 'karma:unit'],
+			dev1: ['jshint', 'connect:test', 'karma:test', 'sass:dev', 'copy'],
 			dev2: ['requirejs']
 		}
 	});
@@ -214,6 +252,6 @@ module.exports = function (grunt) {
 	grunt.registerTask('default', ['dev']);
 
 	// Travis CI task
-	grunt.registerTask('travis', ['jshint', 'connect:test', 'jasmine']);
+	grunt.registerTask('travis', ['jshint', 'connect:test', 'karma:unit']);
 
 };

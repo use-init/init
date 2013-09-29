@@ -498,6 +498,20 @@ table {
   *zoom: 1;
 }
 
+/**
+ * Typography is specified in here.
+ */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Georgia, "Times New Roman" serif;
+}
+
 /*
  * HTML5 Boilerplate
  *
@@ -543,7 +557,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cccccc;
   margin: 1em 0;
   padding: 0;
 }
@@ -581,6 +595,15 @@ textarea {
   padding: 0.2em 0;
 }
 
+/**
+ * All styles related to markup inside the header
+ */
+/**
+ * All styles related to markup inside the main element
+ */
+/**
+ * All styles related to markup inside the footer
+ */
 @media print {
   /* ==========================================================================
      Print styles.
@@ -651,14 +674,4 @@ textarea {
   h3 {
     page-break-after: avoid;
   }
-}
-@media screen only and (max-width: 480px) {
-  /* ==========================================================================
-     EXAMPLE Media Queries for Responsive Design.
-     Theses examples override the primary ('mobile first') styles.
-     Modify as content requires.
-     ========================================================================== */
-}
-@media screen only and (max-width: 480px) and (-o-min-device-pixel-ratio: 5 / 4), screen only and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 1.25), screen only and (max-width: 480px) and (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
 }

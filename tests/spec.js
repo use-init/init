@@ -1,21 +1,10 @@
-require(['modules/module'], function (module) {
-	'use strict';
+/**
+ * All specifications you need to load for your test suite
+ */
+define({
+	specs: [
 
-	describe('init', function () {
-		it('is available', function () {
-			expect(module).not.toBe(null);
-		});
-
-		it('fires event on init', function () {
-			var eventCalled;
-
-			$(document).on(module.getEventName(), function () {
-				eventCalled = true;
-			});
-
-			module.init();
-
-			expect(eventCalled).toBeTruthy();
-		});
-	});
+		// Load the example spec, add your own specifications here
+		'specs/example-spec'
+	]
 });

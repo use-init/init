@@ -9,6 +9,5 @@
     "modernizr": "~2.6.2",
     "requirejs": "~2.1.8",
     "sass-mixins": "~0.4.1"
-  },
-  "devDependencies": {}
+  }
 }
