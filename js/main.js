@@ -10,4 +10,6 @@ require([
 	'modules/module'
 ], function (module) {
 	'use strict';
+
+	console.log(module);
 });
