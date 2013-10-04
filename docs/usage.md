@@ -35,7 +35,7 @@ Same goes for Bower:
 
 	$ npm i -g bower
 
-No we need to install the GruntJS modules we want to use within the project and the components that are predefined:
+Now we need to install the GruntJS modules we want to use within the project and the components that are predefined:
 
 	$ npm i && bower i
 
