@@ -32,28 +32,28 @@ While we are using the imagemin task by default to optimize all your JPG, PNG, G
 2. If to the Command line / Terminal and enter `npm install` to install the package
 3. In the `Gruntfile.js` add the following code to the config section on top of the file:
 
-	// SVG files
-	svg: {
-		src: 'img/',
-		dest: 'dist/img/'
-	},
+		// SVG files
+		svg: {
+			src: 'img/',
+			dest: 'dist/img/'
+		},
 
 4. In the `Gruntfile.js` add the following code at the bottom of the `grunt.initConfig`:
 
-	grunt.initConfig({
-		// INIT basic tasks
+		grunt.initConfig({
+			// INIT basic tasks
 
-		svgmin: {
-			dist: {
-				files: [{
-					expand: true,
-					cwd: config.svg.src,
-					src: ['**/*.svg'],
-					dest: config.img.dest,
-					ext: 'min.svg'
-				}]
+			svgmin: {
+				dist: {
+					files: [{
+						expand: true,
+						cwd: config.svg.src,
+						src: ['**/*.svg'],
+						dest: config.img.dest,
+						ext: 'min.svg'
+					}]
+				}
 			}
-		}
-	});
+		});
 
 If you need more information, please [read the documentation of the plugin](https://github.com/sindresorhus/grunt-svgmin).

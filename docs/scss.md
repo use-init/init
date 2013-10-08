@@ -12,6 +12,10 @@ In init we modularize our styles in several components. We have therefore divide
 
 Most of the files contain some raw styles or example code so you can just view the files to understand what they are thought for. Surely you can adapt the files and contents of the files to your own project-style.
 
+## Sass-Mixins
+
+We added some useful Sass Mixins to INIT as a Bower module so you can use them right away. Please refer to the [offical documentation of Sass-Mixins](https://github.com/drublic/Sass-Mixins/blob/master/README.md) for usage instructions and report bugs from there to the project.
+
 ## Concatenation
 
 As we use several single Sass-files they need to be concatenated for usage in your project. This is done by the Sass `@import` function within the [`scss/main.scss`](../scss/main.scss) file. As you can see there you just type the folder and name of the file without the leading `_` and without the file ending to import a file.
@@ -30,4 +34,4 @@ To get a compressed, production ready CSS file simply run the following command:
 
 	grunt deploy
 
-See the [documentation about grunt](grund.md) for more information about this task.
+See the [documentation about grunt](grunt.md) for more information about this task.
