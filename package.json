@@ -21,7 +21,7 @@
   "dependencies": {},
   "devDependencies": {
     "bower": "~1.2.7",
-    "matchdep": "0.1.2",
+    "matchdep": "0.3.0",
     "grunt": "0.4.x",
     "grunt-concurrent": "0.4.0",
     "grunt-contrib-connect": "0.5.0",
