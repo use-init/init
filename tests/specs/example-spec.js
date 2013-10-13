@@ -5,7 +5,7 @@
 define(['modules/module'], function (module) {
 	'use strict';
 
-	// Test suit INIT
+	// Test suite INIT
 	describe('INIT', function () {
 
 
