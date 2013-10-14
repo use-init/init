@@ -11,8 +11,8 @@
 
 		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-		<link rel="stylesheet" href="css/main.css">
-		<script src="components/modernizr/modernizr.js"></script>
+		<link rel="stylesheet" href="@@maincss">
+		<script src="@@modernizr"></script>
 	</head>
 	<body>
 		<!--[if lt IE 7]>
@@ -54,8 +54,8 @@
 				the license information</a>.</p>
 		</footer>
 
-		<!-- Add RequireJS -->
-		<script data-main="js/config" src="components/requirejs/require.js"></script>
+		<!-- Load scripts -->
+		@@mainjs
 
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>

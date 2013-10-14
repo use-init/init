@@ -17,6 +17,26 @@ var config = {
 		'js/**/*.js'
 	],
 
+	// Versioned references
+	replace: {
+		files: [
+			'*.html'
+		],
+		dest: [
+			'dist/'
+		],
+		deploy: {
+			maincss: '<%= pkg.version %>/main.min.css',
+			modernizr: '<%= pkg.version %>/modernizr.custom.min.js',
+			mainjs: '<script src="<%= pkg.version %>/main.min.js"></script>'
+		},
+		dev: {
+			maincss: 'css/main.css',
+			modernizr: '../components/modernizr/modernizr.js',
+			mainjs: '<script data-main="js/config" src="../components/requirejs/require.js"></script>'
+		}
+	},
+
 	// JavaScript files
 	js: {
 		files: [
@@ -39,7 +59,7 @@ var config = {
 	// Modernizr files
 	modernizr: {
 		src: 'components/modernizr/modernizr.js',
-		dest: 'dist/<%= pkg.version %>/modernizr.min.js'
+		dest: 'dist/<%= pkg.version %>/modernizr.custom.min.js'
 	},
 
 	// Images
@@ -149,6 +169,54 @@ module.exports = function (grunt) {
 			}
 		},
 
+		// File versioning in build process
+		replace: {
+			deploy: {
+				options: {
+					patterns: [
+						{
+							match: 'maincss',
+							replacement: config.replace.deploy.maincss
+						},
+						{
+							match: 'modernizr',
+							replacement: config.replace.deploy.modernizr
+						},
+						{
+							match: 'mainjs',
+							replacement: config.replace.deploy.mainjs
+						}
+					]
+				},
+				files: [{
+					src: config.replace.files,
+					dest: config.destDir
+				}]
+			},
+			dev: {
+				options: {
+					patterns: [
+						{
+							match: 'maincss',
+							replacement: config.replace.dev.maincss
+						},
+						{
+							match: 'modernizr',
+							replacement: config.replace.dev.modernizr
+						},
+						{
+							match: 'mainjs',
+							replacement: config.replace.dev.mainjs
+						}
+					]
+				},
+				files: [{
+					src: config.replace.files,
+					dest: config.destDir
+				}]
+			}
+		},
+
 		// Lossless image optimization
 		imagemin: {
 			images: {
@@ -232,9 +300,9 @@ module.exports = function (grunt) {
 
 		// Setup concurrent tasks
 		concurrent: {
-			deploy1: ['jshint', 'modernizr', 'sass:deploy', 'imagemin', 'copy'],
+			deploy1: ['jshint', 'modernizr', 'sass:deploy', 'imagemin', 'replace:deploy', 'copy'],
 			deploy2: ['requirejs', 'connect:test', 'karma:unit'],
-			dev1: ['jshint', 'connect:test', 'karma:test', 'sass:dev', 'copy'],
+			dev1: ['jshint', 'connect:test', 'karma:test', 'sass:dev', 'replace:dev', 'copy'],
 			dev2: ['requirejs']
 		}
 	});
