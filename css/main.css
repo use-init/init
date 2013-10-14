@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
  *	This project's description goes here
  *
@@ -9,12 +10,341 @@
  * Variables to be used throughout the project
  */
 /**
- * @include x-multiple-backgrounds(
- *	rgba(0, 0, 0, 0.3),
- *	url('img/someImage-1.png'),
- *	url('../img/someImage-2.png') no-repeat,
- *	(linear-gradient, to bottom, #aaa, #ddd)
- * );
+ * @description
+ * Generates keyframe animations
+ *
+ * @author drublic
+ *
+ * @link caniuse
+ * @link spec
+ *
+ * @param values
+ * @returns
+ *   -webkit-animation: <values>;
+ *           animation: <values>;
+ *
+ * @example
+ *   .selector {
+ *     @include x-animation(jump 1s ease-out);
+ *   }
+ */
+/*
+ * @example
+ *    @include x-keyframes(jump) {
+ *      from { top: 0; }
+ *      to { top: -10px; }
+ *   }
+ */
+/**
+ * @description
+ * Generates cross-browser-compatible `border-radius` for a given element
+ *
+ * @author drublic
+ *
+ * @link caniuse http://caniuse.com/border-radius
+ * @link spec http://www.w3.org/TR/css3-background/#corners
+ *
+ * @param values
+ * @returns
+ *   -webkit-border-radius: <values>;
+ *           border-radius: <values>;
+ *
+ * @example
+ *   .selector {
+ *     @include x-border-radius(20px 10px);
+ *   }
+ */
+/**
+ * @description
+ * Generates cross-browser-compatible `box-shadow` for a given element
+ *
+ * @author drublic
+ *
+ * @link caniuse http://caniuse.com/css-boxshadow
+ * @link spec http://www.w3.org/TR/css3-background/#the-box-shadow
+ *
+ * @param values
+ * @returns
+ *   -webkit-box-shadow: <values>;
+ *           box-shadow: <values>;
+ *
+ * @example
+ *   .selector {
+ *     @include x-box-shadow(5px 5px 10px 5px #aaa);
+ *   }
+ */
+/**
+ * @description
+ * Generates cross-browser-compatible `box-sizing` output for a given element.
+ *
+ * @author drublic
+ *
+ * @link caniuse
+ * @link spec
+ *
+ * @param type
+ * @returns
+ *   -webkit-box-sizing: <type>;
+ *      -moz-box-sizing: <type>;
+ *           box-sizing: <type>;
+ *
+ * @example
+ *   .selector {
+ *     @include x-box-sizing;
+ *   }
+ */
+/**
+ * @description
+ * These mixins generates Media Queries
+ *
+ * @author drublic
+ *
+ * @link caniuse
+ * @link spec
+ *
+ * Note: Please use the CSS unit `em` for device-width in order to stay
+ * responsive.
+ */
+/*
+ * @param device-width {number}
+ * @content
+ * @returns
+ *   @media screen and (min-width: <device-width>) {
+ *      <content>
+ *   }
+ *
+ * @example
+ *   .selector {
+ *     x-at-least(40em) { width: 60%; }
+ *   }
+ */
+/*
+ * @param device-width {number}
+ * @content
+ * @returns
+ *   @media screen and (max-width: <device-width - 0.01>) {
+ *      <content>
+ *   }
+ *
+ * @example
+ *   .selector {
+ *     x-until(40em) { width: 100%; }
+ *   }
+ */
+/**
+ * @description
+ * Generates a linear gradient for a given element with a fallback color.
+ *
+ * @author drublic
+ *
+ * @link caniuse
+ * @link spec
+ *
+ * @dependency helper-gradient-angle
+ * @param direction {'to bottom'|'to right'|'to top'|'to left'|<degree>}
+ * @param fallback {color}
+ * @param from {color}
+ * @param to {color}
+ * @default 'to bottom', #ccc, #ccc, #aaa
+ *
+ * @returns
+ *   background-color: <fallback>;
+ *   background-image: -webkit-gradient(linear, <direction - old converted>, from(<from>), to(<to>));
+ *   background-image: -webkit-linear-gradient(<direction - converted>, <from>, <to>);
+ *   background-image:         linear-gradient(<direction>, <from>, <to>);
+ *
+ * @example
+ *   .selector {
+ *     @include x-linear-gradient("to bottom", #ccc, #ddd, #bbb);
+ *   }
+ *
+ * Note: By default this linear-gradient-mixin encourages people to use the
+ * latest CSS-syntax for gradients.
+ */
+/**
+ * @description
+ * This mixin generates multiple backgrounds
+ *
+ * @author drublic
+ *
+ * @link caniuse http://caniuse.com/css-gradients
+ * @link spec http://www.w3.org/TR/2011/WD-css3-images-20110217/#linear-gradients
+ */
+/*
+ * A function for prefixing gradients
+ *
+ * @param mode {'webkit-old'|'webkit'|''}
+ * @param gradient
+ * @returns
+ *   -<mode>-linear-gradient(<gradient>);
+ */
+/*
+ * Generates multiple backgrounds
+ *
+ * @param backgrounds {list}
+ * @return
+ *   <property>: (<value> * <default-font-size>)px;
+ *   <property>: <value>;
+ *
+ * @example
+ *   .selector {
+ *     @include x-multiple-backgrounds(
+ *       rgba(0, 0, 0, 0.3),
+ *       url('../img/html5_logo.png') top right no-repeat,
+ *       (linear-gradient, to bottom, #aaa, #ddd)
+ *     );
+ *   }
+ */
+/**
+ * @description
+ * This mixin creates (endless) multiple color stops in gradients just with one
+ * call for the mixin.
+ *
+ * @author drublic
+ *
+ * @link caniuse http://caniuse.com/css-gradients
+ * @link spec http://www.w3.org/TR/2011/WD-css3-images-20110217/#linear-gradients
+ *
+ * @param stops {list}
+ * @returns
+ *   background-image: -webkit-linear-gradient(top, <stops[1]>, <stops[2]>, ..., <stops[n]>);
+ *   background-image:         linear-gradient(to bottom, <stops[1]>, <stops[2]>, ..., <stops[n]>);
+ *
+ * @example
+ *   .selector {
+ *     @include x-multiple-colored-gradient(( "top", #aaa 0%, #bbb 50%, #ccc 100% ));
+ *   }
+ *
+ * Note: This mixis does not define a fallback-color for your background as it
+ * is likely you want to add an image or something. Please specify one by
+ * yourself.
+ */
+/**
+ * @description
+ * Generates `opacity` output for a given element and adds a filter for old IE.
+ *
+ * @author bartveneman
+ *
+ * @link caniuse http://caniuse.com/css-opacity
+ * @link spec http://www.w3.org/TR/css3-color/#transparency
+ *
+ * @param value
+ * @returns
+ *   opacity: <value>;
+ *       filter: alpha(opacity=<value * 100>);
+ *   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=<value * 100>)";
+ *
+ * @example
+ *   .selector {
+ *     @include x-opacity(0.3);
+ *   }
+ */
+/**
+ * @description
+ * This mixin will enable using the CSS3 value `rem`, which lets you define
+ * property-sizes based on the root-element's font-size.
+ *
+ * @author drublic
+ *
+ * @link caniuse http://caniuse.com/rem
+ * @link spec http://www.w3.org/TR/css3-values/#relative0
+ *
+ * @param property
+ * @param values
+ * @param default-font-size int optional
+ * @returns
+ *   <property>: (<value> * <default-font-size>)px;
+ *   <property>: <value>;
+ *
+ * @example
+ *   .selector {
+ *     @include x-rem(font-size, 1.3);
+ *   }
+ *
+ * Note: Depending on the font-size of the root-element `rem` calculates a
+ * property of a current element. The fallback solution excepts a
+ * `default-font-size`-argument which is 16px by default.
+ */
+/**
+ * @description
+ * Sass-mixin for CSS property `tab-size`, generates cross-browser-compatible
+ * `tab-size` output.
+ *
+ * @author drublic
+ *
+ * @link caniuse http://caniuse.com/css3-tabsize
+ * @link spec http://dev.w3.org/csswg/css-text/#tab-size1
+ *
+ * @param value int optional
+ * @default 4
+ * @returns
+ *   -moz-tab-size: <value>;
+ *        tab-size: <value>;
+ *
+ * @example
+ *   .selector {
+ *     @include x-tab-size(4);
+ *    }
+ */
+/**
+ * @description
+ * Generates cross-browser-compatible `transform` for a given element
+ *
+ * @author drublic
+ *
+ * @link caniuse http://caniuse.com/transforms2d http://caniuse.com/transforms3d
+ * @link spec
+ *
+ * @param values
+ * @returns
+ *   -webkit-transform: <values>;
+ *       -ms-transform: <values>;
+ *           transform: <values>;
+ *
+ * @example
+ *   .selector {
+ *     @include x-transform(rotate(1deg));
+ *   }
+ */
+/**
+ * @description
+ * Generates cross-browser-compatible `transition` output for a given element.
+ *
+ * @author drublic
+ *
+ * @link caniuse http://caniuse.com/css-transitions
+ * @link spec
+ *
+ * @param values
+ * @returns
+ *   -webkit-transition: <values>;
+ *           transition: <values>;
+ *
+ * @example
+ *   .selector {
+ *     @include x-transition(background 0.3s ease-in);
+ *   }
+ */
+/**
+ * @description
+ * Disables selection of content of a given element
+ *
+ * @author drublic
+ *
+ * @link caniuse http://caniuse.com/user-select-none
+ *
+ * @param value none|auto optional
+ * @default none
+ * @returns
+ *   -webkit-user-select: <value>;
+ *      -moz-user-select: <value>;
+ *       -ms-user-select: <value>;
+ *           user-select: <value>;
+ *
+ * @example
+ *   .selector {
+ *     @include x-user-select;
+ *   }
  */
 /* ==========================================================================
    Normalize.scss settings
@@ -603,6 +933,28 @@ textarea {
  */
 /**
  * All styles related to markup inside the footer
+ */
+/**
+ * An example module: Box
+ *
+ * @author Your Name
+ * @date 01.01.1970
+ */
+/*
+ * Configuration
+ * Use module specific variables and prefix them with the namespace.
+ *
+ * @example $box-background: #ddd;
+ */
+/*
+ * General styling
+ * Define general styles as abstract as possible for a module and build variants
+ * of your modules if you need to break out of the general style.
+ */
+/*
+ * Media Queries
+ * If you build mobile first or using another method you need Media Queries to
+ * target different screen sizes. These should be included module-wise.
  */
 @media print {
   /* ==========================================================================
