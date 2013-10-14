@@ -13,7 +13,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "test": "grunt travis --verbose"
+    "postinstall": "node_modules/.bin/bower install"
   },
   "engines": {
     "node": ">=0.10"
@@ -34,7 +34,6 @@
     "grunt-modernizr": "0.3.0",
     "grunt-replace": "0.5.1",
     "grunt-karma": "~0.6.1",
-
     "karma-script-launcher": "~0.1.0",
     "karma-chrome-launcher": "~0.1.0",
     "karma-firefox-launcher": "~0.1.0",
@@ -45,10 +44,8 @@
     "karma-phantomjs-launcher": "~0.1.0",
     "karma": "~0.10.1",
     "karma-safari-launcher": "~0.1.1",
-    "karma-opera-launcher": "~0.1.0"
-  },
-  "scripts": {
-    "postinstall" : "node_modules/.bin/bower install"
+    "karma-opera-launcher": "~0.1.0",
+    "glob": "~3.2.6"
   },
   "keywords": []
 }

@@ -1,76 +1,24 @@
 /**
- * Grunt configuration
+ * General Grunt setup
  */
-var config = {
+'use strict';
 
-	// A banner for distributed files (name, version, license, date)
-	banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - MIT License - ' +
-		'<%= grunt.template.today("yyyy-mm-dd") %> */',
+/**
+ * Load configuration files for Grunt
+ * @param  {string} path Path to folder with tasks
+ * @return {object}      All options
+ */
+var loadConfig = function (path) {
+	var glob = require('glob');
+	var object = {};
+	var key;
 
-	destDir: 'dist/',
+	glob.sync('*', {cwd: path}).forEach(function (option) {
+		key = option.replace(/\.js$/,'');
+		object[key] = require(path + option);
+	});
 
-	requirejs: '../components/requirejs/require',
-
-	// All files that should be checked with JSHint
-	jsHintFiles: [
-		'Gruntfile.js',
-		'js/**/*.js'
-	],
-
-	// Versioned references
-	replace: {
-		files: [
-			'*.html'
-		],
-		dest: [
-			'dist/'
-		],
-		deploy: {
-			maincss: '<%= pkg.version %>/main.min.css',
-			modernizr: '<%= pkg.version %>/modernizr.custom.min.js',
-			mainjs: '<script src="<%= pkg.version %>/main.min.js"></script>'
-		},
-		dev: {
-			maincss: 'css/main.css',
-			modernizr: '../components/modernizr/modernizr.js',
-			mainjs: '<script data-main="js/config" src="../components/requirejs/require.js"></script>'
-		}
-	},
-
-	// JavaScript files
-	js: {
-		files: [
-			'js/**/*.js'
-		],
-		config: 'js/config.js',
-		dest: 'dist/<%= pkg.version %>/main.min.js'
-	},
-
-	// Sass files
-	sass: {
-		files: [
-			'scss/**/*.scss'
-		],
-		src: 'scss/main.scss',
-		devDest: 'css/main.css',
-		dest: 'dist/<%= pkg.version %>/main.min.css'
-	},
-
-	// Modernizr files
-	modernizr: {
-		src: 'components/modernizr/modernizr.js',
-		dest: 'dist/<%= pkg.version %>/modernizr.custom.min.js'
-	},
-
-	// Images
-	img: {
-		src: 'img/',
-		dest: 'dist/img/'
-	},
-
-	tests: {
-		src: 'tests/**/*spec.js'
-	}
+	return object;
 };
 
 /*
@@ -78,234 +26,14 @@ var config = {
  */
 module.exports = function (grunt) {
 
-	'use strict';
+	var config = {
+		pkg: require('./package')
+	};
 
-	/*
-	 * Helper
-	 */
-	var helper = {};
+	grunt.util._.extend(config, loadConfig('./tasks/options/'));
 
-	helper.sassDev = {};
-	helper.sassDev[config.sass.devDest] = config.sass.src;
-	helper.sassProd = {};
-	helper.sassProd[config.sass.dest] = config.sass.src;
-
-	// Project configuration.
-	grunt.initConfig({
-		pkg: require('./package'),
-		meta: {
-			banner: config.banner
-		},
-
-		jshint: {
-			all: config.jsHintFiles,
-			options: {
-				jshintrc: '.jshintrc'
-			}
-		},
-
-		// Build modernizr
-		modernizr: {
-			devFile: config.modernizr.src,
-			outputFile: config.modernizr.dest,
-
-			extra: {
-				shiv: true,
-				mq: true
-			},
-
-			// Minify
-			uglify: true,
-
-			// Files
-			files: config.js.files.concat(config.sass.files)
-		},
-
-		sass: {
-			dev: {
-				options: {
-					unixNewlines: true,
-					style: 'expanded'
-				},
-				files: helper.sassDev
-			},
-			deploy: {
-				options: {
-					style: 'compressed',
-					banner: config.banner
-				},
-				files: helper.sassProd
-
-			}
-		},
-
-		requirejs: {
-			compile: {
-				options: {
-					mainConfigFile: config.js.config,
-					include: [config.requirejs],
-					out: config.js.dest,
-
-					// Wrap in IIFE
-					wrap: true,
-
-					// Source Maps
-					generateSourceMaps: true,
-
-					// Do not preserve license comments when working with source maps, incompatible.
-					preserveLicenseComments: false,
-
-					optimize: 'uglify2'
-				}
-			}
-		},
-
-		copy: {
-			deploy: {
-				files: [{
-					src: config.js.files,
-					dest: config.destDir
-				}]
-			}
-		},
-
-		// File versioning in build process
-		replace: {
-			deploy: {
-				options: {
-					patterns: [
-						{
-							match: 'maincss',
-							replacement: config.replace.deploy.maincss
-						},
-						{
-							match: 'modernizr',
-							replacement: config.replace.deploy.modernizr
-						},
-						{
-							match: 'mainjs',
-							replacement: config.replace.deploy.mainjs
-						}
-					]
-				},
-				files: [{
-					src: config.replace.files,
-					dest: config.destDir
-				}]
-			},
-			dev: {
-				options: {
-					patterns: [
-						{
-							match: 'maincss',
-							replacement: config.replace.dev.maincss
-						},
-						{
-							match: 'modernizr',
-							replacement: config.replace.dev.modernizr
-						},
-						{
-							match: 'mainjs',
-							replacement: config.replace.dev.mainjs
-						}
-					]
-				},
-				files: [{
-					src: config.replace.files,
-					dest: config.destDir
-				}]
-			}
-		},
-
-		// Lossless image optimization
-		imagemin: {
-			images: {
-				options: {
-					optimizationLevel: 5
-				},
-				files: [{
-					expand: true,
-					cwd: config.img.src,
-					src: ['**/*.{png,jpg,gif}'],
-					dest: config.img.dest
-				}]
-			}
-		},
-
-		// Server config
-		connect: {
-			test: {
-				port: 8000
-			},
-
-			server: {
-				options: {
-					port: 9001,
-					keepalive: true
-				}
-			}
-		},
-
-		// Configuration for Karma test-runner
-		karma: {
-			options: {
-				configFile: 'karma.conf.js',
-
-				proxies: {
-					'/base': 'http://localhost:<%= connect.test.port %>'
-				}
-			},
-
-			test: {
-				options: {
-
-					// Start these browsers
-					browsers: ['Chrome', 'Firefox', 'Safari', 'PhantomJS'],
-
-					plugins: [
-						'karma-jasmine',
-						'karma-chrome-launcher',
-						'karma-firefox-launcher',
-						'karma-safari-launcher',
-						'karma-phantomjs-launcher'
-					]
-				}
-			},
-
-			unit: {
-				options: {
-
-					// Use Phantom and Firefox for Travis
-					browsers: ['PhantomJS', 'Firefox']
-				}
-			}
-		},
-
-		watch: {
-			scss: {
-				files: config.sass.files,
-				tasks: 'sass:dev'
-			},
-
-			js: {
-				files: config.jsHintFiles,
-				tasks: ['jshint', 'connect:test', 'karma:unit']
-			},
-
-			karma: {
-				files: [config.jsHintFiles, config.tests.src],
-				tasks: ['connect:test', 'karma:unit']
-			}
-		},
-
-		// Setup concurrent tasks
-		concurrent: {
-			deploy1: ['jshint', 'modernizr', 'sass:deploy', 'imagemin', 'replace:deploy', 'copy'],
-			deploy2: ['requirejs', 'connect:test', 'karma:unit'],
-			dev1: ['jshint', 'connect:test', 'karma:test', 'sass:dev', 'replace:dev', 'copy'],
-			dev2: ['requirejs']
-		}
-	});
+	// Load project configuration
+	grunt.initConfig(config);
 
 	// Load all npm tasks through node-matchdep (fetches all tasks from package.json)
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);

@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Move all Grunt tasks into own file
 * Remove Jasmine task from Grunt
 * Add Karma as Test Suite
 * Add default logo.svg
