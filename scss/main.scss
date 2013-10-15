@@ -1,31 +1,30 @@
-/*!
- *	This project's description goes here
+/**
+ * This project's description goes here
  *
- *	@author		Some author's name
- *	@version	v0.0.0
- *
+ * @author  Some author's name
+ * @version v0.0.0
  */
 
 
 // Helpers
-@import "helpers/variables";
-@import "../components/sass-mixins/mixins";
-@import "../components/normalize-scss/normalize";
-@import "helpers/helpers";
+@import 'helpers/variables';
+@import '../components/sass-mixins/mixins';
+@import '../components/normalize-scss/normalize';
+@import 'helpers/helpers';
 
 // Typography and Elements
-@import "elements/typography";
+@import 'elements/typography';
 
 // Layout
-@import "page/base";
-@import "page/header";
-@import "page/main";
-@import "page/footer";
+@import 'page/base';
+@import 'page/header';
+@import 'page/main';
+@import 'page/footer';
 
 // Modules
-@import "modules/box";
+@import 'modules/box';
 
 // Print Stylesheets
 @media print {
-	@import "media/print";
+	@import 'media/print';
 }

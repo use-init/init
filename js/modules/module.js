@@ -1,8 +1,8 @@
 /**
  * An example module
  *
- * @author Hans Christian Reinl
- * @date 18.08.2013
+ * @author Author name
+ * @date 2013-08-18
  */
 
 define([
