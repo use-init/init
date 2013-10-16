@@ -8,10 +8,18 @@ module.exports = {
 		port: 8000
 	},
 
-	server: {
+	develop: {
 		options: {
 			port: 9001,
 			keepalive: true
+		}
+	},
+
+	prod: {
+		options: {
+			port: 8080,
+			keepalive: true,
+			base: 'dist'
 		}
 	}
 };

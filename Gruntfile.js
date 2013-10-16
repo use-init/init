@@ -38,11 +38,15 @@ module.exports = function (grunt) {
 	// Load all npm tasks through node-matchdep (fetches all tasks from package.json)
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
+	// Tasks for generating static pages
+	grunt.registerTask('pages:dev', ['concat', 'replace:dev', 'clean:temp']);
+	grunt.registerTask('pages:deploy', ['concat', 'replace:deploy', 'clean:temp']);
+
 	// A task for development
-	grunt.registerTask('dev', ['concurrent:dev1', 'concurrent:dev2']);
+	grunt.registerTask('dev', ['concurrent:dev1', 'concurrent:dev2', 'pages:dev']);
 
 	// A task for deployment
-	grunt.registerTask('deploy', ['concurrent:deploy1', 'concurrent:deploy2']);
+	grunt.registerTask('deploy', ['concurrent:deploy1', 'concurrent:deploy2', 'pages:deploy']);
 
 	// Default task
 	grunt.registerTask('default', ['dev']);
