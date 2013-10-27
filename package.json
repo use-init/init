@@ -34,7 +34,6 @@
     "grunt-contrib-watch": "0.5.3",
     "grunt-modernizr": "0.3.0",
     "grunt-replace": "0.5.1",
-    "grunt-karma": "~0.6.1",
     "grunt-karma": "~0.6.2",
     "karma-script-launcher": "~0.1.0",
     "karma-chrome-launcher": "~0.1.0",
