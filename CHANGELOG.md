@@ -2,6 +2,8 @@
 
 ### HEAD
 
+* Add an option to use templates for content
+* Add a build step for HTML files (#5)
 * Move all Grunt tasks into own file
 * Remove Jasmine task from Grunt
 * Add Karma as Test Suite
