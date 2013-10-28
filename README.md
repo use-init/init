@@ -3,6 +3,9 @@
 This project is based upon [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate) and adds more structure for SCSS files, JavaScripts, includes build tasks and a whole lot more.
 
 [![Build Status](https://secure.travis-ci.org/drublic/init.png?branch=master)](http://travis-ci.org/drublic/init)
+[![Dependency Status](https://david-dm.org/drublic/init.png)](https://david-dm.org/alanshaw/david-www)
+[![devDependency Status](https://david-dm.org/drublic/init/dev-status.png)](https://david-dm.org/alanshaw/david-www#info=devDependencies)
+
 
 ## Dependencies
 
