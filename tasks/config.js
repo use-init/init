@@ -59,7 +59,7 @@ module.exports = {
 
 	// Versioned references
 	replace: {
-		deploy: {
+		build: {
 			src: ['temp/index.html'],
 			dest: 'dist/index.html',
 			maincss: '<%= pkg.version %>/main.min.css',

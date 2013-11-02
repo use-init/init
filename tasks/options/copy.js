@@ -6,7 +6,7 @@
 var config = require('../config');
 
 module.exports = {
-	deploy: {
+	build: {
 		files: [{
 			src: config.js.files,
 			dest: config.destDir

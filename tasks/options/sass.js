@@ -23,7 +23,7 @@ module.exports = {
 		},
 		files: helper.sassDev
 	},
-	deploy: {
+	build: {
 		options: {
 			style: 'compressed',
 			banner: config.banner

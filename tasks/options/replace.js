@@ -6,23 +6,23 @@
 var config = require('../config');
 
 module.exports = {
-	deploy: {
+	build: {
 		options: {
 			patterns: [{
 				match: 'maincss',
-				replacement: config.replace.deploy.maincss
+				replacement: config.replace.build.maincss
 			}, {
 				match: 'modernizr',
-				replacement: config.replace.deploy.modernizr
+				replacement: config.replace.build.modernizr
 			}, {
 				match: 'mainjs',
-				replacement: config.replace.deploy.mainjs
+				replacement: config.replace.build.mainjs
 			}]
 		},
 
 		files: [{
-			src: config.replace.deploy.src,
-			dest: config.replace.deploy.dest,
+			src: config.replace.build.src,
+			dest: config.replace.build.dest,
 		}]
 	},
 

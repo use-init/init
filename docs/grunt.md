@@ -8,8 +8,8 @@ tasks you need for development and deployment of a web project.
 ## Used Tasks
 
 * [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint) hints your JavaScript code
-* [grunt-contrib-clean](https://github.com/gruntjs/grunt-contrib-clean) cleans your deployment directory before doing a new build
-* [grunt-contrib-copy](https://github.com/gruntjs/grunt-contrib-copy) copies files from the development directories into the deployment directory
+* [grunt-contrib-clean](https://github.com/gruntjs/grunt-contrib-clean) cleans your build directory before doing a new build
+* [grunt-contrib-copy](https://github.com/gruntjs/grunt-contrib-copy) copies files from the development directories into the build directory
 * [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch) watches files for changes
 * [grunt-contrib-sass](https://github.com/gruntjs/grunt-contrib-sass) runs the Sass task and builds the CSS files
 * [grunt-contrib-requirejs](https://github.com/gruntjs/grunt-contrib-requirejs) runs requireJS and builds the JS files
@@ -49,12 +49,12 @@ To listen continuously to changes you do in files (e.g. Sass) you can type:
 
 	$ grunt watch
 
-### Deployment
+### Creating a build
 
 As for deployment you want to only have the production files and might want a
 different output (e.g. minified and compressed JS and CSS files) there is a
 separate task to make a build:
 
-	$ grunt deploy
+	$ grunt build
 
 This generates the assets with the version number specified in package.json.

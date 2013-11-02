@@ -32,6 +32,6 @@ This runs the `watch` task in grunt which includes also the `sass --watch` task.
 
 To get a compressed, production ready CSS file simply run the following command:
 
-	grunt deploy
+	grunt build
 
 See the [documentation about grunt](grunt.md) for more information about this task.

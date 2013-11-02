@@ -66,7 +66,7 @@ We use jQuery, Modernizr (custom build via Grunt) and RequireJS.
 Please use JSHint for your JavaScript before you commit. You can use the Grunt-task `jshint` for this. It is also integrated in `grunt watch`.
 
 
-## Deployment
+## Creating a Build
 
 Please use [Grunt.js](https://github.com/gruntjs/grunt) for building a production-state of a website. The `Gruntfile.js` has tasks for concatenating and minifing CSS and JavaScript.
 

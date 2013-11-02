@@ -40,13 +40,13 @@ module.exports = function (grunt) {
 
 	// Tasks for generating static pages
 	grunt.registerTask('pages:dev', ['concat', 'replace:dev', 'clean:temp']);
-	grunt.registerTask('pages:deploy', ['concat', 'replace:deploy', 'clean:temp']);
+	grunt.registerTask('pages:build', ['concat', 'replace:build', 'clean:temp']);
 
 	// A task for development
 	grunt.registerTask('dev', ['concurrent:dev1', 'concurrent:dev2', 'pages:dev']);
 
 	// A task for deployment
-	grunt.registerTask('deploy', ['concurrent:deploy1', 'concurrent:deploy2', 'pages:deploy']);
+	grunt.registerTask('build', ['concurrent:build1', 'concurrent:build2', 'pages:build']);
 
 	// Default task
 	grunt.registerTask('default', ['dev']);
