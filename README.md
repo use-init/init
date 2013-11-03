@@ -29,10 +29,11 @@ After you've set this stuff up please run
 This installs the Grunt command line tools.
 Afterwards please run
 
-	$ npm install && bower install
+	$ npm install
 
 in your project's directory.
-This will install all the things you need for running the grunt-tasks automatically.
+This will install all the things you need for running the grunt-tasks
+automatically and all Bower components defined in `bower.json`.
 
 Also it will create a folder `components` which holds all vendor dependencies
 managed by Bower.
