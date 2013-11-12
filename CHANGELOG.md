@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Update to Apache Server Configs v2.0.0
 * Add an option to use templates for content
 * Add a build step for HTML files (#5)
 * Move all Grunt tasks into own file
@@ -16,7 +17,6 @@
 * Add Grunt task to optimize images (#26)
 * Add documentation about how to write modules with Sass
 * Add default markup (#31)
-* Update to Apache Server Configs v1.1.0
 * Remove media-query files in favor of inline media-queries
 * Add .bowerrc configuration file for Bower
 * Add test integration with Jasmine
