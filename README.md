@@ -46,6 +46,15 @@ If running the install does not work, please try running it as with admin-rights
 	$ sudo npm install -g grunt-cli
 
 
+## Browser support
+
+* Chrome
+* Firefox 4+
+* Internet Explorer 8+
+* Opera 12+
+* Safari 5+
+
+
 ## Contribute
 
 Please help making this project better and [contribute](CONTRIBUTING.md) with your knowledge.
