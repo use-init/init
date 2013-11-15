@@ -16,8 +16,8 @@
 		paths: {
 
 			// Location of tests
-			spec: '../tests/spec',
-			specs: '../tests/specs'
+			spec: '../test/spec',
+			specs: '../test/specs'
 		}
 	});
 

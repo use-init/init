@@ -14,7 +14,7 @@ module.exports = function(config) {
 		// List of files to load in the browser
 		files: [
 			'components/requirejs/require.js',
-			'tests/test-main.js'
+			'test/test-main.js'
 		]
 	});
 };

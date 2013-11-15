@@ -19,7 +19,7 @@ module.exports = {
 	jsHintFiles: [
 		'Gruntfile.js',
 		'js/**/*.js',
-		'tests/**/*.js'
+		'test/**/*.js'
 	],
 
 	// JavaScript files
@@ -54,7 +54,7 @@ module.exports = {
 	},
 
 	tests: {
-		src: 'tests/**/*spec.js'
+		src: 'test/**/*spec.js'
 	},
 
 	// Versioned references
