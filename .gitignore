@@ -10,3 +10,4 @@ dist
 index.html
 
 test/coverage
+test/dist

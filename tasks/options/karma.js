@@ -34,5 +34,22 @@ module.exports = {
 			// Use Phantom and Firefox for Travis
 			browsers: ['PhantomJS', 'Firefox']
 		}
+	},
+
+	prod: {
+		options: {
+
+			// Use Phantom for Jenkins
+			browsers: ['PhantomJS'],
+
+			frameworks: ['jasmine'],
+			reporters: ['progress'],
+
+			files: [
+				'dist/<%= pkg.version %>/main.min.js',
+				'test/dist/tests.min.js',
+				'test/test-main.js'
+			]
+		}
 	}
 };

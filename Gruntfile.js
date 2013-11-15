@@ -48,6 +48,9 @@ module.exports = function (grunt) {
 	// A task for deployment
 	grunt.registerTask('build', ['concurrent:build1', 'concurrent:build2', 'pages:build']);
 
+	// A task for testing production code
+	grunt.registerTask('test', ['requirejs:compile', 'requirejs:prod', 'connect:test', 'karma:prod']);
+
 	// Default task
 	grunt.registerTask('default', ['dev']);
 

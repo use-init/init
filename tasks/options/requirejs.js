@@ -23,5 +23,14 @@ module.exports = {
 
 			optimize: 'uglify2'
 		}
+	},
+
+	prod: {
+		options: {
+			baseUrl: './js',
+			include: [config.requirejs],
+			mainConfigFile: 'test/test-main.js',
+			out: 'test/dist/tests.min.js'
+		}
 	}
 };
