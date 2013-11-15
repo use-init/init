@@ -9,3 +9,4 @@ components
 dist
 index.html
 
+test/coverage

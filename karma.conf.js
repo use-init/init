@@ -9,11 +9,25 @@ module.exports = function(config) {
 		colors: true,
 		captureTimeout: 7000,
 
-		frameworks: ['jasmine'],
+		frameworks: ['jasmine', 'requirejs'],
+		reporters: ['progress', 'coverage'],
+
+		preprocessors: {
+			'js/**/*.js': 'coverage',
+		},
+
+		coverageReporter: {
+			type: 'text-summary',
+			dir: 'test/coverage/'
+		},
+
+		logLevel: 'INFO',
 
 		// List of files to load in the browser
 		files: [
-			'components/requirejs/require.js',
+			{ pattern: 'components/**/*.js', included: false },
+			{ pattern: 'js/**/*.js', included: false },
+			{ pattern: 'test/specs/**/*-spec.js', included: false },
 			'test/test-main.js'
 		]
 	});
