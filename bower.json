@@ -6,8 +6,8 @@
   "dependencies": {
     "jquery": "1.10.2",
     "normalize-scss": "~2.1.2",
-    "modernizr": "~2.6.3",
-    "requirejs": "~2.1.8",
+    "modernizr": "~2.7.0",
+    "requirejs": "~2.1.9",
     "sass-mixins": "~0.6.0"
   }
 }
