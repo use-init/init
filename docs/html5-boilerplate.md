@@ -1,9 +1,9 @@
 [&laquo; back to Table of Contents](TOC.md)
 
-[HTML5 Boilerplate homepage](http://html5boilerplate.com) |
-[Documentation](//github.com/h5bp/html5-boilerplate/blob/master/doc/TOC.md)
-
 # HTML5 Boilerplate documentation
+
+Please refer to the official [documentation](//github.com/h5bp/html5-boilerplate/blob/master/doc/TOC.md)
+for more information about [HTML5 Boilerplate](http://html5boilerplate.com).
 
 ## Getting started
 
