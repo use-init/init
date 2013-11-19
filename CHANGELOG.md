@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Add folder CSS to .gitignore
 * Update Modernizr to 2.7.0 and RequireJS to 2.1.9
 * Update to Apache Server Configs v2.0.0
 * Add an option to use templates for content
