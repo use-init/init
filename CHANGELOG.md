@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Update 404 template to latest version from HTML5 Boilerplate
 * Add folder CSS to .gitignore
 * Update Modernizr to 2.7.0 and RequireJS to 2.1.9
 * Update to Apache Server Configs v2.0.0
