@@ -5,6 +5,6 @@ define({
 	specs: [
 
 		// Load the example spec, add your own specifications here
-		'specs/example-spec'
+		'specs/example.spec'
 	]
 });
