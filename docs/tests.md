@@ -22,3 +22,9 @@ When adding a new test suite you need to do the following:
 * Name it `{{spec-name}}.spec.js`
 * Add the file name without the extension to the list of dependencies in `test/spec.js`
 * Wrap your test suite in a `define` function call as you can see here in order to get it working with RequireJS
+
+### Coverage
+Karma tests include a coverage report within the console.
+
+### Testing production code
+There is a test for all production code produced via Grunt with Karma. You can run `grunt test` to build a production version of your code, the Jasmine tests as a build with r.js and run them against the production package.
