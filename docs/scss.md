@@ -1,4 +1,6 @@
-# [Scss](scss.md)
+[&laquo; back to Table of Contents](TOC.md)
+
+# SCSS
 
 Init is using Sass with its .scss file format. Sass is a CSS preprocessor providing non-standardized functions and methods. You can read about the language in the [official Sass documentation](http://sass-lang.com/).
 

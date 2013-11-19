@@ -1,12 +1,14 @@
-[Frequently Asked Questions](FAQ.md)
+[&laquo; back to Table of Contents](TOC.md)
 
-# General
+# FAQ.md
 
-If you need assistance with the init-project please have a look at the [README](../README.md) and the [FAQ](FAQ.md) first. If you can't find a solution there, please [create an issue on github](https://github.com/drublic/init/issues) and provide all details necessary to reproduce your problem.
+## General
 
-# FAQ
+If you need assistance with the INIT project please have a look at the [README](../README.md) and documenation (TOC.md) first. If you can't find a solution there, please [create an issue on GitHub](https://github.com/drublic/init/issues) and provide all details necessary to reproduce your problem.
 
-### I am having issues with grunt aborting the task
+## FAQ
+
+### I am having issues with Grunt aborting the task
 
 It is likely jshint encountered problems in your code. Ensure you stick to the [`.jshintrc`](../.jshintrc) configuration and check again if jshint task outputs any warnings or errors.
 

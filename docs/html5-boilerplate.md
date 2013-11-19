@@ -1,3 +1,5 @@
+[&laquo; back to Table of Contents](TOC.md)
+
 [HTML5 Boilerplate homepage](http://html5boilerplate.com) |
 [Documentation](//github.com/h5bp/html5-boilerplate/blob/master/doc/TOC.md)
 

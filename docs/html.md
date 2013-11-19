@@ -1,8 +1,10 @@
-[HTML](html.md)
+[&laquo; back to Table of Contents](TOC.md)
+
+# HTML
 
 The HTML structure is mainly based on the famous [HTML5 Boilerplate](http://html5boilerplate.com/). While we use this as a base for our markup we add several things including a default markup for your page layout. This is very simple and it is strongly recommended to adapt this markup to your fits.
 
-# Legacy Internet Explorer
+## Legacy Internet Explorer
 
 To inform users of older Internet Explorers for which the project has not been optimized anymore we provide a Conditional Comment (by default targeting users of IE6 and lower) with a nice little toolbar appearing on top of your website. You are free to adapt this element via changing the text in the markup or adjusting the style via the [`.browsehappy` CSS class](../scss/page/_base.scss#L:85).
 
@@ -28,11 +30,11 @@ The last statement can also be simplified using Sass language by including it in
 
 Interpreted by Sass this will generate the same output as the example above except this is better readable in the original Sass file.
 
-# `<head>` Explanations
+## `<head>` Explanations
 
 In the `<head>` section we included some default markup which you might want to extend. Here are some tipps about what is added and what you can do.
 
-## Viewport
+### Viewport
 
 This statement forces the browser to adjust the viewport saying your website is optimized for all devices (Responsive Webdesign).
 
@@ -40,7 +42,7 @@ This statement forces the browser to adjust the viewport saying your website is 
 
 The property `initial-scale=1` is needed for iOS devices forcing the layout to be displayed unscaled. In rare cases you might want to add the property `user-scalable=no` which we strongly do not recommend to use if unless you really know what you are doing and have tested this.
 
-## WebFonts
+### WebFonts
 
 We do not include a webfont integration by default. You can do this by either including it via CSS ([@font-face]()), via external CSS file or via asynchronous JavaScript in the head section.
 
@@ -53,19 +55,19 @@ We strongly encourage you to make use of DNS prefetching for all requests you do
 
 This indicates to the browser that you will make a request somewhere in your HTML, CSS or JavaScript to one of the listes domains. The protocol does not matter as we let the browser fetch the DNS headers itself for both, http and https protocols. This feature can improve performance a lot.
 
-# Header
+## Header
 
 We provide a header markup including a `<h1>` tag for your title (can be a logo, too) and a menu via the `<nav>` tag. For accessibility we added some roles, `role="banner"` for the title and `role="navigation"` for the menu.
 
-# Main
+## Main
 
 The `<main>` element is the wrapper element for your main content. It also has for accessibility reason the provided ARIA `role="main"`. We don't provide any more structure inside this element.
 
-# Footer
+## Footer
 
 A footer is also provided for your copyright notice and additional links on your website.
 
-# JavaScript
+## JavaScript
 
 JavaScript is included in three parts for several reasons explained below.
 

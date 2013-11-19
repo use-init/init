@@ -1,4 +1,4 @@
-[grunt](grunt.md)
+[&laquo; back to Table of Contents](TOC.md)
 
 # GruntJS
 

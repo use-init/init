@@ -1,3 +1,5 @@
+[&laquo; back to Table of Contents](TOC.md)
+
 ## How you can write JavaScript
 
 We use RequireJS within this project. RequireJS is a Framework which manages
