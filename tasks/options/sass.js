@@ -23,12 +23,12 @@ module.exports = {
 		},
 		files: helper.sassDev
 	},
+
 	build: {
 		options: {
 			style: 'compressed',
 			banner: config.banner
 		},
 		files: helper.sassProd
-
 	}
 };

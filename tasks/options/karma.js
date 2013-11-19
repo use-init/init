@@ -12,6 +12,7 @@ module.exports = {
 		}
 	},
 
+	// Testing in all browsers
 	test: {
 		options: {
 
@@ -20,6 +21,8 @@ module.exports = {
 
 			plugins: [
 				'karma-jasmine',
+				'karma-requirejs',
+				'karma-coverage',
 				'karma-chrome-launcher',
 				'karma-firefox-launcher',
 				'karma-safari-launcher',
@@ -28,14 +31,17 @@ module.exports = {
 		}
 	},
 
+	// Travis
 	unit: {
 		options: {
 
 			// Use Phantom and Firefox for Travis
-			browsers: ['PhantomJS', 'Firefox']
+			browsers: ['PhantomJS', 'Firefox'],
+			reporters: ['progress']
 		}
 	},
 
+	// Production ready JS
 	prod: {
 		options: {
 
