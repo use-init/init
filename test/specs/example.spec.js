@@ -8,9 +8,12 @@ define(['modules/module'], function (module) {
 	// Test suite INIT
 	describe('INIT', function () {
 
-
 		it('is available', function () {
 			expect(module).not.toBe(null);
+		});
+
+		it('has getter for event name', function () {
+			expect(module.getEventName()).toBe('_test');
 		});
 
 		it('fires event on init', function () {
