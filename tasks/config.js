@@ -55,7 +55,8 @@ module.exports = {
 	},
 
 	tests: {
-		src: 'test/specs/**/*spec.js'
+		src: 'test/specs/**/*spec.js',
+		config: 'test/test-main.js'
 	},
 
 	// Versioned references

@@ -29,7 +29,7 @@ module.exports = {
 		options: {
 			baseUrl: './js',
 			include: [config.requirejs],
-			mainConfigFile: 'test/test-main.js',
+			mainConfigFile: config.tests.config,
 			out: 'test/dist/tests.min.js'
 		}
 	}
