@@ -1,39 +1,42 @@
 # Changelog
 
-### HEAD
+### 1.0.0 (20 November 2013)
 
-* Update 404 template to latest version from HTML5 Boilerplate
-* Add folder CSS to .gitignore
-* Update Modernizr to 2.7.0 and RequireJS to 2.1.9
-* Update to Apache Server Configs v2.0.0
-* Add an option to use templates for content
-* Add a build step for HTML files (#5)
-* Move all Grunt tasks into own file
-* Remove Jasmine task from Grunt
-* Add Karma as Test Suite
-* Add default logo.svg
-* Remove grunt-contrib-clean
-* Add node-matchdep to automatically fetch dependencies
-* Add clean Grunt config at beginning of Gruntfile (#46)
-* Use only one Apple Touch Icon
-* Restructre copying of files and dist-folder structure (#11)
-* Add Grunt task to optimize images (#26)
-* Add documentation about how to write modules with Sass
-* Add default markup (#31)
-* Remove media-query files in favor of inline media-queries
-* Add .bowerrc configuration file for Bower
-* Add test integration with Jasmine
-* Update Bower dependencies
-* Update npm module dependencies
-* Add AUTHORS file instead of specifiying it in package.json
-* Update jQuery to 1.10.2
-* Use Sass-Mixins (v0.4.1) via Bower
+#### Additions
 * Use Bower for package management and replace vendor packages (#24)
+* Add Karma as Test Suite
+* Add test integration with Jasmine
+* Add default markup (#31)
+* Add Grunt task to optimize images (#26)
+* Move all Grunt tasks into own file
+* Add node-matchdep to automatically fetch dependencies
+* Add a build step for HTML files (#5)
+* Add an option to use templates for content
+* Add documentation about how to write modules with Sass
+* Add default logo.svg
+
+#### Updates
+* Update Modernizr to 2.7.0
+* Update RequireJS to 2.1.9
+* Update to Apache Server Configs v2.0.0
+* Update jQuery to 1.10.2
+* Update normalize.css to 2.1.2 (removes IE 6 and 7 support)
+* Use Sass-Mixins v0.6.0
 * Update to Google Universal Analytics
+* Update 404 template to latest version from HTML5 Boilerplate
+
+#### Removals
 * Remove CC for IE7
 * Remove Chrome Frame support (#28)
-* Update normalize.css to 2.1.2 (removes IE 6 and 7 support)
+* Use only one Apple Touch Icon
+
+#### Other
+* Restructre copying of files and dist-folder structure (#11)
+* Remove media-query files in favor of inline media-queries
+* Add AUTHORS file instead of specifiying it in package.json
 * Use a variable for main text color (#30)
+* Add .bowerrc configuration file for Bower
+* Add folder CSS to .gitignore
 
 ### 0.9.1 (04 April 2013)
 
