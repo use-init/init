@@ -1,5 +1,10 @@
 # Changelog
 
+### HEAD
+
+* Remove regexp option from JSHint options
+* Fix broken link in template
+
 ### 1.0.0 (20 November 2013)
 
 #### Additions
