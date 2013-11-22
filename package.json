@@ -22,7 +22,7 @@
   "devDependencies": {
     "bower": "~1.2.7",
     "matchdep": "0.3.0",
-    "grunt": "0.4.x",
+    "grunt": "0.4.2",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-connect": "0.5.0",
     "grunt-contrib-copy": "0.4.1",
