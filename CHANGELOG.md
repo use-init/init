@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Update dependencies and devDependencies
 * Move Karma tests in `grunt build` without using concurrent (#62)
 * Remove regexp option from JSHint options
 * Fix broken link in template
