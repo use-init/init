@@ -2,6 +2,7 @@
 
 ### HEAD
 
+### 1.0.1 (26 November 2013)
 * Update dependencies and devDependencies
 * Move Karma tests in `grunt build` without using concurrent (#62)
 * Remove regexp option from JSHint options
