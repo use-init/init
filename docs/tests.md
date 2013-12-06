@@ -13,7 +13,7 @@ All testing frameworks run with GruntJS.
 All JavaScript files should be checked with JSHint for syntax errors before committing them.
 
 ## Running tests
-You can run tests by using the Grunt implementation. Just run `grunt connect:test krama:test` to run all tests with Karma.
+You can run tests by using the Grunt implementation. Just run `grunt connect:test karma:test` to run all tests with Karma.
 
 For a less extensive unit test with PhantomJS use `grunt connect:test karma:unit`.
 
