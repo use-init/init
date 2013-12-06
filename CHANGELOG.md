@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Remove grunt-concurrent
 * Update Modernizr to v2.7.0
 
 ### 1.0.1 (26 November 2013)

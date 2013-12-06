@@ -15,7 +15,6 @@ tasks you need for development and deployment of a web project.
 * [grunt-contrib-requirejs](https://github.com/gruntjs/grunt-contrib-requirejs) runs requireJS and builds the JS files
 * [grunt-modernizr](https://github.com/Modernizr/grunt-modernizr) builds a custom Modernizr build based on your used tests
 * [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect) runs a static web server with root on your working directory
-* [grunt-concurrent](https://github.com/sindresorhus/grunt-concurrent) runs tasks concurrently
 * [grunt-imageoptim](https://github.com/JamieMason/grunt-imageoptim) optimizes your images
 * [grunt-karma](https://github.com/karma-runner/grunt-karma) runs your JS unit-tests in different browsers
 

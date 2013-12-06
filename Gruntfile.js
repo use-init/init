@@ -43,10 +43,10 @@ module.exports = function (grunt) {
 	grunt.registerTask('pages:build', ['concat', 'replace:build', 'clean:temp']);
 
 	// A task for development
-	grunt.registerTask('dev', ['concurrent:dev1', 'concurrent:dev2', 'pages:dev']);
+	grunt.registerTask('dev', ['jshint', 'sass:dev', 'copy', 'requirejs', 'pages:dev']);
 
 	// A task for deployment
-	grunt.registerTask('build', ['concurrent:build1', 'concurrent:build2', 'connect:test', 'karma:unit', 'pages:build']);
+	grunt.registerTask('build', ['jshint', 'modernizr', 'sass:build', 'imagemin', 'copy', 'requirejs', 'connect:test', 'karma:unit', 'pages:build']);
 
 	// A task for testing production code
 	grunt.registerTask('test', ['requirejs:compile', 'requirejs:prod', 'connect:test', 'karma:prod']);
