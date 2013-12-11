@@ -2,10 +2,11 @@
 
 ### HEAD
 
+### 1.0.2 (11 December 2013)
 * Minor updates to .htaccess
 * Clean up Gruntfile
 * Remove grunt-concurrent
-* Update Modernizr to v2.7.0
+* Update Modernizr to v2.7.1
 
 ### 1.0.1 (26 November 2013)
 * Update dependencies and devDependencies
