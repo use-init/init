@@ -2,6 +2,8 @@
 
 ### HEAD
 
+* Minor updates to .htaccess
+* Clean up Gruntfile
 * Remove grunt-concurrent
 * Update Modernizr to v2.7.0
 
