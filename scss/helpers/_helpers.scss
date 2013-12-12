@@ -3,25 +3,6 @@
    ========================================================================== */
 
 /*
- * Image replacement
- */
-
-.ir {
-	background-color: transparent;
-	border: 0;
-	overflow: hidden;
-	/* IE 6/7 fallback */
-	*text-indent: -9999px;
-}
-
-.ir:before {
-	content: "";
-	display: block;
-	width: 0;
-	height: 150%;
-}
-
-/*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
 
