@@ -11,7 +11,7 @@ When starting a new project with init you will need to make sure to install some
 
 ## Clone the project
 
-	$ git clone git@github.com:drublic/init.git
+	$ git clone git@github.com:use-init/init.git
 
 This will create a local clone of init in a subfolder called 'init' in the directory you chose before in the command line. You can rename the folder name.
 

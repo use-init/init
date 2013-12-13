@@ -1,6 +1,6 @@
 # Contributing to init
 
-If you got something that's worth including into the project please [submit a Pull Request](https://github.com/drublic/init/issues) or [open an issue](https://github.com/drublic/init/issues) for further discussion.
+If you got something that's worth including into the project please [submit a Pull Request](https://github.com/use-init/init/issues) or [open an issue](https://github.com/use-init/init/issues) for further discussion.
 
 [@necolas](https://github.com/necolas) [wrote down some good guidelines](https://github.com/necolas/issue-guidelines) for contributing to his projects. Please keep these in mind when contributing to this project. <3
 

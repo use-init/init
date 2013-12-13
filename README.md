@@ -1,10 +1,10 @@
-# <img src="http://rawgithub.com/drublic/init/master/logo.svg" alt="INIT" title="INIT" width="200">
+# <img src="http://rawgithub.com/use-init/init/master/logo.svg" alt="INIT" title="INIT" width="200">
 
 This project is based upon [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate) and adds more structure for SCSS files, JavaScripts, includes build tasks and a whole lot more.
 
-[![Build Status](https://secure.travis-ci.org/drublic/init.png?branch=master)](http://travis-ci.org/drublic/init)
-[![Dependency Status](https://david-dm.org/drublic/init.png)](https://david-dm.org/drublic/init)
-[![devDependency Status](https://david-dm.org/drublic/init/dev-status.png)](https://david-dm.org/drublic/init#info=devDependencies)
+[![Build Status](https://secure.travis-ci.org/use-init/init.png?branch=master)](http://travis-ci.org/use-init/init)
+[![Dependency Status](https://david-dm.org/use-init/init.png)](https://david-dm.org/use-init/init)
+[![devDependency Status](https://david-dm.org/use-init/init/dev-status.png)](https://david-dm.org/use-init/init#info=devDependencies)
 
 
 ## Dependencies
@@ -85,7 +85,7 @@ Additional information on this project is stored in `package.json`.
 
 ## Development
 
-This package is developed and maintained by [Hans Christian Reinl](http://drublic.de/), [Anselm Hannemann](http://helloanselm.com/) and [more contributors](https://github.com/drublic/init/graphs/contributors).
+This package is developed and maintained by [Hans Christian Reinl](http://drublic.de/), [Anselm Hannemann](http://helloanselm.com/) and [more contributors](https://github.com/use-init/init/graphs/contributors).
 
 
 ## Credits
