@@ -2,7 +2,7 @@
 
 # General Purpose
 
-Init is a project is based upon HTML5 Boilerplate. It adds more structure to your SCSS files and JavaScripts and helps you staring your project faster by reducing boilerplate code and tasks.
+Init is a project is based upon HTML5 Boilerplate. It adds more structure to your SCSS and JavaScript files and helps you staring your project faster by reducing boilerplate code and tasks.
 Init includes build tasks for your projects, proivdes a test infrastructure and implements tools to help you creating web pages and apps fast.
 
 # Starting Point
