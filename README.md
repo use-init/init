@@ -55,6 +55,9 @@ If running the install does not work, please try running it as with admin-rights
 * Opera 12+
 * Safari 5+
 
+## Yeoman Generator-INIT
+
+INIT is also available as [Yeoman Generator](http://yeoman.io/generators.html) and is called [`generator-init`](https://github.com/use-init/generator-init). See the repository for detailed instruction and more information.
 
 ## Contribute
 
