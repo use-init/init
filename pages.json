@@ -6,5 +6,13 @@
       "templates/footer.html"
     ],
     "dest": "temp/index.html"
+  },
+  "resume": {
+    "src": [
+      "templates/header.html",
+      "templates/resume.html",
+      "templates/footer.html"
+    ],
+    "dest": "temp/resume.html"
   }
 }
