@@ -2,7 +2,9 @@
 
 ### HEAD
 
+* Update Grunt to 0.4.2
 * Minor updates of IE 6, 7 support
+* Removing .ir class, as it was done on HTML5 Boilerplate
 
 ### 1.0.2 (11 December 2013)
 * Minor updates to .htaccess
