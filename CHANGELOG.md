@@ -2,6 +2,8 @@
 
 ### HEAD
 
+* Minor updates of IE 6, 7 support
+
 ### 1.0.2 (11 December 2013)
 * Minor updates to .htaccess
 * Clean up Gruntfile
