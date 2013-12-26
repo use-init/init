@@ -3,7 +3,7 @@
  */
 'use strict';
 
-module.exports = function(config) {
+module.exports = function (config) {
 	config.set({
 		singleRun: true,
 		colors: true,
@@ -24,11 +24,15 @@ module.exports = function(config) {
 		logLevel: 'INFO',
 
 		// List of files to load in the browser
-		files: [
-			{ pattern: 'components/**/*.js', included: false },
-			{ pattern: 'js/**/*.js', included: false },
-			{ pattern: 'test/specs/**/*spec.js', included: false },
-			'test/test-main.js'
-		]
+		files: [{
+			pattern: 'components/**/*.js',
+			included: false
+		}, {
+			pattern: 'js/**/*.js',
+			included: false
+		}, {
+			pattern: 'test/specs/**/*spec.js',
+			included: false
+		}, 'test/test-main.js']
 	});
 };

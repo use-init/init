@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Clean up karma.conf.js
 * Use xtend instead of deprecated Grunt dependency Lodash
 * Update Grunt to 0.4.2
 * Minor updates of IE 6, 7 support
