@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Use xtend instead of deprecated Grunt dependency Lodash
 * Update Grunt to 0.4.2
 * Minor updates of IE 6, 7 support
 * Removing .ir class, as it was done on HTML5 Boilerplate

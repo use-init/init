@@ -3,6 +3,8 @@
  */
 'use strict';
 
+var xtend = require('xtend');
+
 /**
  * Load configuration files for Grunt
  * @param  {string} path Path to folder with tasks
@@ -26,11 +28,9 @@ var loadConfig = function (path) {
  */
 module.exports = function (grunt) {
 
-	var config = {
+	var config = xtend({
 		pkg: require('./package')
-	};
-
-	grunt.util._.extend(config, loadConfig('./tasks/options/'));
+	}, loadConfig('./tasks/options/'));
 
 	// Load project configuration
 	grunt.initConfig(config);
