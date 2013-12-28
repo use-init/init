@@ -1,6 +1,7 @@
 {
 	"node": true,
 	"browser": true,
+	"jquery": true,
 	"esnext": true,
 	"bitwise": true,
 	"camelcase": true,
@@ -17,9 +18,6 @@
 	"smarttabs": true,
 
 	"globals": {
-		"jQuery": true,
-		"$": true,
-
 		"module": true,
 		"require": true,
 		"requirejs": true,
