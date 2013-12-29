@@ -8,6 +8,7 @@ components
 css
 dist
 index.html
+resume.html
 node_modules
 test/coverage
 test/dist
