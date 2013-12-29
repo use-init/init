@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Add time-grunt to measure grunt's execution time
 * Use libsass instead of Ruby Sass
 * Clean up karma.conf.js
 * Use xtend instead of deprecated Grunt dependency Lodash
