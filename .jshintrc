@@ -23,6 +23,7 @@
 	 * Relaxing options
 	 * See http://www.jshint.com/docs/options/#relaxing-options
 	 */
+	"eqnull": true,
 	"esnext": true,
 	"smarttabs": true,
 
