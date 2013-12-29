@@ -20,12 +20,10 @@ This will create a local clone of init in a subfolder called 'init' in the direc
 ### Majors:
 
 * Node.js
-* Ruby
 
 #### Secondaries:
 
 * npm (comes with node)
-* Sass (Ruby gem: `$ gem install sass`)
 
 Apart from that we make use of GruntJS and you might want to install it globally via
 
