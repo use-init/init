@@ -7,12 +7,12 @@
     ],
     "dest": "temp/index.html"
   },
-  "resume": {
+  "about": {
     "src": [
       "templates/header.html",
-      "templates/resume.html",
+      "templates/about.html",
       "templates/footer.html"
     ],
-    "dest": "temp/resume.html"
+    "dest": "temp/about.html"
   }
 }
