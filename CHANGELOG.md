@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Update to Apache Server Configs v2.1.0
 * Simplified default template markup (#81)
 * Add time-grunt to measure grunt's execution time
 * Use libsass instead of Ruby Sass
