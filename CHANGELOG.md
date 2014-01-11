@@ -2,7 +2,8 @@
 
 ### HEAD
 
-* Update Sass-Mixins to 0.7.0 and npm dependencies to latest
+* Update 404 to reduce uncopressed size
+* Update Bower packages and npm dependencies to latest
 * Update to Apache Server Configs v2.1.0
 * Simplified default template markup (#81)
 * Add time-grunt to measure grunt's execution time
