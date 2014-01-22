@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Add `Disallow:` to `robots.txt`
 * Update 404 to reduce uncopressed size
 * Update Bower packages and npm dependencies to latest
 * Update to Apache Server Configs v2.1.0

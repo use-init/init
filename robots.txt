@@ -1,4 +1,5 @@
 # www.robotstxt.org/
-# https://developers.google.com/webmasters/control-crawl-index/
 
+# Allow crawling of all content
 User-agent: *
+Disallow:
