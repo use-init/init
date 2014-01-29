@@ -2,6 +2,8 @@
 
 ### HEAD
 
+### 1.1.0 (29 January 2014)
+* Further optimize `apple-touch-icon-precomposed`
 * Add `Disallow:` to `robots.txt`
 * Update 404 to reduce uncopressed size
 * Update Bower packages and npm dependencies to latest
