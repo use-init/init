@@ -2,6 +2,8 @@
 
 ### HEAD
 
+* Update to Apache Server Configs v2.2.0
+
 ### 1.1.0 (29 January 2014)
 * Further optimize `apple-touch-icon-precomposed`
 * Add `Disallow:` to `robots.txt`
