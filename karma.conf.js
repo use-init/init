@@ -21,7 +21,7 @@ module.exports = function (config) {
 			dir: 'test/coverage/'
 		},
 
-		logLevel: 'INFO',
+		logLevel: config.LOG_INFO,
 
 		// List of files to load in the browser
 		files: [{
