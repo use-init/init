@@ -7,7 +7,7 @@ require.config({
 	deps: ['plugins/console', 'main'],
 
 	paths: {
-		jquery: '../components/jquery/jquery.min'
+		jquery: '../components/jquery/dist/jquery.min'
 		// More additional paths here
 	},
 
