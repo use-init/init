@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Fix npm postinstall script for win32 systems (#89)
 * Update to Apache Server Configs v2.2.0
 
 ### 1.1.0 (29 January 2014)
