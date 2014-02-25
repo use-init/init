@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Update normalize-scss to v3.0.0
 * Fix npm postinstall script for win32 systems (#89)
 * Update to Apache Server Configs v2.2.0
 
