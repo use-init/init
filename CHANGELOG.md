@@ -2,6 +2,10 @@
 
 ### HEAD
 
+* Fix Grunt-Modernizr task for latest update
+* Update npm dependencies to latest versions
+* Use constant instead of string for Karma log level
+* Fix path of jQuery in config.js in order of v1.11.0 update
 * Update jQuery to v1.11.0
 * Update normalize-scss to v3.0.0
 * Fix npm postinstall script for win32 systems (#89)
