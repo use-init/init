@@ -2,6 +2,8 @@
 
 ### HEAD
 
+* Add `/browserconfig.xml` file and tile images
+
 ### 1.1.1 (04 March 2014)
 * Fix Grunt-Modernizr task for latest update
 * Update npm dependencies to latest versions
