@@ -5,7 +5,7 @@
 
 module.exports = {
 	options: {
-		configFile: 'karma.conf.js',
+		configFile: 'tasks/karma.conf.js',
 
 		proxies: {
 			'/base': 'http://localhost:<%= connect.test.port %>'

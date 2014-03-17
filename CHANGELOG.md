@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Move karma.config.js file to `tasks` directory
 * Add `/browserconfig.xml` file and tile images
 
 ### 1.1.1 (04 March 2014)
