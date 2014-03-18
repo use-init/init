@@ -19,14 +19,14 @@ module.exports = {
 	dev: {
 		options: {
 			unixNewlines: true,
-			style: 'expanded'
+			outputStyle: 'expanded'
 		},
 		files: helper.sassDev
 	},
 
 	build: {
 		options: {
-			style: 'compressed',
+			outputStyle: 'compressed',
 			banner: config.banner
 		},
 		files: helper.sassProd
