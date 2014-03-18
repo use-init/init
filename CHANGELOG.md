@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Fix non-compressed output on Sass files in build (#101)
 * Move karma.config.js file to `tasks` directory
 * Add `/browserconfig.xml` file and tile images
 
