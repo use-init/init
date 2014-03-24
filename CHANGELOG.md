@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Update dependencies to latest version
 * Add Sass 3.3 sourcemaps support (#99)
 * Fix output style again
 * Revert "Use libsass instead of Ruby Sass"
