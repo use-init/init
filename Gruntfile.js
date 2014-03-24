@@ -33,7 +33,7 @@ module.exports = function (grunt) {
 
 	var config = xtend({
 		pkg: require('./package')
-	}, loadConfig('./tasks/options/'));
+	}, loadConfig('./grunt/options/'));
 
 	// Load project configuration
 	grunt.initConfig(config);

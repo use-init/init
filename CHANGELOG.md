@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Rename `tasks` to `grunt`
 * Update bower components to lastest version
 * Update dependencies to latest version
 * Add Sass 3.3 sourcemaps support (#99)
