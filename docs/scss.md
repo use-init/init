@@ -3,7 +3,6 @@
 # SCSS
 
 Init is using Sass with its .scss file format. Sass is a CSS preprocessor providing non-standardized functions and methods. You can read about the language in the [official Sass documentation](http://sass-lang.com/).
-We use [libsass](https://github.com/hcatlin/libsass) which is a C implementation of Ruby Sass, thus faster.
 
 In init we modularize our styles in several components. We have therefore divided the styles in the following folders:
 

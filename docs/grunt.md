@@ -11,10 +11,10 @@ tasks you need for development and deployment of a web project.
 * [grunt-contrib-clean](https://github.com/gruntjs/grunt-contrib-clean) cleans your build directory before doing a new build
 * [grunt-contrib-copy](https://github.com/gruntjs/grunt-contrib-copy) copies files from the development directories into the build directory
 * [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch) watches files for changes
+* [grunt-contrib-sass](https://github.com/gruntjs/grunt-contrib-sass) runs the Sass task and builds the CSS files
 * [grunt-contrib-requirejs](https://github.com/gruntjs/grunt-contrib-requirejs) runs requireJS and builds the JS files
-* [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect) runs a static web server with root on your working directory
 * [grunt-modernizr](https://github.com/Modernizr/grunt-modernizr) builds a custom Modernizr build based on your used tests
-* [grunt-sass](https://github.com/sindresorhus/grunt-sass) runs the Sass task and builds the CSS files
+* [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect) runs a static web server with root on your working directory
 * [grunt-imageoptim](https://github.com/JamieMason/grunt-imageoptim) optimizes your images
 * [grunt-karma](https://github.com/karma-runner/grunt-karma) runs your JS unit-tests in different browsers
 
