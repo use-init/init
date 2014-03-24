@@ -2,6 +2,8 @@
 
 ### HEAD
 
+* Add Sass 3.3 sourcemaps support (#99)
+* Fix output style again
 * Revert "Use libsass instead of Ruby Sass"
 * Fix non-compressed output on Sass files in build (#101)
 * Move karma.config.js file to `tasks` directory
