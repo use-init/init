@@ -5,7 +5,7 @@
 
 module.exports = {
 	options: {
-		configFile: 'tasks/karma.conf.js',
+		configFile: 'grunt/karma.conf.js',
 
 		proxies: {
 			'/base': 'http://localhost:<%= connect.test.port %>'
@@ -52,9 +52,9 @@ module.exports = {
 			reporters: ['progress'],
 
 			files: [
-				'dist/<%= pkg.version %>/main.min.js',
-				'test/dist/tests.min.js',
-				'test/test-main.js'
+				'../dist/<%= pkg.version %>/main.min.js',
+				'../test/dist/tests.min.js',
+				'../test/test-main.js'
 			]
 		}
 	}

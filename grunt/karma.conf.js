@@ -13,7 +13,7 @@ module.exports = function (config) {
 		reporters: ['progress', 'coverage'],
 
 		preprocessors: {
-			'js/**/*.js': 'coverage',
+			'../js/**/*.js': 'coverage',
 		},
 
 		coverageReporter: {
@@ -25,14 +25,14 @@ module.exports = function (config) {
 
 		// List of files to load in the browser
 		files: [{
-			pattern: 'components/**/*.js',
+			pattern: '../components/**/*.js',
 			included: false
 		}, {
-			pattern: 'js/**/*.js',
+			pattern: '../js/**/*.js',
 			included: false
 		}, {
-			pattern: 'test/specs/**/*spec.js',
+			pattern: '../test/specs/**/*spec.js',
 			included: false
-		}, 'test/test-main.js']
+		}, '../test/test-main.js']
 	});
 };
