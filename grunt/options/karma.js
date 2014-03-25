@@ -17,17 +17,7 @@ module.exports = {
 		options: {
 
 			// Start these browsers
-			browsers: ['Chrome', 'Firefox', 'Safari', 'PhantomJS'],
-
-			plugins: [
-				'karma-jasmine',
-				'karma-requirejs',
-				'karma-coverage',
-				'karma-chrome-launcher',
-				'karma-firefox-launcher',
-				'karma-safari-launcher',
-				'karma-phantomjs-launcher'
-			]
+			browsers: ['Chrome', 'Firefox', 'Safari', 'PhantomJS']
 		}
 	},
 
@@ -36,8 +26,7 @@ module.exports = {
 		options: {
 
 			// Use Phantom and Firefox for Travis
-			browsers: ['PhantomJS', 'Firefox'],
-			reporters: ['progress']
+			browsers: ['PhantomJS', 'Firefox']
 		}
 	},
 
@@ -48,13 +37,12 @@ module.exports = {
 			// Use Phantom for Jenkins
 			browsers: ['PhantomJS'],
 
-			frameworks: ['jasmine'],
 			reporters: ['progress'],
 
 			files: [
-				'../dist/<%= pkg.version %>/main.min.js',
-				'../test/dist/tests.min.js',
-				'../test/test-main.js'
+				'dist/<%= pkg.version %>/main.min.js',
+				'test/dist/tests.min.js',
+				'test/test-main.js'
 			]
 		}
 	}

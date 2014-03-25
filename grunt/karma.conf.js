@@ -5,6 +5,8 @@
 
 module.exports = function (config) {
 	config.set({
+		basePath: '../',
+
 		singleRun: true,
 		colors: true,
 		captureTimeout: 7000,
@@ -13,26 +15,42 @@ module.exports = function (config) {
 		reporters: ['progress', 'coverage'],
 
 		preprocessors: {
-			'../js/**/*.js': 'coverage',
+			'js/**/*.js': 'coverage',
 		},
 
+		plugins: [
+			'karma-jasmine',
+			'karma-requirejs',
+			'karma-coverage',
+			'karma-chrome-launcher',
+			'karma-firefox-launcher',
+			'karma-safari-launcher',
+			'karma-phantomjs-launcher'
+		],
+
 		coverageReporter: {
-			type: 'text-summary',
-			dir: 'test/coverage/'
+			reporters: [{
+				type: 'text-summary',
+				dir: 'test/coverage/'
+			}, {
+				type: 'html',
+				dir: 'test/coverage/'
+			}]
 		},
 
 		logLevel: config.LOG_INFO,
 
 		// List of files to load in the browser
 		files: [{
-			pattern: '../components/**/*.js',
+			pattern: 'components/**/*.js',
 			included: false
 		}, {
-			pattern: '../js/**/*.js',
+			pattern: 'js/**/*.js',
 			included: false
 		}, {
-			pattern: '../test/specs/**/*spec.js',
+			pattern: 'test/specs/**/*spec.js',
 			included: false
-		}, '../test/test-main.js']
+		}, 'test/test-main.js']
 	});
 };
+
