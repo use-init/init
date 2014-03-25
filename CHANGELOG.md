@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Add directory `grunt/plugins` to include plugins for Grunt config
 * Rename `tasks` to `grunt`
 * Update bower components to lastest version
 * Update dependencies to latest version
