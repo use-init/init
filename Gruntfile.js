@@ -41,6 +41,12 @@ module.exports = function (grunt) {
 	// Load all npm tasks through node-matchdep (fetches all tasks from package.json)
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
+	// Load your own tasks
+	grunt.task.loadTasks('./grunt/tasks');
+
+	/**
+	 * A task to generate pages
+	 */
 	// Tasks for generating static pages
 	grunt.registerTask('pages:dev', [
 		'concat',
@@ -54,7 +60,9 @@ module.exports = function (grunt) {
 		'clean:temp'
 	]);
 
-	// A task for development
+	/**
+	 * A task for development
+	 */
 	grunt.registerTask('dev', [
 		'jshint',
 		'sass:dev',
@@ -63,7 +71,12 @@ module.exports = function (grunt) {
 		'pages:dev'
 	]);
 
-	// A task for deployment
+	// Default task
+	grunt.registerTask('default', ['dev']);
+
+	/**
+	 * A task for building your pages
+	 */
 	grunt.registerTask('build', [
 		'jshint',
 		'modernizr',
@@ -76,18 +89,26 @@ module.exports = function (grunt) {
 		'pages:build'
 	]);
 
-	// A task for testing production code
+	/**
+	 * Testing
+	 */
+	// A task for testing development code
 	grunt.registerTask('test', [
+		'connect:test',
+		'karma:unit'
+	]);
+
+	// A task for testing production code
+	grunt.registerTask('test:build', [
 		'requirejs:compile',
 		'requirejs:prod',
 		'connect:test',
 		'karma:prod'
 	]);
 
-	// Default task
-	grunt.registerTask('default', ['dev']);
-
-	// Travis CI task
+	/**
+	 * Travis CI task
+	 */
 	grunt.registerTask('travis', [
 		'jshint',
 		'connect:test',

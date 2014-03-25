@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Add `grunt/tasks` folder for own tasks
 * Update Karma configuration to work with new repository structure
 * Add directory `grunt/plugins` to include plugins for Grunt config
 * Rename `tasks` to `grunt`
