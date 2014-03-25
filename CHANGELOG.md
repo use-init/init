@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Use load-grunt-tasks instead of matchdep
 * Clean up Karma configuration and make coverage working with new version
 * Add `grunt/tasks` folder for own tasks
 * Add directory `grunt/plugins` to include plugins for Grunt config
