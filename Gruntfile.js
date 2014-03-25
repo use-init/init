@@ -38,8 +38,8 @@ module.exports = function (grunt) {
 	// Load project configuration
 	grunt.initConfig(config);
 
-	// Load all npm tasks through node-matchdep (fetches all tasks from package.json)
-	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+	// Load all npm tasks
+	require('load-grunt-tasks')(grunt);
 
 	// Load your own tasks
 	grunt.task.loadTasks('./grunt/tasks');
