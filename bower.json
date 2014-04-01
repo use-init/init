@@ -5,7 +5,7 @@
   "ignore": [],
   "dependencies": {
     "jquery": "1.11.0",
-    "normalize-scss": "3.0.0",
+    "normalize-scss": "3.0.1",
     "modernizr": "2.7.2",
     "requirejs": "2.1.11",
     "sass-mixins": "0.8.0"

@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Update component normalize.scss to v3.0.1
 * Use INIT logo for tiles and icons (#105)
 * Use load-grunt-tasks instead of matchdep
 * Add config option to add custom concat tasks (#87)
