@@ -2,6 +2,7 @@
 
 ### HEAD
 
+### 1.2.0 (2 April 2014)
 * Update component normalize.scss to v3.0.1
 * Use INIT logo for tiles and icons (#105)
 * Use load-grunt-tasks instead of matchdep
