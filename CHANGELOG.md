@@ -1,6 +1,7 @@
 # Changelog
 
 ### HEAD
+* Update to Apache Server Configs v2.3.0
 
 ### 1.2.0 (2 April 2014)
 * Update component normalize.scss to v3.0.1
