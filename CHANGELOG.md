@@ -1,6 +1,7 @@
 # Changelog
 
 ### HEAD
+* Update npm packages to their latest version
 * Update to Apache Server Configs v2.3.0
 
 ### 1.2.0 (2 April 2014)
