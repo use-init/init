@@ -15,7 +15,7 @@ for more information about [HTML5 Boilerplate](http://html5boilerplate.com).
 * [HTML](//github.com/h5bp/html5-boilerplate/blob/master/doc/html.md) — A guide to the default HTML.
 * [CSS](//github.com/h5bp/html5-boilerplate/blob/master/doc/css.md) — A guide to the default CSS.
 * [JavaScript](//github.com/h5bp/html5-boilerplate/blob/master/doc/js.md) — A guide to the default JavaScript.
-* [.htaccess](//github.com/h5bp/server-configs-apache/tree/master/doc)
+* [.htaccess](//github.com/h5bp/server-configs-apache/blob/master/.htaccess)
   — All about the Apache web server configs (also see our [alternative server
   configs](//github.com/h5bp/server-configs/blob/master/README.md)).
 * [crossdomain.xml](//github.com/h5bp/html5-boilerplate/blob/master/doc/crossdomain.md) — An introduction to making use of

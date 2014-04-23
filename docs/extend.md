@@ -13,7 +13,7 @@ As we are using NPM, GruntJS and bower it is straight forward to extend the proj
 
 If you use the livereload app to instantly update your page in the browser you can trigger this via GruntJS.
 
-In the `Gruntfile.js` add the following code at the bottom of the `grunt.initConfig`:
+In the [`Gruntfile.js`](../Gruntfile.js) add the following code at the bottom of the `grunt.initConfig`:
 
 	grunt.initConfig({
 		// INIT basic tasks
@@ -31,8 +31,8 @@ If the LiveReload helper App is running on your system by now your code should b
 While we are using the imagemin task by default to optimize all your JPG, PNG, GIF images by compressing them losslessly you can do nearly the same for SVG. What you need is the `grunt-svgmin` package.
 
 1. Add the package by simply adding `"grunt-svgmin": "0.2.0"` to the [`package.json`](../package.json) file to the devDependencies.
-2. If to the Command line / Terminal and enter `npm install` to install the package
-3. In the `Gruntfile.js` add the following code to the config section on top of the file:
+2. If to the Command line / Terminal and enter `$ npm install` to install the package
+3. In the [`Gruntfile.js`](../Gruntfile.js) add the following code to the config section on top of the file:
 
 		// SVG files
 		svg: {
@@ -40,7 +40,7 @@ While we are using the imagemin task by default to optimize all your JPG, PNG, G
 			dest: 'dist/img/'
 		},
 
-4. In the `Gruntfile.js` add the following code at the bottom of the `grunt.initConfig`:
+4. In the [`Gruntfile.js`](../Gruntfile.js) add the following code at the bottom of the `grunt.initConfig`:
 
 		grunt.initConfig({
 			// INIT basic tasks

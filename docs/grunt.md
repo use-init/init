@@ -26,7 +26,7 @@ This file includes all metadata of a project and the dependency packages. The fi
 The first part includes the metadata of the package as well as a link to the repository URL and website.
 Following links to the bug reporting tool, license and additional scripts (in our case we use `grunt travis` for example) you can find all dependency packages listed in here with the used versions.
 
-### [Gruntfile.js](../Gruntfile.js)
+### [`Gruntfile.js`](../Gruntfile.js)
 
 The Gruntfile is the configuration and task command file. In there you can first find a configuration of all used components (usually includes the source and target directories where the task should be applied to).
 Then you will find a snippet loading all npm-tasks from package.json automatically. This means when you add a package in package.json it will automatically be loaded in the Gruntfile.
@@ -56,4 +56,4 @@ separate task to make a build:
 
 	$ grunt build
 
-This generates the assets with the version number specified in package.json.
+This generates the assets with the version number specified in [`package.json`](../package.json).

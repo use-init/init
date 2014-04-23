@@ -4,7 +4,7 @@
 
 ## General
 
-If you need assistance with the INIT project please have a look at the [README](../README.md) and documenation (TOC.md) first. If you can't find a solution there, please [create an issue on GitHub](https://github.com/use-init/init/issues) and provide all details necessary to reproduce your problem.
+If you need assistance with the INIT project please have a look at the [README](../README.md) and documenation ([TOC.md](TOC.md)) first. If you can't find a solution there, please [create an issue on GitHub](https://github.com/use-init/init/issues) and provide all details necessary to reproduce your problem.
 
 ## FAQ
 
@@ -14,7 +14,7 @@ It is likely [JSHint](http://www.jshint.com/) encountered problems in your code.
 
 You might also make sure that all dependencies are installed propertly. Please [see the Usage section](usage.md) for more information.
 
-Also if you added new Sass files ensure you add them not only as files but also in main.scss as import with the proper name.
+Also if you added new Sass files ensure you add them not only as files but also in [`main.scss`](../scss/main.scss) as import with the proper name.
 
 ### I am getting a warning about `.jshintrc` config.
 

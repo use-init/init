@@ -14,7 +14,6 @@
 * [Build process](grunt.md) - A detailed guide to the GruntJS configs.
 * [Testing](tests.md) — How to test your code with INIT.
 * [Custom File Concatenation](concat.md) — How to concatenate your files with INIT.
-* [Some other things](misc.md).
 
 ## Extend INIT
 

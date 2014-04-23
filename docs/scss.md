@@ -4,7 +4,7 @@
 
 Init is using Sass with its .scss file format. Sass is a CSS preprocessor providing non-standardized functions and methods. You can read about the language in the [official Sass documentation](http://sass-lang.com/).
 
-In init we modularize our styles in several components. We have therefore divided the styles in the following folders:
+In INIT we modularize our styles in several components. We have therefore divided the styles into the following folders:
 
 - [elements](../scss/elements) contains `_typography.scss` by default where you put your typographic styles in.
 - [helpers](../scss/helpers) contains `_helpers.scss` like `.clearfix` / `.hidden` classes.
@@ -16,13 +16,13 @@ Most of the files contain some raw styles or example code so you can just view t
 
 ## Sass-Mixins
 
-We added some useful Sass Mixins to INIT as a Bower module so you can use them right away. Please refer to the [offical documentation of Sass-Mixins](https://github.com/drublic/Sass-Mixins/blob/master/README.md) for usage instructions and report bugs from there to the project.
+We added some useful Sass Mixins to INIT as a Bower module so you can use them right away. Please refer to the [offical documentation of Sass-Mixins](//github.com/drublic/Sass-Mixins/blob/master/README.md) for usage instructions and report bugs from there to the project.
 
 ## Concatenation
 
 As we use several single Sass-files they need to be concatenated for usage in your project. This is done by the Sass `@import` function within the [`scss/main.scss`](../scss/main.scss) file. As you can see there you just type the folder and name of the file without the leading `_` and without the file ending to import a file.
 
-Notice: Don't forget to import a file in main.scss if you created a new one in the Sass structure so it will be added to the main.css file you use in your project.
+Notice: Don't forget to import a file in `main.scss` if you created a new one in the Sass structure so it will be added to the `main.css` file you use in your project.
 
 ## CSS Style
 

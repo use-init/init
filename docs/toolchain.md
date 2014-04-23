@@ -20,4 +20,4 @@ You can easily install more components. Please refer to Bower's docs for more in
 [RequireJS](http://requirejs.org/) is a JavaScript module loader that helps your organize your dependency-management within JavaScript.
 
 ## Karma
-[Karma](http://karma-runner.github.io/) is a testrunner, running JavaScript unit tests in different browsers. INIT makes use of Karma with [Jasmine](http://pivotal.github.io/jasmine/) as testing library.
+[Karma](http://karma-runner.github.io/) is a testrunner, running JavaScript unit tests in different browsers. INIT makes use of Karma with [Jasmine](http://jasmine.github.io/) as testing library.

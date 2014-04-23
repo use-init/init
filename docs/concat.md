@@ -10,7 +10,7 @@ prototype / HTML page.
 ## Add custom concat tasks
 
 You can add custom tasks to concatenate files. Add your custom concatenations to
-the config object in `config.js`.
+the config object in [`config.js`](../js/config.js).
 
 A sample custom config object could look like:
 

@@ -13,9 +13,9 @@ All testing frameworks run with GruntJS.
 All JavaScript files should be checked with JSHint for syntax errors before committing them.
 
 ## Running tests
-You can run tests by using the Grunt implementation. Just run `grunt connect:test karma:test` to run all tests with Karma.
+You can run tests by using the Grunt implementation. Just run `$ grunt connect:test karma:test` to run all tests with Karma.
 
-For a less extensive unit test with PhantomJS use `grunt connect:test karma:unit`.
+For a less extensive unit test with PhantomJS use `$ grunt connect:test karma:unit`.
 
 ## How to set up a Jasmine Test suite
 When adding a new test suite you need to do the following:
@@ -29,4 +29,4 @@ When adding a new test suite you need to do the following:
 Karma tests include a coverage report within the console.
 
 ### Testing production code
-There is a test for all production code produced via Grunt with Karma. You can run `grunt test` to build a production version of your code, the Jasmine tests as a build with r.js and run them against the production package.
+There is a test for all production code produced via Grunt with Karma. You can run `$ grunt test` to build a production version of your code, the Jasmine tests as a build with r.js and run them against the production package.
