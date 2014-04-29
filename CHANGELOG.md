@@ -1,6 +1,7 @@
 # Changelog
 
 ### HEAD
+* Update component Modernizr to v2.8.0
 * Update npm packages to their latest version
 * Update to Apache Server Configs v2.3.0
 
