@@ -4,7 +4,7 @@
   "main": "",
   "ignore": [],
   "dependencies": {
-    "jquery": "1.11.0",
+    "jquery": "1.11.1",
     "normalize-scss": "3.0.1",
     "modernizr": "2.8.0",
     "requirejs": "2.1.11",
