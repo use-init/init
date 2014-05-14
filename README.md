@@ -5,9 +5,9 @@ This project is based upon
 structure for SCSS and JavaScript files, includes build tasks and a whole lot
 more.
 
-[![Build Status](https://secure.travis-ci.org/use-init/init.png?branch=master)](http://travis-ci.org/use-init/init)
-[![Dependency Status](https://david-dm.org/use-init/init.png)](https://david-dm.org/use-init/init)
-[![devDependency Status](https://david-dm.org/use-init/init/dev-status.png)](https://david-dm.org/use-init/init#info=devDependencies)
+[![Build Status](https://secure.travis-ci.org/use-init/init.svg?branch=master)](http://travis-ci.org/use-init/init)
+[![Dependency Status](https://david-dm.org/use-init/init.svg)](https://david-dm.org/use-init/init)
+[![devDependency Status](https://david-dm.org/use-init/init/dev-status.svg)](https://david-dm.org/use-init/init#info=devDependencies)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 
