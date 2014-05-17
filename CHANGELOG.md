@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Add `lang=""` to `<html>`
 * Use `<!doctype html>` instead of `<!DOCTYPE html>`
 * Update component jQuery to 1.11.1
 * Update component Modernizr to v2.8.0
