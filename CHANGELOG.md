@@ -2,12 +2,12 @@
 
 ### HEAD
 
+* Update to Apache Server Configs v2.4.0
 * Add `lang=""` to `<html>`
 * Use `<!doctype html>` instead of `<!DOCTYPE html>`
 * Update component jQuery to 1.11.1
 * Update component Modernizr to v2.8.0
 * Update npm packages to their latest version
-* Update to Apache Server Configs v2.3.0
 
 ### 1.2.0 (2 April 2014)
 * Update component normalize.scss to v3.0.1
