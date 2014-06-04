@@ -2,6 +2,7 @@
 
 ### HEAD
 
+### 1.3.0 (4 June 2014)
 * Update to Apache Server Configs v2.4.0
 * Add `lang=""` to `<html>`
 * Use `<!doctype html>` instead of `<!DOCTYPE html>`
