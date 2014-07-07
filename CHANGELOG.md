@@ -1,7 +1,7 @@
 # Changelog
 
 ### HEAD
-* Update to Apache Server Configs v2.5.0
+* Update to Apache Server Configs v2.6.0
 * Update bower and npm dependencies
 
 ### 1.3.0 (4 June 2014)
