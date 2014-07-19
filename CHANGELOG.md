@@ -1,10 +1,10 @@
 # Changelog
 
 ### HEAD
+* Update `bower` and `npm` dependencies
 * Add `auto` to the Google Universal Analytics tracker create method
 * Add `timeline` and `timelineEnd` to the list of `console` methods
 * Update to Apache Server Configs v2.6.0
-* Update bower and npm dependencies
 
 ### 1.3.0 (4 June 2014)
 * Update to Apache Server Configs v2.4.0
