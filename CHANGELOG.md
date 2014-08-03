@@ -1,6 +1,7 @@
 # Changelog
 
 ### HEAD
+* Remove proxy from Karma configuration since it is not needed
 * Remove `connect:test` task from Grunt
 * Order .jshintrc options alphabetically
 * Update 404 to latest from HTML5 Boilerplate

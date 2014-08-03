@@ -5,11 +5,7 @@
 
 module.exports = {
 	options: {
-		configFile: 'grunt/karma.conf.js',
-
-		proxies: {
-			'/base': 'http://localhost:<%= connect.test.port %>'
-		}
+		configFile: 'grunt/karma.conf.js'
 	},
 
 	// Testing in all browsers
