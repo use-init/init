@@ -14,10 +14,10 @@
 	"latedef": true,
 	"newcap": true,
 	"noarg": true,
-	"undef": true,
-	"unused": true,
 	"strict": true,
 	"trailing": true,
+	"undef": true,
+	"unused": true,
 
 	/**
 	 * Relaxing options
@@ -31,9 +31,9 @@
 	 * Environments
 	 * See http://www.jshint.com/docs/options/#environments
 	 */
-	"node": true,
 	"browser": true,
 	"jquery": true,
+	"node": true,
 
 	/**
 	 * Globals
@@ -41,17 +41,18 @@
 	 */
 	"globals": {
 		// RequireJS
+		"define": true,
 		"module": true,
 		"require": true,
 		"requirejs": true,
-		"define": true,
 
 		// Jasmin
-		"sinon": true,
-		"describe": true,
-		"it": true,
-		"expect": true,
+		"jasmine": true,
+		"afterEach": true,
 		"beforeEach": true,
-		"afterEach": true
+		"describe": true,
+		"expect": true,
+		"it": true,
+		"sinon": true
 	}
 }
