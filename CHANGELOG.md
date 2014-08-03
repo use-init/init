@@ -1,6 +1,7 @@
 # Changelog
 
 ### HEAD
+* Make structure for test suites easier to unterstand
 * Update `bower` and `npm` dependencies
 * Add `auto` to the Google Universal Analytics tracker create method
 * Add `timeline` and `timelineEnd` to the list of `console` methods

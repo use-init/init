@@ -10,24 +10,11 @@
 		// Set baseUrl for Karma
 		baseUrl: 'base/js',
 
-		deps: ['config'],
-
-		// Location of tests
-		paths: {
-
-			// Location of tests
-			spec: '../test/spec',
-			specs: '../test/specs'
-		}
+		deps: ['config']
 	});
 
-	require(['spec'], function (spec) {
-
-		// Load all specs
-		require(spec.specs, function () {
-
-			// Start Karma
-			window.__karma__.start();
-		});
-	});
+	// Load the example spec, add your own specifications here
+	require([
+		'../test/specs/example.spec'
+	], window.__karma__.start);
 }());
