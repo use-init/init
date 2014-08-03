@@ -1,6 +1,7 @@
 # Changelog
 
 ### HEAD
+* Update to Apache Server Configs v2.7.1
 * Integrate jit-grunt
 * Remove proxy from Karma configuration since it is not needed
 * Remove `connect:test` task from Grunt
@@ -10,7 +11,6 @@
 * Update `bower` and `npm` dependencies
 * Add `auto` to the Google Universal Analytics tracker create method
 * Add `timeline` and `timelineEnd` to the list of `console` methods
-* Update to Apache Server Configs v2.6.0
 
 ### 1.3.0 (4 June 2014)
 * Update to Apache Server Configs v2.4.0
