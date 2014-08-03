@@ -8,7 +8,7 @@
 	require.config({
 
 		// Set baseUrl for Karma
-		baseUrl: 'base/js',
+		baseUrl: 'http://localhost:9876/base/js/',
 
 		deps: ['config']
 	});

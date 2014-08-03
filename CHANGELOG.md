@@ -1,6 +1,7 @@
 # Changelog
 
 ### HEAD
+* Remove timestamp logging when running Karma
 * Update to Apache Server Configs v2.7.1
 * Integrate jit-grunt
 * Remove proxy from Karma configuration since it is not needed
