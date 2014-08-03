@@ -38,8 +38,8 @@ module.exports = function (grunt) {
 	// Load project configuration
 	grunt.initConfig(config);
 
-	// Load all npm tasks
-	require('load-grunt-tasks')(grunt);
+	// Load all npm tasks through jit-grunt (all tasks from node_modules)
+	require('jit-grunt')(grunt);
 
 	// Load your own tasks
 	grunt.task.loadTasks('./grunt/tasks');

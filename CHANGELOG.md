@@ -1,6 +1,7 @@
 # Changelog
 
 ### HEAD
+* Integrate jit-grunt
 * Remove proxy from Karma configuration since it is not needed
 * Remove `connect:test` task from Grunt
 * Order .jshintrc options alphabetically
