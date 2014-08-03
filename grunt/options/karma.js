@@ -30,7 +30,7 @@ module.exports = {
 		}
 	},
 
-	// Production ready JS
+	// Production-ready JS
 	prod: {
 		options: {
 

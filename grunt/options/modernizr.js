@@ -18,7 +18,7 @@ module.exports = {
 		// Minify
 		uglify: true,
 
-		// Files
+		// Files from configuration
 		files: {
 			src: config.js.files.concat(config.sass.files)
 		}
