@@ -1,6 +1,7 @@
 # Changelog
 
 ### HEAD
+* Remove `connect:test` task from Grunt
 * Order .jshintrc options alphabetically
 * Update 404 to latest from HTML5 Boilerplate
 * Make structure for test suites easier to unterstand

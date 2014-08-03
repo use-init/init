@@ -84,7 +84,6 @@ module.exports = function (grunt) {
 		'imagemin',
 		'copy',
 		'requirejs',
-		'connect:test',
 		'karma:unit',
 		'pages:build'
 	]);
@@ -94,7 +93,6 @@ module.exports = function (grunt) {
 	 */
 	// A task for testing development code
 	grunt.registerTask('test', [
-		'connect:test',
 		'karma:unit'
 	]);
 
@@ -102,7 +100,6 @@ module.exports = function (grunt) {
 	grunt.registerTask('test:build', [
 		'requirejs:compile',
 		'requirejs:prod',
-		'connect:test',
 		'karma:prod'
 	]);
 
@@ -111,7 +108,6 @@ module.exports = function (grunt) {
 	 */
 	grunt.registerTask('travis', [
 		'jshint',
-		'connect:test',
 		'karma:unit'
 	]);
 

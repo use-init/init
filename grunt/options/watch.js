@@ -12,12 +12,7 @@ module.exports = {
 	},
 
 	js: {
-		files: config.jsHintFiles,
-		tasks: ['jshint', 'connect:test', 'karma:unit']
-	},
-
-	karma: {
 		files: [config.jsHintFiles, config.tests.src],
-		tasks: ['connect:test', 'karma:unit']
+		tasks: ['jshint', 'karma:unit']
 	}
 };

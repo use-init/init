@@ -4,10 +4,6 @@
 'use strict';
 
 module.exports = {
-	test: {
-		port: 8000
-	},
-
 	develop: {
 		options: {
 			port: 9001,
