@@ -1,7 +1,9 @@
-// Avoid `console` errors in browsers that lack a console.
+// Enhance console.log / console.warn output in browsers and avoid errors
+// in browsers that lack a console.
 (function() {
 	'use strict';
 
+	// Avoid `console` errors in browsers that lack a console.
 	var method;
 	var noop = function () {};
 	var methods = [
@@ -21,4 +23,24 @@
 			console[method] = noop;
 		}
 	}
+
+	var methodsToEnhance = ['log', 'warn'];
+	var old;
+	var stack;
+	var args;
+
+	methodsToEnhance.forEach(function (method) {
+		old = console[method];
+
+		console[method] = function () {
+			stack = (new Error()).stack.split(/\n/);
+			// Chrome includes a single "Error" line, FF doesn't.
+			if (stack[0].indexOf('Error') === 0) {
+				stack = stack.slice(1);
+			}
+			args = [].slice.apply(arguments).concat([stack[1].trim()]);
+
+			return old.apply(console, args);
+		};
+	});
 }());
