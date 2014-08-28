@@ -5,6 +5,7 @@
 
 	// Avoid `console` errors in browsers that lack a console.
 	var method;
+	var methodsToEnhance = ['log', 'warn'];
 	var noop = function () {};
 	var methods = [
 		'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
@@ -15,6 +16,22 @@
 	var length = methods.length;
 	var console = (window.console = window.console || {});
 
+	var methodFunction = function (old) {
+		return function () {
+			var args;
+			var stack = (new Error()).stack.split(/\n/);
+
+			// Chrome includes a single "Error" line, FF doesn't.
+			if (stack[0].indexOf('Error') === 0) {
+				stack = stack.slice(1);
+			}
+
+			args = [].slice.apply(arguments).concat([stack[1].trim()]);
+
+			return old.apply(console, args);
+		};
+	};
+
 	while (length--) {
 		method = methods[length];
 
@@ -22,25 +39,9 @@
 		if (!console[method]) {
 			console[method] = noop;
 		}
+
+		if (Array.prototype.indexOf && methodsToEnhance.indexOf(method) > -1) {
+			console[method] = methodFunction(console[method]);
+		}
 	}
-
-	var methodsToEnhance = ['log', 'warn'];
-	var old;
-	var stack;
-	var args;
-
-	methodsToEnhance.forEach(function (method) {
-		old = console[method];
-
-		console[method] = function () {
-			stack = (new Error()).stack.split(/\n/);
-			// Chrome includes a single "Error" line, FF doesn't.
-			if (stack[0].indexOf('Error') === 0) {
-				stack = stack.slice(1);
-			}
-			args = [].slice.apply(arguments).concat([stack[1].trim()]);
-
-			return old.apply(console, args);
-		};
-	});
 }());
