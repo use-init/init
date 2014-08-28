@@ -120,7 +120,3 @@ and optimized by [Stefan Nitzsche](http://www.stn.my/).
 Please be aware of the licenses of each component we use in this project.
 Everything else that has been developed by the contributions to this project is
 under [MIT License](LICENSE.md).
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/use-init/init/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
