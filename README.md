@@ -23,7 +23,7 @@ Majors:
 Secondaries:
 
 * Node: npm
-* Ruby: Sass 3.3.x
+* Ruby: Sass >= 3.3.x
 
 After you've set this stuff up please run
 
@@ -47,7 +47,7 @@ managed by Bower.
 If running the install does not work, please try running it as with
 admin-rights:
 
-	$ sudo npm install -g grunt-cli
+	$ sudo npm install -g grunt-cli bower i
 
 
 ## Browser support
