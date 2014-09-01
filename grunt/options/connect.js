@@ -4,7 +4,7 @@
 'use strict';
 
 module.exports = {
-	develop: {
+	server: {
 		options: {
 			port: 9001,
 			keepalive: true
@@ -16,6 +16,16 @@ module.exports = {
 			port: 8080,
 			keepalive: true,
 			base: 'dist'
+		}
+	},
+
+	serve: {
+		options: {
+			port: 10001,
+			open: {
+				target: 'http://localhost:10001/'
+			},
+			livereload: true
 		}
 	}
 };
