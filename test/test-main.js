@@ -5,6 +5,10 @@
 	// Make async
 	window.__karma__.loaded = function () {};
 
+	// Set the flag for test environment
+	window.__test = true;
+
+	// RequireJS Configuration
 	require.config({
 
 		// Set baseUrl for Karma
