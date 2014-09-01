@@ -53,6 +53,8 @@ module.exports = function (grunt) {
 	/**
 	 * A task for development
 	 */
+	grunt.registerTask('serve', ['connect:serve', 'watch']);
+
 	grunt.registerTask('dev', [
 		'jshint',
 		'sass:dev',
