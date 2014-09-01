@@ -4,11 +4,10 @@
 *.sass-cache
 *.sublime-*
 
-components
 css
 dist
-index.html
-resume.html
+bower_components
+*.html
 node_modules
 test/coverage
 test/dist

@@ -13,7 +13,7 @@ module.exports = {
 
 	destDir: 'dist/',
 
-	requirejs: '../components/requirejs/require',
+	requirejs: '../bower_components/requirejs/require',
 
 	// All files that should be checked with JSHint
 	jsHintFiles: [
@@ -44,7 +44,7 @@ module.exports = {
 
 	// Modernizr files
 	modernizr: {
-		src: 'components/modernizr/modernizr.js',
+		src: 'bower_components/modernizr/modernizr.js',
 		dest: 'dist/<%= pkg.version %>/modernizr.min.js'
 	},
 
@@ -73,8 +73,8 @@ module.exports = {
 			src: 'temp/**.html',
 			dest: '.',
 			maincss: 'css/main.css',
-			modernizr: 'components/modernizr/modernizr.js',
-			mainjs: '<script data-main="js/config" src="components/requirejs/require.js"></script>'
+			modernizr: 'bower_components/modernizr/modernizr.js',
+			mainjs: '<script data-main="js/config" src="bower_components/requirejs/require.js"></script>'
 		}
 	}
 };
