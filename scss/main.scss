@@ -7,19 +7,19 @@
 
 
 // Helpers
-@import 'helpers/variables';
+@import 'base/variables';
 @import '../components/sass-mixins/mixins';
 @import '../components/normalize-scss/normalize';
-@import 'helpers/helpers';
+@import 'base/helpers';
 
 // Typography and Elements
 @import 'elements/typography';
 
 // Layout
-@import 'page/base';
-@import 'page/header';
-@import 'page/main';
-@import 'page/footer';
+@import 'layout/base';
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
 
 // Modules
 @import 'modules/box';
