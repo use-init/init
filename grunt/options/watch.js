@@ -15,5 +15,12 @@ module.exports = {
   js: {
     files: [config.jsHintFiles, config.tests.src],
     tasks: ['jshint', 'karma:unit']
+  },
+
+  livereload: {
+    options: {
+      livereload: true
+    },
+    files: ['src/css/**/*']
   }
 };
