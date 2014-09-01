@@ -4,24 +4,7 @@
 'use strict';
 
 var xtend = require('xtend');
-
-/**
- * Load configuration files for Grunt
- * @param  {string} path Path to folder with tasks
- * @return {object}      All options
- */
-var loadConfig = function (path) {
-	var glob = require('glob');
-	var object = {};
-	var key;
-
-	glob.sync('*', { cwd: path }).forEach(function (option) {
-		key = option.replace(/\.js$/,'');
-		object[key] = require(path + option);
-	});
-
-	return object;
-};
+var loadGruntConfig = require('./grunt/load-grunt-config');
 
 /*
  * Call Grunt configuration
@@ -31,9 +14,16 @@ module.exports = function (grunt) {
 	// Measure time of grunt tasks
 	require('time-grunt')(grunt);
 
+	/**
+	 * Configuration: All data from package.json, grunt/options and
+	 * grunt/plugins
+	 */
 	var config = xtend({
-		pkg: require('./package')
-	}, loadConfig('./grunt/options/'), loadConfig('./grunt/plugins/'));
+			pkg: require('./package')
+		},
+		loadGruntConfig('grunt/options'),
+		loadGruntConfig('grunt/plugins')
+	);
 
 	// Load project configuration
 	grunt.initConfig(config);
