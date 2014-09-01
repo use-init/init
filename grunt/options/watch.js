@@ -8,7 +8,8 @@ var config = require('../config');
 module.exports = {
 	scss: {
 		files: config.sass.files,
-		tasks: 'sass:dev'
+		tasks: 'sass:dev',
+		atBegin: true
 	},
 
 	js: {
