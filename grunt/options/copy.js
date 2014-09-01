@@ -6,10 +6,10 @@
 var config = require('../config');
 
 module.exports = {
-	build: {
-		files: [{
-			src: config.js.files,
-			dest: config.destDir
-		}]
-	}
+  build: {
+    files: [{
+      src: config.js.files,
+      dest: config.destDir
+    }]
+  }
 };

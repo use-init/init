@@ -4,53 +4,53 @@
 'use strict';
 
 module.exports = function (config) {
-	config.set({
-		basePath: '../',
+  config.set({
+    basePath: '../',
 
-		singleRun: true,
-		colors: true,
-		captureTimeout: 7000,
+    singleRun: true,
+    colors: true,
+    captureTimeout: 7000,
 
-		frameworks: ['jasmine', 'requirejs'],
-		reporters: ['progress', 'coverage'],
+    frameworks: ['jasmine', 'requirejs'],
+    reporters: ['progress', 'coverage'],
 
-		preprocessors: {
-			'js/**/*.js': 'coverage',
-		},
+    preprocessors: {
+      'js/**/*.js': 'coverage',
+    },
 
-		plugins: [
-			'karma-jasmine',
-			'karma-requirejs',
-			'karma-coverage',
-			'karma-chrome-launcher',
-			'karma-firefox-launcher',
-			'karma-safari-launcher',
-			'karma-phantomjs-launcher'
-		],
+    plugins: [
+      'karma-jasmine',
+      'karma-requirejs',
+      'karma-coverage',
+      'karma-chrome-launcher',
+      'karma-firefox-launcher',
+      'karma-safari-launcher',
+      'karma-phantomjs-launcher'
+    ],
 
-		coverageReporter: {
-			reporters: [{
-				type: 'text-summary',
-				dir: 'test/coverage/'
-			}, {
-				type: 'html',
-				dir: 'test/coverage/'
-			}]
-		},
+    coverageReporter: {
+      reporters: [{
+        type: 'text-summary',
+        dir: 'test/coverage/'
+      }, {
+        type: 'html',
+        dir: 'test/coverage/'
+      }]
+    },
 
-		logLevel: config.LOG_INFO,
+    logLevel: config.LOG_INFO,
 
-		// List of files to load in the browser
-		files: [{
-			pattern: 'components/**/*.js',
-			included: false
-		}, {
-			pattern: 'js/**/*.js',
-			included: false
-		}, {
-			pattern: 'test/specs/**/*spec.js',
-			included: false
-		}, 'test/test-main.js']
-	});
+    // List of files to load in the browser
+    files: [{
+      pattern: 'components/**/*.js',
+      included: false
+    }, {
+      pattern: 'js/**/*.js',
+      included: false
+    }, {
+      pattern: 'test/specs/**/*spec.js',
+      included: false
+    }, 'test/test-main.js']
+  });
 };
 

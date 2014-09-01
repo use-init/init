@@ -6,14 +6,14 @@
 var config = require('../config');
 
 module.exports = {
-	scss: {
-		files: config.sass.files,
-		tasks: 'sass:dev',
-		atBegin: true
-	},
+  scss: {
+    files: config.sass.files,
+    tasks: 'sass:dev',
+    atBegin: true
+  },
 
-	js: {
-		files: [config.jsHintFiles, config.tests.src],
-		tasks: ['jshint', 'karma:unit']
-	}
+  js: {
+    files: [config.jsHintFiles, config.tests.src],
+    tasks: ['jshint', 'karma:unit']
+  }
 };

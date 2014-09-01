@@ -6,28 +6,28 @@
  */
 
 define([
-	// Dependencies of the module
-	'jquery'
+  // Dependencies of the module
+  'jquery'
 ], function ($) {
 
-	// Strict mode to prevent sloppy JS
-	'use strict';
+  // Strict mode to prevent sloppy JS
+  'use strict';
 
-	// Private variables
-	var _eventName = '_test';
+  // Private variables
+  var _eventName = '_test';
 
-	// Public API
-	return {
+  // Public API
+  return {
 
-		// Getter for private variable
-		getEventName: function () {
-			return _eventName;
-		},
+    // Getter for private variable
+    getEventName: function () {
+      return _eventName;
+    },
 
-		// File an event on initialisation
-		init: function () {
-			$(document).trigger(_eventName);
-		}
-	};
+    // File an event on initialisation
+    init: function () {
+      $(document).trigger(_eventName);
+    }
+  };
 
 });

@@ -2,57 +2,57 @@
  * See http://www.jshint.com/docs/options/ for all available options.
  */
 {
-	/**
-	 * Enforcing options
-	 * See http://www.jshint.com/docs/options/#enforcing-options
-	 */
-	"bitwise": true,
-	"camelcase": true,
-	"curly": true,
-	"eqeqeq": true,
-	"immed": true,
-	"latedef": true,
-	"newcap": true,
-	"noarg": true,
-	"strict": true,
-	"trailing": true,
-	"undef": true,
-	"unused": true,
+  /**
+   * Enforcing options
+   * See http://www.jshint.com/docs/options/#enforcing-options
+   */
+  "bitwise": true,
+  "camelcase": true,
+  "curly": true,
+  "eqeqeq": true,
+  "immed": true,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "strict": true,
+  "trailing": true,
+  "undef": true,
+  "unused": true,
 
-	/**
-	 * Relaxing options
-	 * See http://www.jshint.com/docs/options/#relaxing-options
-	 */
-	"eqnull": true,
-	"esnext": true,
-	"smarttabs": true,
+  /**
+   * Relaxing options
+   * See http://www.jshint.com/docs/options/#relaxing-options
+   */
+  "eqnull": true,
+  "esnext": true,
+  "smarttabs": true,
 
-	/**
-	 * Environments
-	 * See http://www.jshint.com/docs/options/#environments
-	 */
-	"browser": true,
-	"jquery": true,
-	"node": true,
+  /**
+   * Environments
+   * See http://www.jshint.com/docs/options/#environments
+   */
+  "browser": true,
+  "jquery": true,
+  "node": true,
 
-	/**
-	 * Globals
-	 * See http://www.jshint.com/docs/
-	 */
-	"globals": {
-		// RequireJS
-		"define": true,
-		"module": true,
-		"require": true,
-		"requirejs": true,
+  /**
+   * Globals
+   * See http://www.jshint.com/docs/
+   */
+  "globals": {
+    // RequireJS
+    "define": true,
+    "module": true,
+    "require": true,
+    "requirejs": true,
 
-		// Jasmin
-		"jasmine": true,
-		"afterEach": true,
-		"beforeEach": true,
-		"describe": true,
-		"expect": true,
-		"it": true,
-		"sinon": true
-	}
+    // Jasmin
+    "jasmine": true,
+    "afterEach": true,
+    "beforeEach": true,
+    "describe": true,
+    "expect": true,
+    "it": true,
+    "sinon": true
+  }
 }

@@ -15,12 +15,12 @@ button,
 input,
 select,
 textarea {
-	color: $main-color;
+  color: $main-color;
 }
 
 body {
-	font-size: 1em;
-	line-height: 1.4;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 /*
@@ -30,13 +30,13 @@ body {
  */
 
 ::-moz-selection {
-	background: $selection-color;
-	text-shadow: none;
+  background: $selection-color;
+  text-shadow: none;
 }
 
 ::selection {
-	background: $selection-color;
-	text-shadow: none;
+  background: $selection-color;
+  text-shadow: none;
 }
 
 /*
@@ -44,12 +44,12 @@ body {
  */
 
 hr {
-	display: block;
-	height: 1px;
-	border: 0;
-	border-top: 1px solid $hr-color;
-	margin: 1em 0;
-	padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $hr-color;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /*
@@ -57,7 +57,7 @@ hr {
  */
 
 img {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 
 /*
@@ -65,9 +65,9 @@ img {
  */
 
 fieldset {
-	border: 0;
-	margin: 0;
-	padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -75,7 +75,7 @@ fieldset {
  */
 
 textarea {
-	resize: vertical;
+  resize: vertical;
 }
 
 /* ==========================================================================
@@ -83,8 +83,8 @@ textarea {
    ========================================================================== */
 
 .browsehappy {
-	margin: 0.2em 0;
-	background: #ccc;
-	color: #000;
-	padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }

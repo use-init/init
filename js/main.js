@@ -6,10 +6,10 @@
  */
 
 require([
-	// Require the modules
-	'modules/module'
+  // Require the modules
+  'modules/module'
 ], function (module) {
-	'use strict';
+  'use strict';
 
-	console.log(module);
+  console.log(module);
 });

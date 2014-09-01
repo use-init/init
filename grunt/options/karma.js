@@ -4,42 +4,42 @@
 'use strict';
 
 module.exports = {
-	options: {
-		configFile: 'grunt/karma.conf.js'
-	},
+  options: {
+    configFile: 'grunt/karma.conf.js'
+  },
 
-	// Testing in all browsers
-	test: {
-		options: {
+  // Testing in all browsers
+  test: {
+    options: {
 
-			// Start these browsers
-			browsers: ['Chrome', 'Firefox', 'Safari', 'PhantomJS']
-		}
-	},
+      // Start these browsers
+      browsers: ['Chrome', 'Firefox', 'Safari', 'PhantomJS']
+    }
+  },
 
-	// Travis
-	unit: {
-		options: {
+  // Travis
+  unit: {
+    options: {
 
-			// Use Phantom and Firefox for Travis
-			browsers: ['PhantomJS', 'Firefox']
-		}
-	},
+      // Use Phantom and Firefox for Travis
+      browsers: ['PhantomJS', 'Firefox']
+    }
+  },
 
-	// Production-ready JS
-	prod: {
-		options: {
+  // Production-ready JS
+  prod: {
+    options: {
 
-			// Use Phantom for Jenkins
-			browsers: ['PhantomJS'],
+      // Use Phantom for Jenkins
+      browsers: ['PhantomJS'],
 
-			reporters: ['progress'],
+      reporters: ['progress'],
 
-			files: [
-				'dist/<%= pkg.version %>/main.min.js',
-				'test/dist/tests.min.js',
-				'test/test-main.js'
-			]
-		}
-	}
+      files: [
+        'dist/<%= pkg.version %>/main.min.js',
+        'test/dist/tests.min.js',
+        'test/test-main.js'
+      ]
+    }
+  }
 };

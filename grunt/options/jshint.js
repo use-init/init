@@ -7,12 +7,12 @@ var config = require('../config');
 
 module.exports = {
 
-	// All files from config
-	all: config.jsHintFiles,
+  // All files from config
+  all: config.jsHintFiles,
 
-	options: {
+  options: {
 
-		// Add JSHintRC file with options
-		jshintrc: '.jshintrc'
-	}
+    // Add JSHintRC file with options
+    jshintrc: '.jshintrc'
+  }
 };

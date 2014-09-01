@@ -6,21 +6,21 @@
 var config = require('../config');
 
 module.exports = {
-	build: {
-		devFile: config.modernizr.src,
-		outputFile: config.modernizr.dest,
+  build: {
+    devFile: config.modernizr.src,
+    outputFile: config.modernizr.dest,
 
-		extra: {
-			shiv: true,
-			mq: true
-		},
+    extra: {
+      shiv: true,
+      mq: true
+    },
 
-		// Minify
-		uglify: true,
+    // Minify
+    uglify: true,
 
-		// Files from configuration
-		files: {
-			src: config.js.files.concat(config.sass.files)
-		}
-	}
+    // Files from configuration
+    files: {
+      src: config.js.files.concat(config.sass.files)
+    }
+  }
 };

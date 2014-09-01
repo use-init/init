@@ -4,5 +4,5 @@
 'use strict';
 
 module.exports = {
-	temp: ['temp']
+  temp: ['temp']
 };

@@ -18,24 +18,24 @@ helper.sassProd[config.sass.dest] = config.sass.src;
 
 module.exports = {
 
-	// For development
-	dev: {
-		options: {
-			unixNewlines: true,
-			style: 'expanded',
-			sourcemap: true
-		},
+  // For development
+  dev: {
+    options: {
+      unixNewlines: true,
+      style: 'expanded',
+      sourcemap: true
+    },
 
-		files: helper.sassDev
-	},
+    files: helper.sassDev
+  },
 
-	// For production
-	build: {
-		options: {
-			style: 'compressed',
-			banner: config.banner
-		},
+  // For production
+  build: {
+    options: {
+      style: 'compressed',
+      banner: config.banner
+    },
 
-		files: helper.sassProd
-	}
+    files: helper.sassProd
+  }
 };

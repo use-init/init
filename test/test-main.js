@@ -1,24 +1,24 @@
 // jshint camelcase: false
 (function () {
-	'use strict';
+  'use strict';
 
-	// Make async
-	window.__karma__.loaded = function () {};
+  // Make async
+  window.__karma__.loaded = function () {};
 
-	// Set the flag for test environment
-	window.__test = true;
+  // Set the flag for test environment
+  window.__test = true;
 
-	// RequireJS Configuration
-	require.config({
+  // RequireJS Configuration
+  require.config({
 
-		// Set baseUrl for Karma
-		baseUrl: 'http://localhost:9876/base/js/',
+    // Set baseUrl for Karma
+    baseUrl: 'http://localhost:9876/base/js/',
 
-		deps: ['config']
-	});
+    deps: ['config']
+  });
 
-	// Load the example spec, add your own specifications here
-	require([
-		'../test/specs/example.spec'
-	], window.__karma__.start);
+  // Load the example spec, add your own specifications here
+  require([
+    '../test/specs/example.spec'
+  ], window.__karma__.start);
 }());
