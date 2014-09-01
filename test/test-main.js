@@ -12,13 +12,16 @@
   require.config({
 
     // Set baseUrl for Karma
-    baseUrl: 'http://localhost:9876/base/js/',
+    baseUrl: 'http://localhost:9876/base/src/js',
 
-    deps: ['config']
+    deps: [
+      '../../bower_components/modernizr/modernizr',
+      'config'
+    ]
   });
 
   // Load the example spec, add your own specifications here
   require([
-    '../test/specs/example.spec'
+    '../../test/specs/example.spec'
   ], window.__karma__.start);
 }());

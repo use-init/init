@@ -8,8 +8,8 @@
 
 // Helpers
 @import 'base/variables';
-@import '../components/sass-mixins/mixins';
-@import '../components/normalize-scss/normalize';
+@import '../bower_components/sass-mixins/mixins';
+@import '../bower_components/normalize-scss/normalize';
 @import 'base/helpers';
 
 // Typography and Elements

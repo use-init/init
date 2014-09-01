@@ -23,7 +23,7 @@ module.exports = {
     options: {
       port: 10001,
       open: {
-        target: 'http://localhost:10001/'
+        target: 'http://localhost:10001/src/'
       },
       livereload: true
     }

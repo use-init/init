@@ -15,7 +15,7 @@ module.exports = function (config) {
     reporters: ['progress', 'coverage'],
 
     preprocessors: {
-      'js/**/*.js': 'coverage',
+      'src/**/*.js': 'coverage',
     },
 
     plugins: [
@@ -42,10 +42,10 @@ module.exports = function (config) {
 
     // List of files to load in the browser
     files: [{
-      pattern: 'components/**/*.js',
+      pattern: 'bower_components/**/*.js',
       included: false
     }, {
-      pattern: 'js/**/*.js',
+      pattern: 'src/**/*.js',
       included: false
     }, {
       pattern: 'test/specs/**/*spec.js',

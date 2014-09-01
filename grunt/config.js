@@ -13,12 +13,12 @@ module.exports = {
 
   destDir: 'dist/',
 
-  requirejs: '../bower_components/requirejs/require',
+  requirejs: '../../bower_components/requirejs/require',
 
   // All files that should be checked with JSHint
   jsHintFiles: [
     'Gruntfile.js',
-    'js/**/*.js',
+    'src/**/*.js',
     'test/*.js',
     'test/specs/**/*.js'
   ],
@@ -26,9 +26,9 @@ module.exports = {
   // JavaScript files
   js: {
     files: [
-      'js/**/*.js'
+      'src/js/**/*.js'
     ],
-    config: 'js/config.js',
+    config: 'src/js/config.js',
     dest: 'dist/<%= pkg.version %>/main.min.js'
   },
 
@@ -38,7 +38,7 @@ module.exports = {
       'scss/**/*.scss'
     ],
     src: 'scss/main.scss',
-    devDest: 'css/main.css',
+    devDest: 'src/css/main.css',
     dest: 'dist/<%= pkg.version %>/main.min.css'
   },
 
@@ -50,7 +50,7 @@ module.exports = {
 
   // Images
   img: {
-    src: 'img/',
+    src: 'src/img/',
     dest: 'dist/img/'
   },
 
@@ -62,7 +62,7 @@ module.exports = {
   // Versioned references
   replace: {
     build: {
-      src: 'temp/**.html',
+      src: 'temp/**/*.html',
       dest: 'dist/',
       maincss: '<%= pkg.version %>/main.min.css',
       modernizr: '<%= pkg.version %>/modernizr.min.js',
@@ -70,11 +70,11 @@ module.exports = {
     },
 
     dev: {
-      src: 'temp/**.html',
-      dest: '.',
+      src: 'temp/**/*.html',
+      dest: 'src/',
       maincss: 'css/main.css',
-      modernizr: 'bower_components/modernizr/modernizr.js',
-      mainjs: '<script data-main="js/config" src="bower_components/requirejs/require.js"></script>'
+      modernizr: '../bower_components/modernizr/modernizr.js',
+      mainjs: '<script data-main="js/config" src="../bower_components/requirejs/require.js"></script>'
     }
   }
 };

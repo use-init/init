@@ -7,7 +7,6 @@
 css
 dist
 bower_components
-*.html
 node_modules
 test/coverage
 test/dist

@@ -27,7 +27,7 @@ module.exports = {
 
   prod: {
     options: {
-      baseUrl: './js',
+      baseUrl: './src/js',
       include: [config.requirejs],
       mainConfigFile: config.tests.config,
       out: 'test/dist/tests.min.js'
