@@ -1,6 +1,7 @@
 # Changelog
 
 ### HEAD
+* Remove `trailing` JSHint option
 * Update Apache Server Configs to v2.8.0
 * Upgrade `console.log` / `console.warn` (#112)
 * Remove timestamp logging when running Karma
