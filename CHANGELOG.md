@@ -1,6 +1,9 @@
 # Changelog
 
 ### HEAD
+
+* Update `apple-touch-icon-precomposed.png`
+  ([h5bp/html5-boilerplate#1599](https://github.com/h5bp/html5-boilerplate/pull/1599))
 * Remove `trailing` JSHint option
 * Update Apache Server Configs to v2.8.0
 * Upgrade `console.log` / `console.warn` (#112)
