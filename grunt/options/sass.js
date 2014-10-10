@@ -22,8 +22,7 @@ module.exports = {
 	dev: {
 		options: {
 			unixNewlines: true,
-			style: 'expanded',
-			sourcemap: true
+			style: 'expanded'
 		},
 
 		files: helper.sassDev
