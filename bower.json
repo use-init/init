@@ -7,7 +7,7 @@
     "jquery": "1.11.1",
     "normalize-scss": "3.0.1",
     "modernizr": "2.8.3",
-    "requirejs": "2.1.14",
+    "requirejs": "2.1.15",
     "sass-mixins": "0.10.0"
   }
 }

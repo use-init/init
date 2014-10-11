@@ -1,7 +1,7 @@
 # Changelog
 
 ### HEAD
-
+* Update `bower` and `npm` dependencies
 * Removed obsolete sourcemapping option
 * Update `apple-touch-icon-precomposed.png`
   ([h5bp/html5-boilerplate#1599](https://github.com/h5bp/html5-boilerplate/pull/1599))
@@ -15,7 +15,6 @@
 * Order .jshintrc options alphabetically
 * Update 404 to latest from HTML5 Boilerplate
 * Make structure for test suites easier to unterstand
-* Update `bower` and `npm` dependencies
 * Add `auto` to the Google Universal Analytics tracker create method
 * Add `timeline` and `timelineEnd` to the list of `console` methods
 
