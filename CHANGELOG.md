@@ -1,6 +1,7 @@
 # Changelog
 
 ### HEAD
+* Use grunt-sass with libsass for speed
 * Upgrade `console.log` / `console.warn` (#112)
 * Remove timestamp logging when running Karma
 * Update to Apache Server Configs v2.7.1
