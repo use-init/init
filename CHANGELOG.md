@@ -1,12 +1,12 @@
 # Changelog
 
 ### HEAD
+* Update Apache Server Configs to v2.10.0
 * Update `bower` and `npm` dependencies
 * Removed obsolete sourcemapping option
 * Update `apple-touch-icon-precomposed.png`
   ([h5bp/html5-boilerplate#1599](https://github.com/h5bp/html5-boilerplate/pull/1599))
 * Remove `trailing` JSHint option
-* Update Apache Server Configs to v2.8.0
 * Upgrade `console.log` / `console.warn` (#112)
 * Remove timestamp logging when running Karma
 * Integrate jit-grunt
