@@ -13,17 +13,7 @@ more.
 
 ## Dependencies
 
-You will need to install some stuff, if you haven't already:
-
-Majors:
-
-* Node.js
-* Ruby
-
-Secondaries:
-
-* Node: npm
-* Ruby: Sass >= 3.3.x
+You will need to install Node.js, if you haven't already.
 
 After you've set this stuff up please run
 
