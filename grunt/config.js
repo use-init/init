@@ -11,6 +11,7 @@ module.exports = {
   banner: '/*! ' + pkg.name + ' - v' + pkg.version + ' - MIT License - ' +
     '<%= grunt.template.today("yyyy-mm-dd") %> */',
 
+  srcDir: 'src/',
   destDir: 'dist/',
 
   requirejs: '../../bower_components/requirejs/require',
