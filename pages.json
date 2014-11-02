@@ -1,9 +1,9 @@
 {
   "index": {
     "src": [
-      "templates/header.html",
-      "templates/index.html",
-      "templates/footer.html"
+      "src/templates/header.html",
+      "src/templates/index.html",
+      "src/templates/footer.html"
     ],
     "dest": "temp/index.html"
   }

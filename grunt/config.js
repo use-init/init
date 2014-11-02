@@ -36,9 +36,9 @@ module.exports = {
   // Sass files
   sass: {
     files: [
-      'scss/**/*.scss'
+      'src/scss/**/*.scss'
     ],
-    src: 'scss/main.scss',
+    src: 'src/scss/main.scss',
     devDest: 'src/css/main.css',
     dest: 'dist/<%= pkg.version %>/main.min.css'
   },
