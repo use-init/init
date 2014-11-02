@@ -88,6 +88,10 @@ module.exports = function (grunt) {
     'karma:unit'
   ]);
 
+  grunt.registerTask('test:all', [
+    'karma:all'
+  ]);
+
   // A task for testing production code
   grunt.registerTask('test:build', [
     'requirejs:compile',
@@ -100,7 +104,7 @@ module.exports = function (grunt) {
    */
   grunt.registerTask('travis', [
     'jshint',
-    'karma:unit'
+    'karma:travis'
   ]);
 
 };

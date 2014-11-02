@@ -9,7 +9,7 @@ module.exports = {
   },
 
   // Testing in all browsers
-  test: {
+  all: {
     options: {
 
       // Start these browsers
@@ -17,8 +17,15 @@ module.exports = {
     }
   },
 
-  // Travis
+  // PhantomJS
   unit: {
+    options: {
+      browsers: ['PhantomJS']
+    }
+  },
+
+  // Travis
+  travis: {
     options: {
 
       // Use Phantom and Firefox for Travis
@@ -27,13 +34,11 @@ module.exports = {
   },
 
   // Production-ready JS
-  prod: {
+  build: {
     options: {
 
       // Use Phantom for Jenkins
       browsers: ['PhantomJS'],
-
-      reporters: ['progress'],
 
       files: [
         'dist/<%= pkg.version %>/main.min.js',

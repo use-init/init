@@ -1,6 +1,7 @@
 # Changelog
 
 ### HEAD
+* Update karma tasks to better reflect actual propose
 * Copy files that are needed in dest via grunt copy
 * Use grunt-sass with libsass for speed
 * Upgrade `console.log` / `console.warn` (#112)
