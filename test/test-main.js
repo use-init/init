@@ -20,8 +20,9 @@
     ]
   });
 
-  // Load the example spec, add your own specifications here
+  // Load the example spec
   require([
     '../../test/specs/example.spec'
+    // @TODO: Add your own specifications here
   ], window.__karma__.start);
 }());
