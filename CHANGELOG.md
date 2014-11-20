@@ -1,11 +1,11 @@
 # Changelog
 
 ### HEAD
+* Update dependencies from bower and npm
 * Update Apache Server Configs to v2.11.0
 * Rename Apple touch icon to `apple-touch-icon.png` and add<br>
   `<link>` in `templates/header.html`
   ([h5bp/html5-boilerplate#1622](https://github.com/h5bp/html5-boilerplate/pull/1622))
-* Update `bower` and `npm` dependencies
 * Removed obsolete sourcemapping option
 * Update `apple-touch-icon-precomposed.png`
   ([h5bp/html5-boilerplate#1599](https://github.com/h5bp/html5-boilerplate/pull/1599))
