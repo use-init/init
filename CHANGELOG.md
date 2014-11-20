@@ -1,6 +1,8 @@
 # Changelog
 
 ### HEAD
+
+### 1.4.0 (20 November 2014)
 * Update dependencies from bower and npm
 * Update Apache Server Configs to v2.11.0
 * Rename Apple touch icon to `apple-touch-icon.png` and add<br>
