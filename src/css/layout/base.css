@@ -15,7 +15,7 @@ button,
 input,
 select,
 textarea {
-  color: $main-color;
+  color: var(--main-color);
 }
 
 body {
@@ -30,12 +30,12 @@ body {
  */
 
 ::-moz-selection {
-  background: $selection-color;
+  background: var(--selection-color);
   text-shadow: none;
 }
 
 ::selection {
-  background: $selection-color;
+  background: var(--selection-color);
   text-shadow: none;
 }
 
@@ -47,7 +47,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid $hr-color;
+  border-top: 1px solid var(--hr-color);
   margin: 1em 0;
   padding: 0;
 }

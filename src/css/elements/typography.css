@@ -3,12 +3,12 @@
  */
 
 body {
-  font-family: $font-main;
+  font-family: var(--font-main);
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: $font-key;
+  font-family: var(--font-key);
 }

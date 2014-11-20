@@ -4,7 +4,6 @@
 *.sass-cache
 *.sublime-*
 
-src/css
 dist
 bower_components
 node_modules

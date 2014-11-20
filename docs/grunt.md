@@ -11,7 +11,7 @@ tasks you need for development and deployment of a web project.
 * [grunt-contrib-clean](https://github.com/gruntjs/grunt-contrib-clean) cleans your build directory before doing a new build
 * [grunt-contrib-copy](https://github.com/gruntjs/grunt-contrib-copy) copies files from the development directories into the build directory
 * [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch) watches files for changes
-* [grunt-contrib-sass](https://github.com/gruntjs/grunt-contrib-sass) runs the Sass task and builds the CSS files
+* [grunt-pleeease](https://github.com/danielhusar/grunt-pleeease) runs the Pleeease task and builds the CSS files
 * [grunt-contrib-requirejs](https://github.com/gruntjs/grunt-contrib-requirejs) runs requireJS and builds the JS files
 * [grunt-modernizr](https://github.com/Modernizr/grunt-modernizr) builds a custom Modernizr build based on your used tests
 * [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect) runs a static web server with root on your working directory
@@ -44,7 +44,7 @@ For development you can run Grunt initially once by calling:
 
 	$ grunt
 
-To listen continuously to changes you do in files (e.g. Sass) you can type:
+To listen continuously to changes you do in files (e.g. CSS) you can type:
 
 	$ grunt watch
 

@@ -9,8 +9,10 @@
  * Configuration
  * Use module specific variables and prefix them with the namespace.
  *
- * @example $box-background: #ddd;
+ * --box-property: value;
  */
+:root {
+}
 
 /*
  * General styling

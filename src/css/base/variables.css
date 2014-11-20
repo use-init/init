@@ -1,0 +1,18 @@
+/**
+ * Variables to be used throughout the project
+ */
+:root {
+
+  /* Fonts */
+  --font-main: sans-serif;
+  --font-key: Georgia, 'Times New Roman' serif;
+
+  /* <hr> color */
+  --hr-color: #ccc;
+
+  /* Text selection background color */
+  --selection-color: #b3d4fc;
+
+  /* Text Color */
+  --main-color: #222;
+}

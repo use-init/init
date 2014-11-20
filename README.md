@@ -2,7 +2,7 @@
 
 This project is based upon
 [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate) and adds more
-structure for SCSS and JavaScript files, includes build tasks and a whole lot
+structure for CSS and JavaScript files, includes build tasks and a whole lot
 more.
 
 [![Build Status](https://secure.travis-ci.org/use-init/init.svg?branch=master)](http://travis-ci.org/use-init/init)
@@ -62,17 +62,11 @@ your knowledge.
 
 ## CSS
 
-We are currently working with [Sass](http://sass-lang.com/) (in its dialect
-SCSS) and do not use CSS directly. Please do not edit the CSS-files in any case
-but search the corresponding `.scss` file and edit it accordingly. If you are
-not familiar with SCSS you can write pure CSS which is actually valid SCSS.
+We are use vanilla CSS but enhance the experience using
+[Pleeease](http://pleeease.io/) as a post processor.
 
-However all `.scss`-files are compiled into one file called `main.css` in the
-`css`-folder. There is a productive-version (means minified), too.
-
-You can find more information about the installation process of Sass and the
-usage of SCSS in the [Sass Tutorial](http://sass-lang.com/tutorial.html).
-
+However all `.css`-files are compiled into one file called `main.css` in the
+`dist`-folder. There is a productive-version (means minified), too.
 
 ## JS
 

@@ -9,7 +9,7 @@
 
 * [Toolchain](toolchain.md) — The tools we use: GruntJS, Bower, RequireJS.
 * [HTML5 Boilerplate](html5-boilerplate.md) — More about the famous front-end template.
-* [SCSS](scss.md) — How to use SCSS in INIT.
+* [CSS](css.md) — How to use CSS in INIT.
 * [JavaScript](js.md) — A guide to the default JavaScript with RequireJS.
 * [Build process](grunt.md) - A detailed guide to the GruntJS configs.
 * [Testing](tests.md) — How to test your code with INIT.

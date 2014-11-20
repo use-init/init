@@ -18,18 +18,6 @@ To target specific older Internet Explorer versions (up to IE9) we provide you C
 		// add IE8 (and lower) specific styles here
 	}
 
-The last statement can also be simplified using Sass language by including it in your original statement:
-
-	.yourclass {
-		// your normal styles for all browsers
-
-		.lt-ie9 & {
-			// add IE8 (and lower) specific styles here
-		}
-	}
-
-Interpreted by Sass this will generate the same output as the example above except this is better readable in the original Sass file.
-
 ## `<head>` Explanations
 
 In the `<head>` section we included some default markup which you might want to extend. Here are some tipps about what is added and what you can do.

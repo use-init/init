@@ -33,13 +33,13 @@ module.exports = {
     dest: 'dist/<%= pkg.version %>/main.min.js'
   },
 
-  // Sass files
-  sass: {
+  // CSS files
+  css: {
     files: [
-      'src/scss/**/*.scss'
+      'src/css/**/*.css'
     ],
-    src: 'src/scss/main.scss',
-    devDest: 'src/css/main.css',
+    src: 'src/css/main.css',
+    devDest: 'dist/css/main.css',
     dest: 'dist/<%= pkg.version %>/main.min.css'
   },
 

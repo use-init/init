@@ -1,6 +1,8 @@
 # Changelog
 
 ### HEAD
+
+* Remove Sass and replace with Pleeease
 * Update karma tasks to better reflect actual propose
 * Copy files that are needed in dest via grunt copy
 * Use grunt-sass with libsass for speed

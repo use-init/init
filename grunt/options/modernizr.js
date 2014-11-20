@@ -20,7 +20,7 @@ module.exports = {
 
     // Files from configuration
     files: {
-      src: config.js.files.concat(config.sass.files)
+      src: config.js.files.concat(config.css.files)
     }
   }
 };
