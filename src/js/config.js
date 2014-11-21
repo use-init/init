@@ -7,7 +7,7 @@ require.config({
   deps: ['plugins/console', 'main'],
 
   paths: {
-    jquery: '../../bower_components/jquery/dist/jquery.min'
+    jquery: '../../node_modules/jquery/dist/jquery.min'
     // More additional paths here
   },
 

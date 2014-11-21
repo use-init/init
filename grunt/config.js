@@ -14,7 +14,8 @@ module.exports = {
   srcDir: 'src/',
   destDir: 'dist/',
 
-  requirejs: '../../bower_components/requirejs/require',
+
+  requirejs: '../../node_modules/requirejs/require',
 
   // All files that should be checked with JSHint
   jsHintFiles: [
@@ -30,7 +31,12 @@ module.exports = {
       'src/js/**/*.js'
     ],
     config: 'src/js/config.js',
-    dest: 'dist/<%= pkg.version %>/main.min.js'
+    dest: 'dist/<%= pkg.version %>/main.min.js',
+    libs: [
+      'node_modules/grunt-modernizr/lib/modernizr-dev.js',
+      'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/requirejs/require.js'
+    ]
   },
 
   // CSS files
@@ -45,7 +51,8 @@ module.exports = {
 
   // Modernizr files
   modernizr: {
-    src: 'bower_components/modernizr/modernizr.js',
+    dev: 'node_modules/grunt-modernizr/lib/modernizr-dev.js',
+    devDest: 'dist/js/modernizr.js',
     dest: 'dist/<%= pkg.version %>/modernizr.min.js'
   },
 
@@ -75,8 +82,8 @@ module.exports = {
       src: 'temp/**/*.html',
       dest: 'src/',
       maincss: 'css/main.css',
-      modernizr: '../bower_components/modernizr/modernizr.js',
-      mainjs: '<script data-main="js/config" src="../bower_components/requirejs/require.js"></script>'
+      modernizr: '../node_modules/modernizr/modernizr.js',
+      mainjs: '<script data-main="js/config" src="../node_modules/requirejs/require.js"></script>'
     }
   }
 };

@@ -17,27 +17,23 @@ You will need to install Node.js, if you haven't already.
 
 After you've set this stuff up please run
 
-	$ npm install -g grunt-cli bower
+	$ npm install -g grunt-cli
 
-This installs the Grunt command line tools and bower.
+This installs the Grunt command line tools.
 Afterwards please run
 
 	$ npm install
 
 in your project's directory.
 This will install all the things you need for running the grunt-tasks
-automatically and all Bower components defined in `bower.json`.
-
-Also it will create a folder `components` which holds all vendor dependencies
-managed by Bower.
-
+automatically.
 
 ### Troubleshooting
 
 If running the install does not work, please try running it as with
 admin-rights:
 
-	$ sudo npm install -g grunt-cli bower i
+	$ sudo npm install -g grunt-cli i
 
 
 ## Browser support

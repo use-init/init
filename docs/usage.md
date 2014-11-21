@@ -29,15 +29,11 @@ Apart from that we make use of GruntJS and you might want to install it globally
 
 	$ npm i -g grunt-cli
 
-Same goes for Bower:
-
-	$ npm i -g bower
-
 Now we need to install the GruntJS modules we want to use within the project and the components that are predefined:
 
 	$ npm i
 
-It will create a directory called `node_modules` with the dependencies for our Grunt tasks and another folder called `components` which holds all vendor dependencies managed by Bower.
+It will create a directory called `node_modules` with the dependencies for our Grunt tasks and Front-End components.
 
 ### Troubleshooting
 
@@ -46,7 +42,3 @@ If running the install does not work, please try running it as admin:
 	$ sudo npm install -g grunt-cli
 
 You'll need to enter your admin password.
-
-If Bower does not install, please first report this to us and then install it manually:
-
-	$ bower i

@@ -15,7 +15,7 @@
     baseUrl: 'http://localhost:9876/base/src/js',
 
     deps: [
-      '../../bower_components/modernizr/modernizr',
+      '../../node_modules/grunt-modernizr/lib/modernizr-dev',
       'config'
     ]
   });

@@ -5,7 +5,7 @@
 ## General
 
 INIT is built modular so you can extend the project with your own code or plugins.
-As we are using NPM, GruntJS and bower it is straight forward to extend the project with existing components.
+As we are using npm and GruntJS it is straight forward to extend the project with existing components.
 
 ## Examples
 

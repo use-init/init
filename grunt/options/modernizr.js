@@ -7,7 +7,7 @@ var config = require('../config');
 
 module.exports = {
   build: {
-    devFile: config.modernizr.src,
+    devFile: config.modernizr.dev,
     outputFile: config.modernizr.dest,
 
     extra: {

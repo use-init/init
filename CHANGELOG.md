@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Remove Bower and use npm for all dependencies
 * Remove Sass and replace with Pleeease
 * Update karma tasks to better reflect actual propose
 * Copy files that are needed in dest via grunt copy

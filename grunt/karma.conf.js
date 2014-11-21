@@ -11,11 +11,17 @@ var projectConfig = require('./config');
  * @return {Array} Array of all files to include
  */
 var getIncludeFiles = function () {
-  var files = [{
-    pattern: 'bower_components/**/*.js',
-    included: false
-  }];
+  var files = [];
 
+  // Add JavaScript libs
+  projectConfig.js.libs.forEach(function (element) {
+    files.push({
+      pattern: element,
+      included: false
+    });
+  });
+
+  // Add own JS files
   projectConfig.js.files.forEach(function (element) {
     files.push({
       pattern: element,
@@ -23,11 +29,13 @@ var getIncludeFiles = function () {
     });
   });
 
+  // Add tests
   files.push({
     pattern: projectConfig.tests.src,
     included: false
   });
 
+  // And test config
   files.push(projectConfig.tests.config);
 
   return files;
