@@ -4,19 +4,12 @@
 
 The HTML structure is mainly based on the famous [HTML5 Boilerplate](http://html5boilerplate.com/). While we use this as a base for our markup we add several things including a default markup for your page layout. This is very simple and it is strongly recommended to adapt this markup to your fits.
 
-## Legacy Internet Explorer
+## Legazy Internet Explorer
 
-To inform users of older Internet Explorers for which the project has not been optimized anymore we provide a Conditional Comment (by default targeting users of IE6 and lower) with a nice little toolbar appearing on top of your website. You are free to adapt this element via changing the text in the markup or adjusting the style via the [`.browsehappy` CSS class](../scss/page/_base.scss#L:85).
+To inform users of older Internet Explorers for which the project has not been optimized anymore we provide a Conditional Comment (by default targeting users of IE8 and lower) with a nice little toolbar appearing on top of your website. You are free to adapt this element via changing the text in the markup or adjusting the style via the [`.browsehappy` CSS class](../src/css/layout/base.css#L:85).
 
-To target specific older Internet Explorer versions (up to IE9) we provide you Conditional Comments	you can make use of in CSS. Here is an example (targeting IE8):
-
-	.yourclass {
-		// your normal styles for all browsers
-	}
-
-	.lt-ie9 .yourclass {
-		// add IE8 (and lower) specific styles here
-	}
+To target specific older Internet Explorer versions (up to IE9) you can use Conditional Comments and CSS.
+Please refer to the legazy method in HTML5 Boilerplate. Please find the change set [here](https://github.com/kcmckell/html5-boilerplate/commit/6c08acd549efd3c166af5369adedf296b22c9c4d).
 
 ## `<head>` Explanations
 

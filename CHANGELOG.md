@@ -1,7 +1,7 @@
 # Changelog
 
 ### HEAD
-
+* Remove conditional comments for old IE
 * Drop IE8 support: update jQuery to v2.1.1
 * Remove Bower and use npm for all dependencies
 * Remove Sass and replace with Pleeease

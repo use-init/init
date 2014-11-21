@@ -40,7 +40,7 @@ admin-rights:
 
 * Chrome
 * Firefox 4+
-* Internet Explorer 8+
+* Internet Explorer 9+
 * Opera 12+
 * Safari 5+
 
