@@ -1,6 +1,7 @@
 # Changelog
 
 ### HEAD
+* Re-add .htaccess: server-configs-apache in version 2.11.0
 * Remove conditional comments for old IE
 * Drop IE8 support: update jQuery to v2.1.1
 * Remove Bower and use npm for all dependencies
