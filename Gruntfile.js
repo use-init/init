@@ -59,6 +59,7 @@ module.exports = function (grunt) {
     'jshint',
     'pleeease:dev',
     'copy',
+    'replace:htaccess',
     'requirejs',
     'pages:dev'
   ]);
@@ -75,6 +76,7 @@ module.exports = function (grunt) {
     'pleeease:build',
     'imagemin',
     'copy',
+    'replace:htaccess',
     'requirejs',
     'karma:unit',
     'pages:build'

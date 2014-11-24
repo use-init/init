@@ -62,6 +62,12 @@ module.exports = {
     dest: 'dist/img/'
   },
 
+  // Apache Server Configs
+  htaccess: {
+    src: 'node_modules/apache-server-configs/dist/.htaccess',
+    dest: 'dist/.htaccess',
+  },
+
   tests: {
     src: 'test/specs/**/*spec.js',
     config: 'test/test-main.js',

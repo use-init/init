@@ -18,7 +18,6 @@ module.exports = {
       cwd: config.srcDir,
       src: [
         '*.{png,xml,ico,svg,txt}',
-        '.htaccess'
       ],
       dest: config.destDir
     }]
