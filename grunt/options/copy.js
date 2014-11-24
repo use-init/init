@@ -16,7 +16,10 @@ module.exports = {
     files: [{
       expand: true,
       cwd: config.srcDir,
-      src: '*.{png,xml,ico,svg,txt}',
+      src: [
+        '*.{png,xml,ico,svg,txt}',
+        '.htaccess'
+      ],
       dest: config.destDir
     }]
   }

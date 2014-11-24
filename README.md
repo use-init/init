@@ -44,11 +44,13 @@ admin-rights:
 * Opera 12+
 * Safari 5+
 
+
 ## Yeoman Generator-INIT
 
 INIT is also available as [Yeoman Generator](http://yeoman.io/generators.html)
 and is called [`generator-init`](https://github.com/use-init/generator-init).
 See the repository for detailed instruction and more information.
+
 
 ## Contribute
 
@@ -63,6 +65,7 @@ We are use vanilla CSS but enhance the experience using
 
 However all `.css`-files are compiled into one file called `main.css` in the
 `dist`-folder. There is a productive-version (means minified), too.
+
 
 ## JS
 
