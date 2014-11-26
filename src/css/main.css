@@ -20,4 +20,4 @@
 @import url('src/css/layout/footer.css');
 
 /* Modules */
-@import url('src/css/modules/box.css');
+@import url('src/modules/module/module.css');

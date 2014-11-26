@@ -1,8 +1,9 @@
 /**
  * An example specification for the example module
  * Loads the module and runs the test suite
+ * Module path is relative to the current path
  */
-define(['modules/module'], function (module) {
+define(['./module'], function (module) {
   'use strict';
 
   // Test suite INIT

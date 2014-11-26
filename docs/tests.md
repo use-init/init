@@ -18,12 +18,7 @@ You can run tests by using the Grunt implementation. Just run `$ grunt connect:t
 For a less extensive unit test with PhantomJS use `$ grunt connect:test karma:unit`.
 
 ## How to set up a Jasmine Test suite
-When adding a new test suite you need to do the following:
-
-* Add a file in the folder `test/specs/`
-* Name it `{{spec-name}}.spec.js`
-* Add the file name without the extension to the list of dependencies in `test/spec.js`
-* Wrap your test suite in a `define` function call as you can see here in order to get it working with RequireJS
+Please refer to the [Writing Tests](writing-tests.md) documentation.
 
 ### Coverage
 Karma tests include a coverage report within the console.

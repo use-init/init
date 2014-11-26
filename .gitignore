@@ -6,5 +6,6 @@
 
 dist
 node_modules
+src/*.html
 test/coverage
 test/dist

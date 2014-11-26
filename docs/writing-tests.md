@@ -28,11 +28,11 @@ There are four different tasks of interested to run with Grunt:
 In general you want to write a test suite for each module you write. You can do
 this by following this steps:
 
-* If you haven't created the module within `src/js/` yet, do so now.
-* Add a file `modulename.spec.js` within `test/specs/` by copying over
-  `example.spec.js` and removing unnecessary stuff.
+* If you haven't created the module within `src/modules/` yet, do so now.
+* Add a file `modulename.spec.js` within `src/modles/modulename/` by copying
+  over `module.spec.js` and removing unnecessary stuff.
 * Adjust the `define` statement to include the module you want to test. Add
-  `modulename.spec.js` as `../../test/specs/modulename.spec` in
+  `modulename.spec.js` as `../modules/modulename/modulename.spec` in
   `test/test-main.js`.
 * Run tests to ensure everything works just as you expect it.
 

@@ -12,7 +12,7 @@
   require.config({
 
     // Set baseUrl for Karma
-    baseUrl: 'http://localhost:9876/base/src/js',
+    baseUrl: 'http://localhost:9876/base/src/js/',
 
     deps: [
       '../../node_modules/grunt-modernizr/lib/modernizr-dev',
@@ -22,7 +22,7 @@
 
   // Load the example spec
   require([
-    '../../test/specs/example.spec'
+    '../modules/module/module.spec'
     // @TODO: Add your own specifications here
   ], window.__karma__.start);
 }());
