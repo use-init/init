@@ -4,7 +4,7 @@
 require.config({
 
   // Initialize the application with the main application file
-  deps: ['plugins/console', 'main'],
+  deps: ['plugins/console', 'plugins/tracking', 'main'],
 
   paths: {
     jquery: '../../node_modules/jquery/dist/jquery.min'

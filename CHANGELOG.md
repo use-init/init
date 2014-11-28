@@ -1,6 +1,7 @@
 # Changelog
 
 ### HEAD
+* Include better tracking via Google Analytics in a separate file
 * Fetch the `.htaccess` file via `npm`
 * Re-add .htaccess: server-configs-apache in version 2.11.0
 * Remove conditional comments for old IE

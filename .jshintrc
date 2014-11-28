@@ -40,6 +40,8 @@
    * See http://www.jshint.com/docs/
    */
   "globals": {
+    "ga": true,
+
     // RequireJS
     "define": true,
     "module": true,
