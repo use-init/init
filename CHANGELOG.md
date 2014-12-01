@@ -1,6 +1,7 @@
 # Changelog
 
 ### HEAD
+* Update npm dependencies to latest versions
 * Include better tracking via Google Analytics in a separate file
 * Fetch the `.htaccess` file via `npm`
 * Add a modules folder for all components on a page
