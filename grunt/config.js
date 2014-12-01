@@ -28,7 +28,8 @@ module.exports = {
   // JavaScript files
   js: {
     files: [
-      'src/js/**/*.js'
+      'src/js/**/*.js',
+      'src/modules/**/*.js'
     ],
     config: 'src/js/config.js',
     dest: 'dist/<%= pkg.version %>/main.min.js',
@@ -45,7 +46,7 @@ module.exports = {
       'src/css/**/*.css'
     ],
     src: 'src/css/main.css',
-    devDest: 'dist/css/main.css',
+    devDest: 'src/dist/main.css',
     dest: 'dist/<%= pkg.version %>/main.min.css'
   },
 
@@ -69,7 +70,7 @@ module.exports = {
   },
 
   tests: {
-    src: 'test/specs/**/*spec.js',
+    src: 'src/modules/**/*spec.js',
     config: 'test/test-main.js',
     coverage: 'test/coverage/'
   },
@@ -87,8 +88,8 @@ module.exports = {
     dev: {
       src: 'temp/**/*.html',
       dest: 'src/',
-      maincss: 'css/main.css',
-      modernizr: '../node_modules/modernizr/modernizr.js',
+      maincss: 'dist/main.css',
+      modernizr: '../node_modules/grunt-modernizr/lib/modernizr-dev.js',
       mainjs: '<script data-main="js/config" src="../node_modules/requirejs/require.js"></script>'
     }
   }

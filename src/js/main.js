@@ -7,7 +7,7 @@
 
 require([
   // Require the modules
-  'modules/module'
+  '../modules/module/module'
 ], function (module) {
   'use strict';
 
