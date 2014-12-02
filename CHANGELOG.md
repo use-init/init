@@ -1,6 +1,7 @@
 # Changelog
 
 ### HEAD
+* Delete unnecessary property in `.bowerrc`
 
 ### 1.4.0 (20 November 2014)
 * Update dependencies from bower and npm
