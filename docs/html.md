@@ -4,7 +4,7 @@
 
 The HTML structure is mainly based on the famous [HTML5 Boilerplate](http://html5boilerplate.com/). While we use this as a base for our markup we add several things including a default markup for your page layout. This is very simple and it is strongly recommended to adapt this markup to your fits.
 
-## Legazy Internet Explorer
+## Legacy Internet Explorer
 
 To inform users of older Internet Explorers for which the project has not been optimized anymore we provide a Conditional Comment (by default targeting users of IE8 and lower) with a nice little toolbar appearing on top of your website. You are free to adapt this element via changing the text in the markup or adjusting the style via the [`.browsehappy` CSS class](../src/css/layout/base.css#L:85).
 

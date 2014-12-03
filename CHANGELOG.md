@@ -1,11 +1,11 @@
 # Changelog
 
 ### HEAD
+* Add HTML to modules folder and parse module html (#129)
 * Update npm dependencies to latest versions
 * Include better tracking via Google Analytics in a separate file
 * Fetch the `.htaccess` file via `npm`
 * Add a modules folder for all components on a page
-
 * Re-add .htaccess: server-configs-apache in version 2.11.0
 * Remove conditional comments for old IE
 * Drop IE8 support: update jQuery to v2.1.1

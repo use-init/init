@@ -3,6 +3,7 @@
     "src": [
       "src/templates/header.html",
       "src/templates/index.html",
+      "src/modules/module/module.html",
       "src/templates/footer.html"
     ],
     "dest": "temp/index.html"
