@@ -48,8 +48,7 @@
     "karma-requirejs": "0.2.2",
     "karma-safari-launcher": "0.1.1",
     "karma-script-launcher": "0.1.0",
-    "time-grunt": "1.0.0",
-    "xtend": "4.0.0"
+    "time-grunt": "1.0.0"
   },
   "keywords": []
 }

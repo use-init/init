@@ -3,7 +3,7 @@
  */
 'use strict';
 
-var xtend = require('xtend');
+var deepExtend = require('deep-extend');
 var loadGruntConfig = require('./grunt/load-grunt-config');
 
 /*
@@ -18,7 +18,7 @@ module.exports = function (grunt) {
    * Configuration: All data from package.json, grunt/options and
    * grunt/plugins
    */
-  var config = xtend({
+  var config = deepExtend({
       pkg: require('./package')
     },
     loadGruntConfig('grunt/options'),

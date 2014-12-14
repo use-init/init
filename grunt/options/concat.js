@@ -3,7 +3,6 @@
  */
 'use strict';
 
-var xtend = require('xtend');
 var deepExtend = require('deep-extend');
 var pages = require('../../pages');
 var config = require('../config');
@@ -17,4 +16,4 @@ for (pageName in pages) {
   deepExtend(pages[pageName], { 'dest': pagePath });
 }
 
-module.exports = xtend(pages, config.concat || {});
+module.exports = deepExtend(pages, config.concat || {});

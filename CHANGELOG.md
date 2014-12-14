@@ -1,6 +1,7 @@
 # Changelog
 
 ### HEAD
+* Remove node dependency `xtend` in favor of `node-deep-extend` (#132)
 * Add HTML to modules folder and parse module html (#129)
 * Update npm dependencies to latest versions
 * Include better tracking via Google Analytics in a separate file
