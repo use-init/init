@@ -92,5 +92,20 @@ module.exports = {
       modernizr: '../node_modules/grunt-modernizr/lib/modernizr-dev.js',
       mainjs: '<script data-main="js/config" src="../node_modules/requirejs/require.js"></script>'
     }
+  },
+
+  // Static Site Generator
+  generator: {
+    files: {
+      cwd: 'src/pages',
+      src: '**/*',
+      dest: 'dist/',
+      ext: '.html'
+    },
+    options: {
+      partialsglob: 'pages/partials/*.html',
+      templates: 'templates',
+      environment: 'dev'
+    }
   }
 };

@@ -61,7 +61,8 @@ module.exports = function (grunt) {
     'copy',
     'replace:htaccess',
     'requirejs',
-    'pages:dev'
+    'pages:dev',
+    'generator:dev'
   ]);
 
   // Default task
