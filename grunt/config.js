@@ -104,7 +104,7 @@ module.exports = {
     },
     options: {
       partialsglob: 'pages/partials/*.html',
-      templates: 'templates',
+      templates: 'src/templates',
       environment: 'dev'
     }
   }
