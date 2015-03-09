@@ -15,16 +15,28 @@
 * Update karma tasks to better reflect actual propose
 * Copy files that are needed in dest via grunt copy
 * Use grunt-sass with libsass for speed
+
+#### Pre v2
+* Delete unnecessary property in `.bowerrc`
+
+### 1.4.0 (20 November 2014)
+* Update dependencies from bower and npm
+* Update Apache Server Configs to v2.11.0
+* Rename Apple touch icon to `apple-touch-icon.png` and add<br>
+  `<link>` in `templates/header.html`
+  ([h5bp/html5-boilerplate#1622](https://github.com/h5bp/html5-boilerplate/pull/1622))
+* Removed obsolete sourcemapping option
+* Update `apple-touch-icon-precomposed.png`
+  ([h5bp/html5-boilerplate#1599](https://github.com/h5bp/html5-boilerplate/pull/1599))
+* Remove `trailing` JSHint option
 * Upgrade `console.log` / `console.warn` (#112)
 * Remove timestamp logging when running Karma
-* Update to Apache Server Configs v2.7.1
 * Integrate jit-grunt
 * Remove proxy from Karma configuration since it is not needed
 * Remove `connect:test` task from Grunt
 * Order .jshintrc options alphabetically
 * Update 404 to latest from HTML5 Boilerplate
 * Make structure for test suites easier to unterstand
-* Update `bower` and `npm` dependencies
 * Add `auto` to the Google Universal Analytics tracker create method
 * Add `timeline` and `timelineEnd` to the list of `console` methods
 
