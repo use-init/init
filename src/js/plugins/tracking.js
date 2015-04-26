@@ -12,7 +12,9 @@
  * https://developers.google.com/analytics/devguides/collection/analyticsjs/
  * http://mathiasbynens.be/notes/async-analytics-snippet#universal-analytics
  */
-define(['jquery'], function ($) {
+import $ from '../node_modules/jquery/dist/jquery.js';
+
+export default function () {
   'use strict';
 
   // Add your Google Universal Analytics ID here
@@ -55,4 +57,4 @@ define(['jquery'], function ($) {
       }
     }
   });
-});
+}

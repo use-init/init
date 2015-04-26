@@ -14,15 +14,12 @@ module.exports = {
   srcDir: 'src/',
   destDir: 'dist/',
 
-
-  requirejs: '../../node_modules/requirejs/require',
-
   // All files that should be checked with JSHint
   jsHintFiles: [
     'Gruntfile.js',
     'src/**/*.js',
-    'test/*.js',
-    'test/specs/**/*.js'
+    '!src/dist/**/*.js',
+    'test/*.js'
   ],
 
   // JavaScript files
@@ -31,12 +28,20 @@ module.exports = {
       'src/js/**/*.js',
       'src/modules/**/*.js'
     ],
-    config: 'src/js/config.js',
-    dest: 'dist/<%= pkg.version %>/main.min.js',
+    dev: {
+      entry: 'src/js/main.js',
+      dest: 'src/dist/index.js'
+    },
+    build: {
+      entry: 'src/js/main.js',
+      dest: 'dist/<%= pkg.version %>/main.min.js',
+    },
+    test: {
+      entry: 'test/main.js',
+      dest: 'test/dist/test.js',
+    },
     libs: [
-      'node_modules/grunt-modernizr/lib/modernizr-dev.js',
-      'node_modules/jquery/dist/jquery.min.js',
-      'node_modules/requirejs/require.js'
+      'node_modules/grunt-modernizr/lib/modernizr-dev.js'
     ]
   },
 
@@ -70,8 +75,9 @@ module.exports = {
   },
 
   tests: {
-    src: 'src/modules/**/*spec.js',
-    config: 'test/test-main.js',
+    specs: [
+      'src/modules/**/*spec.js'
+    ],
     coverage: 'test/coverage/'
   },
 
@@ -90,7 +96,7 @@ module.exports = {
       dest: 'src/',
       maincss: 'dist/main.css',
       modernizr: '../node_modules/grunt-modernizr/lib/modernizr-dev.js',
-      mainjs: '<script data-main="js/config" src="../node_modules/requirejs/require.js"></script>'
+      mainjs: '<script src="dist/index.js"></script>'
     }
   }
 };

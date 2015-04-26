@@ -14,29 +14,18 @@ var getIncludeFiles = function () {
   var files = [];
 
   // Add JavaScript libs
-  projectConfig.js.libs.forEach(function (element) {
-    files.push({
-      pattern: element,
-      included: false
-    });
-  });
-
-  // Add own JS files
-  projectConfig.js.files.forEach(function (element) {
-    files.push({
-      pattern: element,
-      included: false
-    });
-  });
+  var filePatterns = projectConfig.js.libs;
 
   // Add tests
-  files.push({
-    pattern: projectConfig.tests.src,
-    included: false
-  });
+  filePatterns.push(projectConfig.js.test.dest);
 
-  // And test config
-  files.push(projectConfig.tests.config);
+  // Iterate through files
+  filePatterns.forEach(function (element) {
+    files.push({
+      pattern: element,
+      included: true
+    });
+  });
 
   return files;
 };
@@ -52,38 +41,16 @@ module.exports = function (config) {
     colors: true,
     captureTimeout: 7000,
 
-    frameworks: ['jasmine', 'requirejs'],
-    reporters: ['progress', 'coverage'],
-
-    preprocessors: (function () {
-      var preprocessors = {};
-
-      projectConfig.js.files.forEach(function (element) {
-        preprocessors[element] = 'coverage';
-      });
-
-      return preprocessors;
-    }()),
+    frameworks: ['jasmine'],
+    reporters: ['progress'],
 
     plugins: [
       'karma-jasmine',
-      'karma-requirejs',
-      'karma-coverage',
       'karma-chrome-launcher',
       'karma-firefox-launcher',
       'karma-safari-launcher',
       'karma-phantomjs-launcher'
     ],
-
-    coverageReporter: {
-      reporters: [{
-        type: 'text-summary',
-        dir: projectConfig.tests.coverage
-      }, {
-        type: 'html',
-        dir: projectConfig.tests.coverage
-      }]
-    },
 
     logLevel: config.LOG_INFO,
 

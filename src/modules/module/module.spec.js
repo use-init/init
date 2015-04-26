@@ -3,8 +3,13 @@
  * Loads the module and runs the test suite
  * Module path is relative to the current path
  */
-define(['./module'], function (module) {
+import $ from '../../../node_modules/jquery/dist/jquery.js';
+import Module from './module.js';
+
+export default function () {
   'use strict';
+
+  var module = new Module();
 
   // Test suite INIT
   describe('INIT', function () {
@@ -29,4 +34,4 @@ define(['./module'], function (module) {
       expect(eventCalled).toBeTruthy();
     });
   });
-});
+}

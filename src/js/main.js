@@ -3,12 +3,10 @@
  *
  * @author Author Name
  */
+import Module from '../modules/module/module';
 
-require([
-  // Require the modules
-  '../modules/module/module'
-], function (module) {
+(function () {
   'use strict';
 
-  console.log(module);
-});
+  console.log(Module);
+}());

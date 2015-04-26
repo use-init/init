@@ -1,6 +1,7 @@
 # Changelog
 
 ### HEAD
+* Add ES6 modules to JS + build workflow
 * Remove unused `@date` definitions
 * Update Apache Server Configs to v2.14.0
 * Remove node dependency `xtend` in favor of `node-deep-extend` (#132)
