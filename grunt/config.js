@@ -3,13 +3,7 @@
  */
 'use strict';
 
-var pkg = require('../package');
-
 module.exports = {
-
-  // A banner for distributed files (name, version, license, date)
-  banner: '/*! ' + pkg.name + ' - v' + pkg.version + ' - MIT License - ' +
-    '<%= grunt.template.today("yyyy-mm-dd") %> */',
 
   srcDir: 'src/',
   destDir: 'dist/',

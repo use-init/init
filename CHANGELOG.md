@@ -1,6 +1,7 @@
 # Changelog
 
 ### HEAD
+* Remove unused banner config in grunt config
 * Use config.js.hintFiles for files that should be linted
 * Optimize SVG logo
 * Add ES6 modules to JS + build workflow
