@@ -1,4 +1,4 @@
-# <img src="http://rawgithub.com/use-init/init/master/logo.svg" alt="INIT" title="INIT" width="200">
+# <img src="https://rawgit.com/use-init/init/master/src/logo.svg" alt="INIT" title="INIT" width="200">
 
 This project is based upon
 [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate) and adds more
