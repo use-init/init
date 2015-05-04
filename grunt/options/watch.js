@@ -13,7 +13,7 @@ module.exports = {
   },
 
   js: {
-    files: [config.jsHintFiles, config.tests.src],
+    files: [config.js.hintFiles, config.tests.src],
     tasks: ['jshint', 'karma:unit']
   },
 

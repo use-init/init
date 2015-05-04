@@ -14,20 +14,21 @@ module.exports = {
   srcDir: 'src/',
   destDir: 'dist/',
 
-  // All files that should be checked with JSHint
-  jsHintFiles: [
-    'Gruntfile.js',
-    'src/**/*.js',
-    '!src/dist/**/*.js',
-    'test/*.js'
-  ],
-
   // JavaScript files
   js: {
     files: [
       'src/js/**/*.js',
       'src/modules/**/*.js'
     ],
+
+    // All files that should be checked with JSHint
+    hintFiles: [
+      'Gruntfile.js',
+      'src/**/*.js',
+      '!src/dist/**/*.js',
+      'test/*.js'
+    ],
+
     dev: {
       entry: 'src/js/main.js',
       dest: 'src/dist/index.js'

@@ -8,7 +8,7 @@ var config = require('../config');
 module.exports = {
 
   // All files from config
-  all: config.jsHintFiles,
+  all: config.js.hintFiles,
 
   options: {
 
