@@ -33,7 +33,7 @@ automatically.
 If running the install does not work, please try running it as with
 admin-rights:
 
-	$ sudo npm install -g grunt-cli i
+	$ sudo npm install -g grunt-cli
 
 
 ## Browser support
