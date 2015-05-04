@@ -1,6 +1,7 @@
 # Changelog
 
 ### HEAD
+* Optimize SVG logo
 * Add ES6 modules to JS + build workflow
 * Remove unused `@date` definitions
 * Update Apache Server Configs to v2.14.0
