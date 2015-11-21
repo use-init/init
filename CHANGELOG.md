@@ -1,6 +1,7 @@
 # Changelog
 
 ### HEAD
+* Add JSCS module to grunt build workflow
 * Fix bug with jshint config in grunt watch task (#141)
 * Remove unused banner config in grunt config
 * Use config.js.hintFiles for files that should be linted

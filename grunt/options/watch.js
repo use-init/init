@@ -14,7 +14,7 @@ module.exports = {
 
   js: {
     files: [config.js.hintFiles, config.tests.specs],
-    tasks: ['jshint', 'karma:unit']
+    tasks: ['jshint', 'jscs', 'karma:unit']
   },
 
   livereload: {

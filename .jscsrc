@@ -1,0 +1,13 @@
+{
+  "preset": "airbnb",
+  "disallowSpaceAfterObjectKeys": {
+    "allExcept": ["method"]
+  },
+  "disallowSpacesInAnonymousFunctionExpression": false,
+  "disallowSpacesInFunctionDeclaration": false,
+  "disallowSpacesInFunctionExpression": false,
+  "disallowSpacesInNamedFunctionExpression": false,
+  "requireCommaBeforeLineBreak": false,
+  "requirePaddingNewLinesBeforeLineComments": false,
+  "requireTrailingComma": false,
+}

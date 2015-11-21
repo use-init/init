@@ -57,6 +57,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('dev', [
     'jshint',
+    'jscs',
     'pleeease:dev',
     'copy',
     'replace:htaccess',
@@ -72,6 +73,7 @@ module.exports = function (grunt) {
    */
   grunt.registerTask('build', [
     'jshint',
+    'jscs',
     'modernizr:build',
     'pleeease:build',
     'imagemin',
