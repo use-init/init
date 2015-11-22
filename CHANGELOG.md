@@ -1,6 +1,6 @@
 # Changelog
 
-### HEAD
+### v2.0.0
 * Update node modules
 * Add JSCS module to grunt build workflow
 * Fix bug with jshint config in grunt watch task (#141)
