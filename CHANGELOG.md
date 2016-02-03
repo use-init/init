@@ -1,6 +1,7 @@
 # Changelog
 
 * Fix JSCS error in the console.js plugin script file
+* Update clearfix to a more simple, leaner one
 
 ### v2.0.0
 * Update node modules
