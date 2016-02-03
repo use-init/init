@@ -1,6 +1,6 @@
 // Enhance console.log / console.warn output in browsers and avoid errors
 // in browsers that lack a console.
-(function() {
+(function () {
   'use strict';
 
   // Avoid `console` errors in browsers that lack a console.

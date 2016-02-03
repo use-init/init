@@ -1,5 +1,7 @@
 # Changelog
 
+* Fix JSCS error in the console.js plugin script file
+
 ### v2.0.0
 * Update node modules
 * Add JSCS module to grunt build workflow
